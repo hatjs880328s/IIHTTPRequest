@@ -10,15 +10,15 @@ import Foundation
 
 /// swift中的 dataresponse- 转义到oc中的nsobject子类
 /// 结果中的response-为了给OC使用，swift中目前为结构体
-class HTTPOCResponse: NSObject {
+public class HTTPOCResponse: NSObject {
     
-    var ocRequest: URLRequest?
+    @objc public var ocRequest: URLRequest?
     
-    var ocResponse: HTTPURLResponse?
+    @objc public var ocResponse: HTTPURLResponse?
 
-    var responseData: Data?
+    @objc public var responseData: Data?
     
-    init(request: URLRequest?, response: HTTPURLResponse?, responseData: Data?) {
+    @objc public init(request: URLRequest?, response: HTTPURLResponse?, responseData: Data?) {
         super.init()
         self.ocRequest = request
         self.ocResponse = response

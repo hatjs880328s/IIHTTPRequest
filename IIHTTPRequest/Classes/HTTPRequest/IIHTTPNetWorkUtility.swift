@@ -13,13 +13,13 @@
 import Foundation
 import UIKit
 
-@objc class IIHTTPNetWorkUtility: NSObject {
-    override init() {
+@objc public class IIHTTPNetWorkUtility: NSObject {
+    @objc public override init() {
         super.init()
     }
 
     /// 判定当前手机的硬件链接状态-不去判定是否真的有网络
-    func analyzeWifiOrOthers() -> HardWareNetWorkStatus {
+    public func analyzeWifiOrOthers() -> HardWareNetWorkStatus {
         guard let ocSubVw = IIHTTPNetWorkUtilityOC().getApplicationStatusBarVw() as? [UIView] else { return HardWareNetWorkStatus.noNetWork }
         guard let anyCla = NSClassFromString("UIStatusBarDataNetworkItemView") else { return HardWareNetWorkStatus.noNetWork }
         var realSubVw: UIView?

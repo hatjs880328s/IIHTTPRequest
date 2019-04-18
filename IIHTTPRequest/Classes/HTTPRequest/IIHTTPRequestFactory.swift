@@ -32,19 +32,19 @@ open class ResponseFactoary: NSObject {
 open class ResponseClass: NSObject {
     
     /// 错误 可为nil
-    var errorValue: ErrorInfo!
+    @objc public var errorValue: ErrorInfo!
     
     /// 结果dic 可为nil
-    var dicValue: NSDictionary!
+    @objc public var dicValue: NSDictionary!
     
     /// 结果arr 可为nil
-    var arrValue: NSArray!
+    @objc public var arrValue: NSArray!
     
     /// 结果string 可为nil
-    var anyValue: AnyObject!
+    @objc public var anyValue: AnyObject!
     
     /// 结果中的response-为了给OC使用，swift中目前为结构体
-    var ocResponse: HTTPOCResponse!
+    @objc public var ocResponse: HTTPOCResponse!
     
     /// alamofire-response，包含 [request & response]
     var response: DataResponse<Any>! {

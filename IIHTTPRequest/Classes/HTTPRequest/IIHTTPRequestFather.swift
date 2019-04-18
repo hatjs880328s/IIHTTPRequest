@@ -18,15 +18,15 @@ open class IIHTTPRequestFather: NSObject {
     /// 是否上传日志-默认关闭
     @objc static var uploadLog: Bool = false
 
-    @objc static func startUploadLogService() {
+    @objc public static func startUploadLogService() {
         uploadLog = true
     }
 
-    @objc static func stopUploadLogService() {
+    @objc public static func stopUploadLogService() {
         uploadLog = false
     }
 
-    @objc class func startRequest(showAlertInfo: Bool = true,
+    @objc public class func startRequest(showAlertInfo: Bool = true,
                                   shouldGetRedirect: Bool = false,
                                   method: IIHTTPMethod,
                                   url: String,
