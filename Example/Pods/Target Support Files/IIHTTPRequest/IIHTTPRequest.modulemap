@@ -1,0 +1,6 @@
+framework module IIHTTPRequest {
+  umbrella header "IIHTTPRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}
