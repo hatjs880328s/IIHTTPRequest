@@ -16,7 +16,7 @@ import Foundation
  4.async方法使用ping获取的真正联通状态
  */
 
-open class IIHTTPNetWork: NSObject {
+public class IIHTTPNetWork: NSObject {
 
     static let pingTimeOut: TimeInterval = 6.5
 
@@ -25,7 +25,7 @@ open class IIHTTPNetWork: NSObject {
     static let connectivity = Connectivity(shouldUseHTTPS: false)
     
     /// 开启监听与设置ping服务器
-    @objc open class func startService(with emmIPAdd: URL) {
+    @objc public class func startService(with emmIPAdd: URL) {
         connectivity.connectivityURLs = [emmIPAdd]
         self.setPingHost()
         RealReachability.sharedInstance().startNotifier()
@@ -39,13 +39,13 @@ open class IIHTTPNetWork: NSObject {
     }
     
     /// 添加监听-多用在基类中或者工具类中，普通vc可不用
-    @objc open class func addObserver(selector: Selector, observer: Any) {
+    @objc public class func addObserver(selector: Selector, observer: Any) {
         NotificationCenter.default.addObserver(observer, selector: selector, name: NSNotification.Name.realReachabilityChanged, object: nil)
     }
     
     /// 返回真实的网络连接状态-[limit 10s,使用ping去校验网络]
     /// 这里进行二次认证 - 使用第三方来进一步判定 - 如果双重否定则是否定，否则都是真
-    @objc open class func getRealNetStatus(connectAction:@escaping () -> Void, nonConnectAction: @escaping () -> Void) {
+    @objc public class func getRealNetStatus(connectAction:@escaping () -> Void, nonConnectAction: @escaping () -> Void) {
         RealReachability.sharedInstance().reachability { (status) in
             if status == ReachabilityStatus.RealStatusNotReachable {
                 IIHTTPNetWork.getNetStatusWith3rd(endAction: { (results) in
@@ -63,7 +63,7 @@ open class IIHTTPNetWork: NSObject {
 
     /// 使用ping处理网络状态 & 返回时间线 [ping时间超过4S判定为网络差]
     /// 没有网络情况下，判定当前是否有wifi链接，如果有则认为是有小助手
-    @objc open class func getNetWorkStatusAndTimeLineWithPing(connectAction: @escaping (_ pingState: PingNetWorkStatus) -> Void) {
+    @objc public class func getNetWorkStatusAndTimeLineWithPing(connectAction: @escaping (_ pingState: PingNetWorkStatus) -> Void) {
         var timeLine: Double = 0
         let timeStart = Date().timeIntervalSince1970
         getRealNetStatus(connectAction: {
@@ -79,7 +79,7 @@ open class IIHTTPNetWork: NSObject {
     }
 
     /// 处理网络状态-使用第三方的一个库来处理
-    @objc open class func getNetStatusWith3rd(endAction: @escaping (_ haveNet: Bool) -> Void) {
+    @objc public class func getNetStatusWith3rd(endAction: @escaping (_ haveNet: Bool) -> Void) {
         IIHTTPNetWork.connectivity.checkConnectivity { connectivity in
             switch connectivity.status {
             case .connected, .connectedViaCellular, .connectedViaWiFi :
