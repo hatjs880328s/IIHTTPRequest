@@ -1,21 +1,21 @@
 PODS:
-  - IIHTTPRequest (0.2.0):
-    - IIHTTPRequest/Connectivity (= 0.2.0)
-    - IIHTTPRequest/HTTPRequest (= 0.2.0)
-    - IIHTTPRequest/HTTPSource (= 0.2.0)
-    - IIHTTPRequest/RealReachability (= 0.2.0)
+  - IIHTTPRequest (1.0.1):
+    - IIHTTPRequest/Connectivity (= 1.0.1)
+    - IIHTTPRequest/HTTPRequest (= 1.0.1)
+    - IIHTTPRequest/HTTPSource (= 1.0.1)
+    - IIHTTPRequest/RealReachability (= 1.0.1)
     - III18N
-  - IIHTTPRequest/Connectivity (0.2.0):
+  - IIHTTPRequest/Connectivity (1.0.1):
     - IIHTTPRequest/RealReachability
     - III18N
-  - IIHTTPRequest/HTTPRequest (0.2.0):
+  - IIHTTPRequest/HTTPRequest (1.0.1):
     - IIHTTPRequest/Connectivity
     - IIHTTPRequest/HTTPSource
     - IIHTTPRequest/RealReachability
     - III18N
-  - IIHTTPRequest/HTTPSource (0.2.0):
+  - IIHTTPRequest/HTTPSource (1.0.1):
     - III18N
-  - IIHTTPRequest/RealReachability (0.2.0):
+  - IIHTTPRequest/RealReachability (1.0.1):
     - III18N
   - III18N (0.7.0)
 
@@ -31,7 +31,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IIHTTPRequest: 5128757b392dc2c8b64a59975e7c255bbf050bc2
+  IIHTTPRequest: cb3c72cbfbf11ad6904381ae3d9f12522fadb60d
   III18N: a64e35e4f9ba88d87360ab0088d829dff71fecfc
 
 PODFILE CHECKSUM: ddec0b6da59bc11fcf6156b72e628137a8b4e95e

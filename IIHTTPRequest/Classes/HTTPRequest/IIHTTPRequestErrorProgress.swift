@@ -96,31 +96,42 @@ extension IIHTTPRequestErrorProgress {
     /// 3.刷新token & 重新请求 & 释放信号量
     /// defer-释放信号量
     @objc private func realRequestToken() {
-        func innerSemProgress() {
-            let refreshTokenStatusCode = self.shouldRefreshToken()
-            switch refreshTokenStatusCode {
-            case .donothing:
-                IIHTTPRequest.gcdSem.releaseSignal()
-            case .shouldDirectRequest:
-                IIHTTPRequest.gcdSem.releaseSignal()
+//        func innerSemProgress() {
+//            let refreshTokenStatusCode = self.shouldRefreshToken()
+//            switch refreshTokenStatusCode {
+//            case .donothing:
+//                IIHTTPRequest.gcdSem.releaseSignal()
+//            case .shouldDirectRequest:
+//                IIHTTPRequest.gcdSem.releaseSignal()
+//                self.reRequest()
+//            case .shouldRefresh:
+//                IIHTTPRequest.refreshToken(id: IIHTTPModuleDoor.urlParams.authHeaderID, secret: IIHTTPModuleDoor.urlParams.authHeaderSecret, successAction: { (response) in
+//                    if response.dicValue == nil {
+//                        IIHTTPRequest.gcdSem.releaseSignal()
+//                        return
+//                    }
+//                    self.saveToken(dic: response.dicValue)
+//                    IIHTTPRequest.gcdSem.releaseSignal()
+//                    self.reRequest()
+//                }) { (_) in
+//                    IIHTTPRequest.gcdSem.releaseSignal()
+//                }
+//            }
+//        }
+//        IIHTTPRequest.gcdSem.limitThreadCountAsyncProgress {
+//            innerSemProgress()
+//        }
+        guard let originRequest = self.response.request as? NSMutableURLRequest else { return }
+        IIHTTPModuleDoor.urlParams.ocRefreshTokenUti?.updateAuthTokenComplete(originRequest, freshToken: { (isSuccess, shouldLogOut) in
+            if isSuccess {
+                //成功 - 重新发起请求
                 self.reRequest()
-            case .shouldRefresh:
-                IIHTTPRequest.refreshToken(id: IIHTTPModuleDoor.urlParams.authHeaderID, secret: IIHTTPModuleDoor.urlParams.authHeaderSecret, successAction: { (response) in
-                    if response.dicValue == nil {
-                        IIHTTPRequest.gcdSem.releaseSignal()
-                        return
-                    }
-                    self.saveToken(dic: response.dicValue)
-                    IIHTTPRequest.gcdSem.releaseSignal()
-                    self.reRequest()
-                }) { (_) in
-                    IIHTTPRequest.gcdSem.releaseSignal()
-                }
+            } else {
+                //失败 & 是否需要登出
+                if !shouldLogOut { return }
+                self.moreThanoneUserLoginwithsameoneAPPID()
             }
-        }
-        IIHTTPRequest.gcdSem.limitThreadCountAsyncProgress {
-            innerSemProgress()
-        }
+        })
     }
     
     /// 重新发起之前失败的网络请求[请求new token之后去重新请求;并在header中标记;如果有标记则不会再次请求]

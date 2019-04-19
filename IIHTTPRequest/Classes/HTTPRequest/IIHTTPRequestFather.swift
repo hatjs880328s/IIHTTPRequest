@@ -47,7 +47,7 @@ open class IIHTTPRequestFather: NSObject {
         writeLog(url: urlrequest.url?.absoluteString, requestType: .refreshTokenThenRequest)
     }
 
-    @objc static func writeLog(url: String?, requestType: RequestType) {
+    @objc public static func writeLog(url: String?, requestType: RequestType) {
         if uploadLog {
 //            let item = APIEvent()
 //            item.setBaseInfo(apiName: url ?? "", time: Date(), requestType: requestType.rawValue)
