@@ -80,7 +80,8 @@ open class IIHTTPRequest: IIHTTPRequestFather {
         let httpHeader = IIHTTPHeaderAndParams.analyzeHTTPHeader(header)
         let httpMethod = method.changeToAlaMethod()
         let requestManager = IIHTTPHeaderAndParams.redirectURL(progress: shouldGetRedirect)
-        let httpRencoding = IIHTTPHeaderAndParams.getTrueEncodingType(param: encodingType)
+        let realEncoding = method == .get ? ParamsSeriType.urlEncoding : ParamsSeriType.jsonEncoding
+        let httpRencoding = IIHTTPHeaderAndParams.getTrueEncodingType(param: realEncoding)
         do {
             let req = try URLRequest(url: URL(string: url)!, method: httpMethod, headers: httpHeader)
             var reqEncode = try httpRencoding.encode(req, with: params)
