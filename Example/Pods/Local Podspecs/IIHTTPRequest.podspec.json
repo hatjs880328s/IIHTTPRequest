@@ -1,6 +1,6 @@
 {
   "name": "IIHTTPRequest",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "summary": "IIHTTPRequest",
   "description": "IIHTTPRequest\n网络请求库SDK",
   "homepage": "https://github.com/hatjs880328s/IIHTTPRequest",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/hatjs880328s/IIHTTPRequest.git",
-    "tag": "1.0.1"
+    "tag": "1.0.3"
   },
   "swift_version": "4.2",
   "platforms": {

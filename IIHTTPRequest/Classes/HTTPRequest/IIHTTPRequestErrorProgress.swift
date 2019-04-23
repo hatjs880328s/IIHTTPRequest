@@ -122,7 +122,7 @@ extension IIHTTPRequestErrorProgress {
 //            innerSemProgress()
 //        }
         guard let originRequest = self.response.request as? NSMutableURLRequest else { return }
-        IIHTTPModuleDoor.urlParams.ocRefreshTokenUti?.updateAuthTokenComplete(originRequest, freshToken: { (isSuccess, shouldLogOut) in
+        (IIHTTPModuleDoor.urlParams.ocRefreshTokenUti as? GetRefreshTokenFunction.Type)?.updateAuthTokenComplete(originRequest, freshToken: { (isSuccess, shouldLogOut) in
             if isSuccess {
                 //成功 - 重新发起请求
                 self.reRequest()

@@ -10,7 +10,7 @@
 #endif
 #endif
 
-#import "GetRefreshTokenFunctionProtocal.h"
+#import "GetRefreshTokenFunction.h"
 #import "IIHTTPNetWorkUtilityOC.h"
 #import "LocalConnection.h"
 #import "FSMDefines.h"

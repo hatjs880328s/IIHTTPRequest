@@ -70,7 +70,8 @@ public class IIHTTPModuleDoorURL: NSObject {
     //kOAuthSecret
     @objc public var authHeaderSecret = ""
 
-    @objc public var ocRefreshTokenUti: GetRefreshTokenFunctionProtocal?
+    //oc http svc ins
+    @objc public var ocRefreshTokenUti: AnyClass?
 
 }
 
