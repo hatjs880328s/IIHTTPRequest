@@ -28,7 +28,7 @@ class IIHTTPHeaderAndParams: NSObject {
     class func analyzeHTTPHeader(_ header: HTTPHeaders?) -> HTTPHeaders {
         var defaultHeaderFields: HTTPHeaders = [
             "Authorization": (IIHTTPModuleDoor.urlParams.impTokenType) + " " + (IIHTTPModuleDoor.dynamicParams.impAccessAT ?? ""),
-            "X-ECC-Current-Enterprise": "\(IIHTTPModuleDoor.urlParams.impUserID)",
+            "X-ECC-Current-Enterprise": "\(IIHTTPModuleDoor.dynamicParams.impUserID)",
             "User-Agent": "iOS/\(IIHTTPModuleDoor.urlParams.deviceIOSVersion)(Apple \(IIHTTPModuleDoor.urlParams.deviceKey)) CloudPlus_Phone/\(IIHTTPModuleDoor.urlParams.appCurrentVersion)",
             "Accept-Language": IIHTTPHeaderAndParams.currentUseLanguage(),
             "X-Device-ID": IIHTTPModuleDoor.urlParams.deviceUUID

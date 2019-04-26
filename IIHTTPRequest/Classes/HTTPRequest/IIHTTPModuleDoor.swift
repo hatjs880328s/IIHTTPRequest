@@ -46,9 +46,6 @@ public class IIHTTPModuleDoorURL: NSObject {
     //IMPAccessTokenModel.activeToken()?.tokenType
     @objc public var impTokenType = ""
 
-    //IMPUserModel.activeInstance()?.enterprise?.id.description
-    @objc public var impUserID = ""
-
     //Utilities.getDeviceiOSVersion() ?? ""
     @objc public var deviceIOSVersion = ""
 
@@ -77,10 +74,6 @@ public class IIHTTPModuleDoorURL: NSObject {
 
 /// 所有提示信息
 public class IIHTTPModuleAlertInfo: NSObject {
-    
-    //Utilities.showToast(getI18NStr(key: III18NEnum.http_request_unConnect.rawValue))
-    //@objc public var unConnect = ""
-
 
 }
 
@@ -105,6 +98,15 @@ public class IIHTTPModuleDynamicParams: NSObject {
         guard let realAction = getATAction else { return nil }
         return realAction()
     }
+
+    /// enterprise id
+    var impUserID: String  {
+        guard let realAction = enterpriseIdAction else { return "" }
+        return realAction()
+    }
+
+    /// user & enterpeise - action
+    @objc public var enterpriseIdAction: (() -> String)?
 
     /// toast- action
     @objc public var showToastAction: ((_ showInfo: String) -> Void)?
