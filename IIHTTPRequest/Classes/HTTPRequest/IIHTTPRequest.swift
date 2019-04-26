@@ -137,7 +137,7 @@ open class IIHTTPRequest: IIHTTPRequestFather {
     
         let params = IIHTTPHeaderAndParams.getRequestTokenParams(userName: userName, userPwd: userPwd, id: id, secret: secret)
         let header = IIHTTPHeaderAndParams.getRequestTokenHeader()
-        IIHTTPRequest.startRequest(method: .post, url: IIHTTPModuleDoor.urlParams.oauthPath, params: params, header: header, encodingType: .urlEncoding, requestType: .requestToken, successAction: { (response) in
+        IIHTTPRequest.startRequest(method: .post, url: IIHTTPModuleDoor.dynamicParams.oauthPath, params: params, header: header, encodingType: .urlEncoding, requestType: .requestToken, successAction: { (response) in
             successAction(response)
         }) { (error) in
             errorAction(error)
@@ -176,7 +176,7 @@ open class IIHTTPRequest: IIHTTPRequestFather {
                                            errorAction:@escaping (_ errorType: ErrorInfo) -> Void) {
         let params = IIHTTPHeaderAndParams.getRefreshTokenParams(refreshTokenInfo: refreshTokenInfo)
         let header = IIHTTPHeaderAndParams.getRefreshTokenHeader(id: id, secret: secret)
-        IIHTTPRequest.startRequest(method: .post, url: IIHTTPModuleDoor.urlParams.oauthPath, params: params, header: header, timeOut: 30, encodingType: .urlEncoding, requestType: .refreshToken, successAction: { (response) in
+        IIHTTPRequest.startRequest(method: .post, url: IIHTTPModuleDoor.dynamicParams.oauthPath, params: params, header: header, timeOut: 30, encodingType: .urlEncoding, requestType: .refreshToken, successAction: { (response) in
             successAction(response)
         }) { (error) in
             errorAction(error)

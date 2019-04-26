@@ -34,9 +34,6 @@ public class IIHTTPModuleDoorURL: NSObject {
     //IIAPIStruct().wifiHelperURL
     @objc public var wifiHelperURL = ""
 
-    //IIAPIStruct().oauthPath
-    @objc public var oauthPath = ""
-
     //IIAPIStruct().pintFirstCheckAdd
     @objc public var pingCheckAdd = ""
 
@@ -104,6 +101,15 @@ public class IIHTTPModuleDynamicParams: NSObject {
         guard let realAction = enterpriseIdAction else { return "" }
         return realAction()
     }
+
+    /// oauth-path
+    var oauthPath: String {
+        guard let realAction = getAuthPathAction else { return "" }
+        return realAction()
+    }
+
+    /// auth - path
+    @objc public var getAuthPathAction: (() -> String)?
 
     /// user & enterpeise - action
     @objc public var enterpriseIdAction: (() -> String)?
