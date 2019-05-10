@@ -64,6 +64,10 @@ import UIKit
     }
 
     func isIphonex() -> Bool {
-        return UIApplication.shared.statusBarFrame.size.height > 20 ? true : false
+        if #available(iOS 11.0, *) {
+            return (UIApplication.shared.delegate?.window??.safeAreaInsets.bottom ?? 0 ) > 0
+        } else {
+            return false
+        }
     }
 }
