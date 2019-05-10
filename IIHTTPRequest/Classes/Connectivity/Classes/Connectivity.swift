@@ -21,7 +21,7 @@ public class Connectivity {
     // MARK: State
     
     /// % successful connections required to be deemed to have connectivity
-    public var successThreshold: Connectivity.Percentage = Connectivity.Percentage(75.0)
+    public var successThreshold: Connectivity.Percentage = Connectivity.Percentage(1.0)
     
     /// URLs to contact in order to check connectivity
     public var connectivityURLs: [URL] = Connectivity

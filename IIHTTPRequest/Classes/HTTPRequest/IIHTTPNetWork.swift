@@ -26,7 +26,11 @@ public class IIHTTPNetWork: NSObject {
     
     /// 开启监听与设置ping服务器
     @objc public class func startService(with emmIPAdd: URL) {
-        connectivity.connectivityURLs = [emmIPAdd]
+        guard let appleUrl = URL(string: "https://www.apple.com") else { return }
+        guard let baiduUrl = URL(string: "https://www.apple.com") else { return }
+        guard let aliyunUrl = URL(string: "http://www.alidns.com") else { return }
+        guard let txUrl = URL(string: "https://www.dnspod.cn") else { return }
+        connectivity.connectivityURLs = [emmIPAdd, aliyunUrl, txUrl, appleUrl, baiduUrl]
         self.setPingHost()
         RealReachability.sharedInstance().startNotifier()
     }
