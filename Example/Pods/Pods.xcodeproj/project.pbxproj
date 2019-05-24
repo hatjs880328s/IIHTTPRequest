@@ -7,267 +7,267 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01A0146181F03F7CA54E9C02006189A0 /* IIHTTPModuleDoor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9FB4EA306E6CFB119D7066FC18DBE /* IIHTTPModuleDoor.swift */; };
-		039D6074A8C5E876E8279B4D60388E79 /* ReachStateWWAN.h in Headers */ = {isa = PBXBuildFile; fileRef = EB57754A12D253F0BA0E5F00439769D9 /* ReachStateWWAN.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		060232863A59DBB2A83184EF1CED8CE8 /* LocalConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = B58FDC0D64574E0C34B3883188164A06 /* LocalConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15D814B68D0B081C29404A987024F9BF /* FSMStateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 518CE017252DEAF05A91B6E014B21130 /* FSMStateUtil.m */; };
-		17D7141E02B446F0DB4EF09305DA5518 /* IIHTTPErrorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFDCCF86DEBFE6EF2F8AA538E4A2A22 /* IIHTTPErrorInfo.swift */; };
-		1AA3A2C9118DD9257C5C7334A32553CD /* ConnectivityResponseValidationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80C594DE26FA380AE4E5AD0CAA227A /* ConnectivityResponseValidationMode.swift */; };
-		1CB29BE3EBB951DB9072003683063C86 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A45C1C78875D79A1BE369C92B32ACB /* TaskDelegate.swift */; };
-		268D2D50491FD0205F8CECE4CCFB23B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E8A52FCA6F39B0E9CEA5EE184963B2 /* Foundation.framework */; };
-		26F687E9683629C96A8F352D635EFDEE /* IIHTTPNetWorkUtilityOC.h in Headers */ = {isa = PBXBuildFile; fileRef = 85A2ECDD71F89AEDE06D4E0F0FC816BC /* IIHTTPNetWorkUtilityOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C2B563C00EDB09A90DD815DE0712E62 /* IIHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92839F58B5EB43FE594D12DD49EBF406 /* IIHTTPRequest.swift */; };
-		2C5B9283D0260FCF408D0AFFA107ABA1 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202C241943E43074D3DD0AB95064CFD /* AFError.swift */; };
-		2CA8B02BFAEE39A9CE9FA392031608C7 /* IIHTTPRequestErrorProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6FBAAB17CC71DEA8806B03ED75B5B /* IIHTTPRequestErrorProgress.swift */; };
-		31C8F8DD2140F005B61B1459ADFA0036 /* RealReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = DD205ACAB4FE66990D112BA3CFF765BB /* RealReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3343BA466453A5889D97ED02EABD315C /* IIHTTPRequestEunmList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B008D66CC088B6F2DA6CE105DFD4BA66 /* IIHTTPRequestEunmList.swift */; };
-		3724CED8C19A2F8C6DC2F265A3859E93 /* IMPI18N.m in Sources */ = {isa = PBXBuildFile; fileRef = AB59355B3E2632CD270E456C032992F8 /* IMPI18N.m */; };
-		3C2F4DAA99867AF82473EE536B2ADE28 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E7D9194C645EC43C980928A7583AA9 /* SessionDelegate.swift */; };
-		4083046F96F5654AD535CC61533DA57D /* ReachStateLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0A41F7A1C9F336B5184E0CB98F5274 /* ReachStateLoading.m */; };
-		42FF3A7CEDF8A0099F2794CB4CEF350B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E8A52FCA6F39B0E9CEA5EE184963B2 /* Foundation.framework */; };
-		457AB93B0E8898258F46FC46BA6AC0B7 /* IHTTPProgressAFNCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AAE100EF8A6FCDD943CFE3D71B3B77 /* IHTTPProgressAFNCode.swift */; };
-		4CD858E48D5AD5CF85BC47DB4C53B104 /* IIL18NEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E2583FCDDD06B1B2E78A3A782B6C5B /* IIL18NEnum.swift */; };
-		5021BD6D642A23504D2ADC9B7436DAF8 /* Pods-IIHTTPRequest_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A06DE1DEA018E22921667802515E1C /* Pods-IIHTTPRequest_Example-dummy.m */; };
-		5123BF7B5869FBA44D0284985CB5DA27 /* PingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F229BB18368FDF90E459F3AD191EBCC /* PingHelper.m */; };
-		53DEDFAAE99C62C91AEA0A56CE259223 /* IIHTTPNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDDA9596D6345686A81A55F78F13748 /* IIHTTPNetWork.swift */; };
-		580078731FF3226D930FD2D2A8476FD3 /* Pods-IIHTTPRequest_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27EB7B201F498B9CA623687AB7390A61 /* Pods-IIHTTPRequest_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C57DA3BB08111716E91841D8564D603 /* FSMStateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = CE7F20632E3EFF384101E7BF31C40966 /* FSMStateUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5CA932147C592AD80292AFFF84BE62D4 /* FSMEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EABBE94FAFE491F0A376DAB322F215F /* FSMEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61F042B6782D0EEE291FD1BEED6103E8 /* ConnectivityResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BA9888BF658D1A496747F524C43DB9 /* ConnectivityResponseValidator.swift */; };
-		62E8B55E5889F57A8FABD65ED2DA9B30 /* ReachStateUnloaded.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD052EC5E507D81075507E9118BFD82 /* ReachStateUnloaded.m */; };
-		6965BD2DD6323B2DF6AAADD4EE2258CB /* IIHTTPGCDUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A16BE989BBE9D368D5F715A739DBB /* IIHTTPGCDUtility.swift */; };
-		6FF0D18C8DB970532D5E0410B144343F /* IIHTTPRequestFather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA1879A5F990DA87C39493233296CE5 /* IIHTTPRequestFather.swift */; };
-		70A060C37E8F69D15A2DD73C3C0B7418 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E8A52FCA6F39B0E9CEA5EE184963B2 /* Foundation.framework */; };
-		796E2FCC6EAB0112D2962E7A0C6C4F49 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE3D5E37D321CB415E8E7FEB68E7986 /* Connectivity.swift */; };
-		7DE9A233D0508ACF060254E897697107 /* RealReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 215816ED2950E86EA4A22CB904C50729 /* RealReachability.m */; };
-		7E5142D86EDFAD51502B48E6BD71B60D /* IIHTTPOCResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BA2273D3C9D73F500B749616A7481 /* IIHTTPOCResponse.swift */; };
-		7FB66B69C1639E9C47BE6DEC51C7CF95 /* NotificationNameAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A77956CB4936833B7664EC254C2A74 /* NotificationNameAdditions.swift */; };
-		820F4197EED23672120AB81200DBA26F /* III18N-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF44E567F4D630E894E553963054AC4 /* III18N-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8397287FA5D292ACC255EAC2DC44F0B7 /* Pods-IIHTTPRequest_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AEC5C1F26D91B63E92DF91B03BB05B /* Pods-IIHTTPRequest_Tests-dummy.m */; };
-		85A5D14C9AF9829F6C345201CD86A2FD /* IIHTTPNetWorkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD082A82326A44C09BC8B59EE03C5253 /* IIHTTPNetWorkUtility.swift */; };
-		8978F7A8E534CAC4E2F4AB1BAF4C5BB4 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069BB583F398E7C352C67B00772FEA09 /* Response.swift */; };
-		8B66D28D893E47D3736D7F2D376E46F1 /* ReachStateUnReachable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C36F38D45A07C74CAAE429714AAEB97 /* ReachStateUnReachable.m */; };
-		8C338F653CB45E793987AD942C3AE15F /* FSMEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = AE797909BE4F7E4D3F21E4069C19122A /* FSMEngine.m */; };
-		8E07B086E2A176443DB08C05EE579968 /* LocalConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 76206AE9355142F4EB660712A2E12E4F /* LocalConnection.m */; };
-		952F8611FC1C3C0B53A9685901357AD5 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD524F9712E9115CF02D64B7F773FA63 /* ParameterEncoding.swift */; };
-		97B7ECFCF49B8578CD47A1ADC6FD3F96 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA98901BDD372CE21AD7B4A464D0B76 /* Reachability.m */; };
-		97C116942A8E91CE46FAF58B3D5A16FF /* ReachStateLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = 70EA00F6715A3531BD134E80E42A55E1 /* ReachStateLoading.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98CD9548EA16921BCA450C9F8B766008 /* ReachStateWWAN.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B03F5090345861A22337350EE8416 /* ReachStateWWAN.m */; };
-		99AE6F78351212A18A105F2F0E6AE543 /* IIHTTPRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56351348E15128418CBD22FEA2F07AEF /* IIHTTPRequestExtension.swift */; };
-		A33BB17CBA03C872F249ED585E113E15 /* IIHTTPRequestStatusCodeProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF2534DA348CB1403F02D60D06394DB /* IIHTTPRequestStatusCodeProgress.swift */; };
-		A6DFE3C113DB832FFB5CA99FE2818A78 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B205F26FEA0D228AAA6E59592630960 /* Alamofire.swift */; };
-		A78D21682EB4CD880CF4C5D8B7BFE61B /* ReachState.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B691C11A5B2A0DD094201D547DFF502 /* ReachState.m */; };
-		A8538358CFF5FCBDA32E820CA4213EFA /* IIHTTPRequest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A172D37B21B1D9F1B98CF825F09808 /* IIHTTPRequest-dummy.m */; };
-		AA30656E7ECA7ECD8F7697AF79C1874D /* GetRefreshTokenFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = E89C6B67460B862ACECE561CC292C1AF /* GetRefreshTokenFunction.m */; };
-		AA5CFBCF4D010D9D38C7FDAB0A739624 /* III18N-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6C8A170648CCB59B1CC25A5F1C56B7 /* III18N-dummy.m */; };
-		AB484D93A85C03BD05C2C1C5A512871D /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38055EFF1EE0B1BFA54FC487372E769 /* SessionManager.swift */; };
-		AB49DC33DE2FE69DEA99B7EB5D2C017D /* ReachState.h in Headers */ = {isa = PBXBuildFile; fileRef = FF18D9C33C33D56B921A56DD95D666E7 /* ReachState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC7A8F54D6F37E332BF754028AF9AB20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E8A52FCA6F39B0E9CEA5EE184963B2 /* Foundation.framework */; };
-		AE7D342F1269CF0057065910972922C4 /* IIHTTPRequest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD6C09C284C65FC4A7CA401148CAE0AC /* IIHTTPRequest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AEE32B8CA4FD59530E7AF734AD162981 /* PingFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 82E9605E3E43D4366CC5677C8BDCA198 /* PingFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B26E7549C4297A12F962E306116E0B70 /* IMPI18N.h in Headers */ = {isa = PBXBuildFile; fileRef = E28AAF296129A9794D92B22F9445EAA2 /* IMPI18N.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3E903DA6B41C2831C02784BD2F7B4B2 /* GetRefreshTokenFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = ED2784BC9515BCE919C2D7608EBDA3D4 /* GetRefreshTokenFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5E2A46BBF266E0814ACE93C7D584D4B /* PingFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B83A6CD6292770C3D373107ADD3A32 /* PingFoundation.m */; };
-		B759DF0B82B2431ACC5BFABB77B96D62 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937581EAF468CD7BCA96FE19E7D5E8EE /* Result.swift */; };
-		B904B20B178C460D7932D46A6D3516A6 /* ReachStateWIFI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F523948AE5D04D081772F05DE04DFBE /* ReachStateWIFI.m */; };
-		BAB3B5714977AB948268FBEF787A3CA4 /* ConnectivityFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E80230B98E6D9F065AD86FC32033293 /* ConnectivityFramework.swift */; };
-		BAFC7AF2D2BCCDE653731D8A1F463930 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E9DC1AE0F72B0B5FA177625C198D66 /* ServerTrustPolicy.swift */; };
-		BCDD79391212264D1D406FFF079C9BE1 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECC8D09D19587394F371FABDA0EF0DB /* DispatchQueue+Alamofire.swift */; };
-		BE4D550689D17C0BC65FA73D84D986D8 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D0955068627392782FE7C4A6F8DD11 /* Validation.swift */; };
-		C49ECBED79869D5FC10D0FC160DA27B6 /* Pods-IIHTTPRequest_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0380624B0C12D570D6A6392E87DDE7 /* Pods-IIHTTPRequest_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C4ED883CE1821A77227F5EFE40A0F07F /* III18N.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C02E4903AACAC3595BC5C6B9D0BDAE6 /* III18N.framework */; };
-		C655C6D75B4CBBA1DEBED690E51E688A /* ConnectivityPercentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D858C87AE7D74BAB39D533A6F9A04323 /* ConnectivityPercentage.swift */; };
-		C67091D7FA157691E7A4262D9BCA327C /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = B8D76FED1E0AD2584519756FBC1C55E4 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD741FEA628C4FCA5B07C9BE8008C27F /* FSMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 058B026729B35AFFAEDC3821012C8353 /* FSMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE95D806F8A13609EC447D4E9F4CFCD5 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A897EB853203098697F067877CE4DC59 /* NetworkReachabilityManager.swift */; };
-		CFE2CC98C374E246104BF272103A0E3A /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD60DF034B095A9FBCC3A248BD600F43 /* Notifications.swift */; };
-		D6BFDBAEEB7A062F156C719304584E81 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5C50D22D7F8A119F1C23CDAC46840 /* ResponseSerialization.swift */; };
-		DE995D1EB0219AA74C643E5EF496A409 /* III18NService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1D652FEA4E66D9AF30E3E73F499CA /* III18NService.swift */; };
-		DEC72435C7D468E392AD509A86C8696C /* IIHTTPImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8955A4D7AF89D0443413D3E716B159C8 /* IIHTTPImageRequest.swift */; };
-		E288CEF3CB2576D562834C59D3EE4CAB /* PingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9C4D0F249E51BAEED0962AFE312CEC /* PingHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3C0D30DA5CF1DA548C7C535F49EE744 /* ReachStateUnloaded.h in Headers */ = {isa = PBXBuildFile; fileRef = EF7B94FB0AC1734B8F0D2F3F242781C4 /* ReachStateUnloaded.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7E293F72D43632972B38D4A60E1EE55 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE2271B288994DB0A4385F5959AA3E5 /* MultipartFormData.swift */; };
-		E89CD4024ECDD2EBE73CEF33FA8B2320 /* ConnectivityStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3109E13029F730981A0D195F523351E /* ConnectivityStatus.swift */; };
-		EAFD276846056CDE912F186FE071EF37 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046693B4A8320A4751CEAD1D11B3486 /* Request.swift */; };
-		EE2C09EC10C330CFB843DA4584E5ADBA /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E2B8DBFF45BD45ECA75CEA20FA2E0D /* Timeline.swift */; };
-		F6E7049A885DB0E87581A4B6A7D314DB /* ReachStateWIFI.h in Headers */ = {isa = PBXBuildFile; fileRef = 07F2FB4794F9168AA52AE5DA7B95789E /* ReachStateWIFI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8A1250737A169EDE474F87CCF3524A2 /* IIHTTPNetWorkUtilityOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D88A0B4884AB702F2B9C5F40B61E7E /* IIHTTPNetWorkUtilityOC.m */; };
-		FB6C5A99C30B2BDAD95DB70F21750108 /* IIHTTPRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44623D1566F9DD229F4EE59221761AB5 /* IIHTTPRequestFactory.swift */; };
-		FBA2A68341CAA9DCB11FE482E7C140D2 /* IHTTPHeaderAndParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C623653AB35559A4E1B121DDAB45F3 /* IHTTPHeaderAndParams.swift */; };
-		FFE7D38A2B071F8177163C58F2496269 /* ReachStateUnReachable.h in Headers */ = {isa = PBXBuildFile; fileRef = FD3ED4C3FDBD3D1FEA4E99CF0C2B427B /* ReachStateUnReachable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0131CD8E333697705E9635A8DA554208 /* II18N-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF4956F51DBC1B6E9176665E5F0C81D /* II18N-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		067B080AFDC1AD4634BEED5F41169338 /* IIHTTPRequest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A13DE492DD0A20FA0730E3A65BD4FF0 /* IIHTTPRequest-dummy.m */; };
+		0A34A9649A21A26BC6C5C8AD01FBCC46 /* IIHTTPImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69DD49A2C283E520A74DA40A376F663 /* IIHTTPImageRequest.swift */; };
+		0C0E05FF833E18EC0EF9B25DA25E8082 /* IIHTTPOCResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61A9BF28DF44AF9B8E332497AAA6FB /* IIHTTPOCResponse.swift */; };
+		0D3E92834151A6EAD78A19B749AEFE69 /* ReachState.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9E8C7C842830C415886B05C520A3DE /* ReachState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DB2EDCCDD1E9E34FC1DC47F70232229 /* IHTTPHeaderAndParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58137381A92327A17BDE49B37E22AFBB /* IHTTPHeaderAndParams.swift */; };
+		1F6490E492F6EA2B9D59407FBEEBB478 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3506C4CBB96B4385AAE0086D394202 /* ResponseSerialization.swift */; };
+		27E5967E43FEDE524172646099B5CF03 /* PingFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 594A5B83E783774A76A53BBB08947C39 /* PingFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		286E2B38CD5A39D6FE788A4B1596769E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731F02458F9716380B605E617E559C1C /* Notifications.swift */; };
+		28777DFC6C6B8BEABDC5E77E6D732E3D /* PingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F25D6066D6780892421EE09F9FBFDC /* PingHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A4507D06EB131ABADD2E410B3C88E80 /* PingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F64C664FCD8FC8026F4EC270BDCC535 /* PingHelper.m */; };
+		2CC19D6E745EC73999DFDB2E5D222C7A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B533F2DDFCFC1893D8576735E88520F /* Result.swift */; };
+		2E81AB6E076368930C23FEDB22497928 /* IIHTTPErrorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830799330DF97C0737A024D277A746FD /* IIHTTPErrorInfo.swift */; };
+		31D74C711DD7B6E77D7DE835D06E4A58 /* ReachStateUnReachable.m in Sources */ = {isa = PBXBuildFile; fileRef = 76348D47C9058D8B5EAA221999136F34 /* ReachStateUnReachable.m */; };
+		31F48F1D917F97C431FF1F013219B58B /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1946B104F13F89F8A79845B5EFFA66FA /* ParameterEncoding.swift */; };
+		32A425A7CA8955663898AAD44DA6EAD1 /* IIHTTPNetWorkUtilityOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 314D911A77E092B5B466D5F7C0256FAA /* IIHTTPNetWorkUtilityOC.m */; };
+		32E2B327B17A9CD12A59C7B8E5FEB4AF /* IHTTPProgressAFNCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CABD409D26AEA2085453E9216E0362 /* IHTTPProgressAFNCode.swift */; };
+		361A7CF27812D5258790A4C32E2F6E9D /* ReachState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3466911652336255338649D5AFAB6B /* ReachState.m */; };
+		3DABE42A7EA050DCBC45BEDB4E0568B0 /* LocalConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 87C9B46EBBD673FC72C7E09DF5D74AD1 /* LocalConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4030A0CB795EFEB0045D5D1119B208C7 /* ReachStateWIFI.m in Sources */ = {isa = PBXBuildFile; fileRef = 248A655EAAE6B9003EB9BB362CB16223 /* ReachStateWIFI.m */; };
+		427DB55AEF5557BC07D0C12C7F762FD6 /* IIHTTPNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F14925ADBF21D98881DE87B3FD074 /* IIHTTPNetWork.swift */; };
+		435A8375A98A52F9638C95A705CA5F4B /* IIHTTPNetWorkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4048577A21FE4B96F3BC1F752A49F24F /* IIHTTPNetWorkUtility.swift */; };
+		45308DA65D092610135F84F28E8EB659 /* ConnectivityResponseValidationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB25B6574B47E8EE26EED48AA9431BE /* ConnectivityResponseValidationMode.swift */; };
+		4779458AAE9F097520BAE4BA9E84554A /* FSMStateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 69473DB8FD508C93C3C98214AF0C8323 /* FSMStateUtil.m */; };
+		496C99D3086294C9E5006A08664CEC81 /* NotificationNameAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4CC488F1F3B6A28D0054572EDB7BA /* NotificationNameAdditions.swift */; };
+		4AAFB85FDE783F87C514CDA7BBC8CEB5 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61636372DC7C3F8CD48D13DE97EB6D68 /* AFError.swift */; };
+		4DFC9E0B9971509DA53E13998EB4BF0E /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202B866AD9E500E9A79D79181FC7E867 /* Alamofire.swift */; };
+		5287DA8CCEF768AAB64E984E1B53074E /* FSMEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 552435C5873435BDF3A8B0DE6073D118 /* FSMEngine.m */; };
+		580078731FF3226D930FD2D2A8476FD3 /* Pods-IIHTTPRequest_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79A40BC845052C603BE358D53A1E909D /* Pods-IIHTTPRequest_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59220297CC913252E9D02542E260AB07 /* IIHTTPRequestFather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C85EC37109E9A20EA9EC3C829850E8 /* IIHTTPRequestFather.swift */; };
+		5B8422DC2B01B1283F5D9BA7EC7B582A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B2E3503E731ECD74AF1705D61BBE1 /* Response.swift */; };
+		5B9534093918B05A32F2885CC44E4BAA /* IIHTTPModuleDoor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAD88EA9960BAE34639E608AE0E656 /* IIHTTPModuleDoor.swift */; };
+		5C67D4B9B6B9A8370E14C81447C05E63 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87796D92CCC4B21CFC2FC4FEFFED008E /* DispatchQueue+Alamofire.swift */; };
+		64BA1856875441025DD75CC910FD36AE /* RealReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D930337B36A297243293B6BF4FD50E8D /* RealReachability.m */; };
+		6CC457516306DA86C02CC2ADED18FC00 /* GetRefreshTokenFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9901B48FBAB0C8AE43621F5F793A45 /* GetRefreshTokenFunction.m */; };
+		6F7CD30FD599C6D3C99E987D1615AA4F /* ReachStateUnReachable.h in Headers */ = {isa = PBXBuildFile; fileRef = 83A8E32A0B6812BDA5ED82432E1D944F /* ReachStateUnReachable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		702567BA574DAED3E510F95435B2E0F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E7ECDCB0BA321B40780CC36A5FD79D /* Foundation.framework */; };
+		70A060C37E8F69D15A2DD73C3C0B7418 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E7ECDCB0BA321B40780CC36A5FD79D /* Foundation.framework */; };
+		70F5ED7752045036984A54147EE40B7A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCF51442813DDDADB349FC61C71F1B7 /* Timeline.swift */; };
+		7430F9F832D5B9EC4A392EB1C477B4D5 /* Pods-IIHTTPRequest_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CACAB4C2B533ED1F499373708B4EFF3 /* Pods-IIHTTPRequest_Example-dummy.m */; };
+		7463CCE4548537CF131FAFF52712B81A /* II18N.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0660F4DBB48584A3BC2E9827BF387043 /* II18N.framework */; };
+		7A83761339FB615D87F92437BFBB58C2 /* IIHTTPRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FB7BCC8E3F2659362E6AB9F971E0D6 /* IIHTTPRequestFactory.swift */; };
+		7FF4E29A170AB51F9420FC599155C7C6 /* IIHTTPRequestEunmList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E22184A76D7B9338FDC960F94DD920 /* IIHTTPRequestEunmList.swift */; };
+		8087A6191FE427ED9297CCFA31A5F7AA /* FSMEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 64AB91EAB145AB4C0EA2607D7840B891 /* FSMEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8379F188C3D8A7A43982B17D2B5B3BDF /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517898C86AAF0B57B758E8F6A818CA4D /* Request.swift */; };
+		8397287FA5D292ACC255EAC2DC44F0B7 /* Pods-IIHTTPRequest_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE3B517B1B3B6FBCD1248FB0372A947 /* Pods-IIHTTPRequest_Tests-dummy.m */; };
+		85593CC442C5655853FC84832D1FDEBC /* ConnectivityStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FFB79B19589989B333962C0F5C8DA4 /* ConnectivityStatus.swift */; };
+		861C148010837047EF6198BEB7FF218C /* GetRefreshTokenFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 126DC9C902FE308F1B1BE41B719D32D4 /* GetRefreshTokenFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87C3F88E1DAF999F22031DF1536AA96C /* IIHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5351F082CF319375E275B2347976D433 /* IIHTTPRequest.swift */; };
+		8F14C58841B2F27AD8E0632E0BA384E7 /* ReachStateLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = 1363902C24360BC56142B5EBE39881D0 /* ReachStateLoading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F4885346D8CEF019C447306DBB7CF46 /* IIHTTPRequestStatusCodeProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B01B13DB565C4BF2EC947514712B2 /* IIHTTPRequestStatusCodeProgress.swift */; };
+		91B8FCF7440A13124F726C1142D12319 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BB8C1878AC79C09420C7BAA9B780E /* Connectivity.swift */; };
+		9C7404661D5BA1004F6E461CBF73173F /* ReachStateWWAN.h in Headers */ = {isa = PBXBuildFile; fileRef = AECE937E1F509CC05E6EBF5F540B9815 /* ReachStateWWAN.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C7A551BA7911CDF7CFC28C4060975CA /* ConnectivityFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B215A982730D2D9180960A036E1140 /* ConnectivityFramework.swift */; };
+		A099725B36551328CD6D19236A565F2E /* IIHTTPRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EA17A92A805B57C6809028DAC8DBE5 /* IIHTTPRequestExtension.swift */; };
+		A09E18E87FAC0064FE77A720CF3B7FA8 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EFB769FD5F437D34B055667B7BC1FE /* NetworkReachabilityManager.swift */; };
+		A1DD27F28D0FC68B9B20209D9674CEFB /* IIL18NEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1D6EF58A946D0615FA0C25A53175F9 /* IIL18NEnum.swift */; };
+		ADCBB90BEDF021DD92661F4E8980E5B4 /* IIHTTPRequest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6DB9BAED2C3CABDDB7CF7D677FB1820 /* IIHTTPRequest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2C5177629985BA5BE1D9005CED7817D /* IIHTTPNetWorkUtilityOC.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B7DABABCE7A21D0CCE5B4DA33EEFAF6 /* IIHTTPNetWorkUtilityOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B30EA15A19051744305955B4E3D2E5E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E7ECDCB0BA321B40780CC36A5FD79D /* Foundation.framework */; };
+		B54B51F7813A20089DFC811291DD4239 /* ReachStateUnloaded.m in Sources */ = {isa = PBXBuildFile; fileRef = D75807E83486E2759A5FDFAFB4E489A9 /* ReachStateUnloaded.m */; };
+		B88CF732E974242181D0BCBE2C9C7598 /* FSMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 308BD936FEEFCC869E4AEC96C241FC4A /* FSMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF7D69B27D57F60B2D60253EE7D81C03 /* ReachStateWWAN.m in Sources */ = {isa = PBXBuildFile; fileRef = 214C4E1C8D5D17CD25D02868D9F5B3B3 /* ReachStateWWAN.m */; };
+		C0AE41F7FF1D0E9EAE20EF4E7F81E1C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E7ECDCB0BA321B40780CC36A5FD79D /* Foundation.framework */; };
+		C0CF44F7B20A308119378F9ED50C32DB /* ReachStateWIFI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BBA23B7B0295103AAAA977FEA0F76BF /* ReachStateWIFI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C103EF42C588E41B0430CF3D7E53A377 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88D2C97E781935B0E31FDF45A27849E /* SessionDelegate.swift */; };
+		C5F30EC254E43E5D60236F247EFA91BD /* III18NService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AB7E15A7973D5A54D428C7E46A1C1B /* III18NService.swift */; };
+		CB64C77C385E8E2BD64E865C50293E8A /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D305C443B97FC17A9CD5F82E6A8CA467 /* SessionManager.swift */; };
+		CBB114241BA38C39D06805C84E31506E /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E7B46141DD5410A4329BC3C7D249E /* ServerTrustPolicy.swift */; };
+		CF60E377D44A283C9EA9277FE4510F45 /* II18N-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F4274CD33319AF12915A16E4FCF3DD /* II18N-dummy.m */; };
+		D09C1DA3B47B8684754C0826802B51B9 /* RealReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BF1328B29F51B191E4E759E1EFD9DBD /* RealReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D20C085DC540BEB9FE77457EF6C2D670 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C6C80133D2B98327D0733085F6B84 /* MultipartFormData.swift */; };
+		D404D87AB187113DD4D7D2F5E6A78B76 /* ReachStateUnloaded.h in Headers */ = {isa = PBXBuildFile; fileRef = F3F581282A12EE485FE38CF8834ECB81 /* ReachStateUnloaded.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D53BF449A1A01AD6DBCFDF48AF99BA42 /* ConnectivityResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170D0374FAF9AC7EC23B4BCEE9B95803 /* ConnectivityResponseValidator.swift */; };
+		D8A89FC73B526D3D4B6815FC5D57F601 /* ReachStateLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3859293B7136ED61A59BA20A6F4B79 /* ReachStateLoading.m */; };
+		D9C0B6C283927F572A8EFAFC73E08275 /* Pods-IIHTTPRequest_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D7C1D316267247EE07A635F88E8F03 /* Pods-IIHTTPRequest_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCC72DAA8820213246B4C46D64452E4D /* PingFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D78C900E326E1A3A6F1E351FE11AE /* PingFoundation.m */; };
+		DDFA1717274ACC05F3EDCC8517CE7900 /* IIHTTPRequestErrorProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954A04C6114A13F4760E043DF5575C0 /* IIHTTPRequestErrorProgress.swift */; };
+		DEB9E11BA5DFC23BA8C51C5162DAE93B /* ConnectivityPercentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E071C091B70B207956CE072EEDF71982 /* ConnectivityPercentage.swift */; };
+		E1C3269A878800826EC2DA8F301D9BB4 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A582ADF40D9F163D3EA99679993DD3 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E76C65BA84701E50F6A7BFEC7D5F378A /* FSMStateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 51830A7E09C59376647C3D66F28B8D1B /* FSMStateUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E78C317B2C0EBF50A0453179766323DC /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12BC6574BF2857E333F4EC933668888 /* TaskDelegate.swift */; };
+		E8E4C9A75D260D72D3A23DAE54A6E226 /* IMPI18N.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCD4D475D9377D37336B9218D17C043 /* IMPI18N.m */; };
+		EBB536F61B1AB997BE7F0BD7AFD30775 /* LocalConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D37CEE1A490A18236DA5606C653243 /* LocalConnection.m */; };
+		EBC3D159B5529C3825F5638936AEF5AC /* IIHTTPGCDUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3856AE1C3D296144A68880CF89ECE005 /* IIHTTPGCDUtility.swift */; };
+		EFF434F6819C53FECD0D677AF2812F37 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E31E09AB2CE9CFD1AABCB3B2169537 /* Reachability.m */; };
+		F77FBEE934ED0274278A5C3E30635FCC /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AE22F71361452404897956B0AF13A /* Validation.swift */; };
+		FEFA785D8D70BEE1CFFD9AF5C1391477 /* IMPI18N.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E61EF37308C38AB4ABF403855626244 /* IMPI18N.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0C0DC5D0F58733CC9A715218E241A2AA /* PBXContainerItemProxy */ = {
+		047EDA18998CF989821173BE4105314B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 942653A1766924AAA9681961C8848604;
-			remoteInfo = III18N;
+			remoteGlobalIDString = 76E4047BDDFC8BC4683407251BEB49F1;
+			remoteInfo = II18N;
 		};
-		52EA5B3BC17F1CD4846772E7AB20F227 /* PBXContainerItemProxy */ = {
+		087D037112316AE69C38AE8254E5D0DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 603FC78618F648FECD24F7B6E9C7FBDF;
+			remoteGlobalIDString = 76E4047BDDFC8BC4683407251BEB49F1;
+			remoteInfo = II18N;
+		};
+		4BB82F21E5E36FA5576391B81D29AC45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D15CF4115902E0DE329DBEADBF7B084;
 			remoteInfo = IIHTTPRequest;
-		};
-		7C271703E97B4CCAFF6B92145206197F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 942653A1766924AAA9681961C8848604;
-			remoteInfo = III18N;
 		};
 		C226DD6BC05C1844CCA9D2EBA61CBE9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E8C5EDABA19F4746473A5677D0D4063A;
+			remoteGlobalIDString = 855DFABD6253AB62E177F72522A23E44;
 			remoteInfo = "Pods-IIHTTPRequest_Example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		058B026729B35AFFAEDC3821012C8353 /* FSMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FSMDefines.h; sourceTree = "<group>"; };
-		069BB583F398E7C352C67B00772FEA09 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = IIHTTPRequest/Classes/HTTPSource/Response.swift; sourceTree = "<group>"; };
-		07B83A6CD6292770C3D373107ADD3A32 /* PingFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PingFoundation.m; sourceTree = "<group>"; };
-		07F2FB4794F9168AA52AE5DA7B95789E /* ReachStateWIFI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ReachStateWIFI.h; sourceTree = "<group>"; };
-		0B691C11A5B2A0DD094201D547DFF502 /* ReachState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReachState.m; sourceTree = "<group>"; };
-		0CA98901BDD372CE21AD7B4A464D0B76 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = IIHTTPRequest/Classes/RealReachability/Reachability.m; sourceTree = "<group>"; };
-		0CAF70E8DA246C9399FB39BBD47AC76F /* Pods-IIHTTPRequest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IIHTTPRequest_Example.release.xcconfig"; sourceTree = "<group>"; };
-		0DF44E567F4D630E894E553963054AC4 /* III18N-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "III18N-umbrella.h"; sourceTree = "<group>"; };
-		0E80230B98E6D9F065AD86FC32033293 /* ConnectivityFramework.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConnectivityFramework.swift; sourceTree = "<group>"; };
-		0EABBE94FAFE491F0A376DAB322F215F /* FSMEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FSMEngine.h; sourceTree = "<group>"; };
-		0FA1879A5F990DA87C39493233296CE5 /* IIHTTPRequestFather.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPRequestFather.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPRequestFather.swift; sourceTree = "<group>"; };
-		11B6FEAA65F28F771A27C93B873563DE /* III18N.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = III18N.xcconfig; sourceTree = "<group>"; };
-		17E9DC1AE0F72B0B5FA177625C198D66 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = IIHTTPRequest/Classes/HTTPSource/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		18456DC97B12C54154BB385A331F17AD /* Pods-IIHTTPRequest_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IIHTTPRequest_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1CE2271B288994DB0A4385F5959AA3E5 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = IIHTTPRequest/Classes/HTTPSource/MultipartFormData.swift; sourceTree = "<group>"; };
-		1D898A4554A471456D98498B007E19F0 /* Pods-IIHTTPRequest_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IIHTTPRequest_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		1DB2FAB084639197069ADEC39BCDD8D8 /* III18N-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "III18N-prefix.pch"; sourceTree = "<group>"; };
-		215816ED2950E86EA4A22CB904C50729 /* RealReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RealReachability.m; path = IIHTTPRequest/Classes/RealReachability/RealReachability.m; sourceTree = "<group>"; };
-		27EB7B201F498B9CA623687AB7390A61 /* Pods-IIHTTPRequest_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IIHTTPRequest_Tests-umbrella.h"; sourceTree = "<group>"; };
-		28D0955068627392782FE7C4A6F8DD11 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = IIHTTPRequest/Classes/HTTPSource/Validation.swift; sourceTree = "<group>"; };
-		2BC6FBAAB17CC71DEA8806B03ED75B5B /* IIHTTPRequestErrorProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPRequestErrorProgress.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPRequestErrorProgress.swift; sourceTree = "<group>"; };
-		2C9E4AB8EA1F17CC03EFDED1F949A032 /* III18N-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "III18N-Info.plist"; sourceTree = "<group>"; };
-		33A77956CB4936833B7664EC254C2A74 /* NotificationNameAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationNameAdditions.swift; sourceTree = "<group>"; };
-		39E2583FCDDD06B1B2E78A3A782B6C5B /* IIL18NEnum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIL18NEnum.swift; path = III18N/Classes/IIL18NEnum.swift; sourceTree = "<group>"; };
-		41A06DE1DEA018E22921667802515E1C /* Pods-IIHTTPRequest_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IIHTTPRequest_Example-dummy.m"; sourceTree = "<group>"; };
-		41F5AD8247EB5625F7CB0A997863026D /* Pods_IIHTTPRequest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IIHTTPRequest_Tests.framework; path = "Pods-IIHTTPRequest_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		44623D1566F9DD229F4EE59221761AB5 /* IIHTTPRequestFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPRequestFactory.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPRequestFactory.swift; sourceTree = "<group>"; };
-		44A172D37B21B1D9F1B98CF825F09808 /* IIHTTPRequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IIHTTPRequest-dummy.m"; sourceTree = "<group>"; };
-		4605FD0AD873E22A8D27DF933D41D750 /* IIHTTPRequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IIHTTPRequest.modulemap; sourceTree = "<group>"; };
-		47E2B8DBFF45BD45ECA75CEA20FA2E0D /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = IIHTTPRequest/Classes/HTTPSource/Timeline.swift; sourceTree = "<group>"; };
-		48D1D652FEA4E66D9AF30E3E73F499CA /* III18NService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = III18NService.swift; path = III18N/Classes/III18NService.swift; sourceTree = "<group>"; };
-		48E7D9194C645EC43C980928A7583AA9 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = IIHTTPRequest/Classes/HTTPSource/SessionDelegate.swift; sourceTree = "<group>"; };
-		4FF038278E3828113998438D4AF93B5E /* Pods-IIHTTPRequest_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IIHTTPRequest_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		518CE017252DEAF05A91B6E014B21130 /* FSMStateUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FSMStateUtil.m; sourceTree = "<group>"; };
-		52B9FB4EA306E6CFB119D7066FC18DBE /* IIHTTPModuleDoor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPModuleDoor.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPModuleDoor.swift; sourceTree = "<group>"; };
-		53BA9888BF658D1A496747F524C43DB9 /* ConnectivityResponseValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConnectivityResponseValidator.swift; sourceTree = "<group>"; };
-		549541C51A8655BD71A946BCBF86CE93 /* IIHTTPRequest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IIHTTPRequest-Info.plist"; sourceTree = "<group>"; };
-		56351348E15128418CBD22FEA2F07AEF /* IIHTTPRequestExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPRequestExtension.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPRequestExtension.swift; sourceTree = "<group>"; };
-		57D88A0B4884AB702F2B9C5F40B61E7E /* IIHTTPNetWorkUtilityOC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IIHTTPNetWorkUtilityOC.m; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPNetWorkUtilityOC.m; sourceTree = "<group>"; };
-		58656C5D6253205C1AAF6C81ED929E5C /* Pods-IIHTTPRequest_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IIHTTPRequest_Example-Info.plist"; sourceTree = "<group>"; };
-		5B205F26FEA0D228AAA6E59592630960 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = IIHTTPRequest/Classes/HTTPSource/Alamofire.swift; sourceTree = "<group>"; };
-		5BD052EC5E507D81075507E9118BFD82 /* ReachStateUnloaded.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReachStateUnloaded.m; sourceTree = "<group>"; };
-		5CDDA9596D6345686A81A55F78F13748 /* IIHTTPNetWork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPNetWork.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPNetWork.swift; sourceTree = "<group>"; };
-		5DF2534DA348CB1403F02D60D06394DB /* IIHTTPRequestStatusCodeProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPRequestStatusCodeProgress.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPRequestStatusCodeProgress.swift; sourceTree = "<group>"; };
-		681B03F5090345861A22337350EE8416 /* ReachStateWWAN.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReachStateWWAN.m; sourceTree = "<group>"; };
-		6A8BA2273D3C9D73F500B749616A7481 /* IIHTTPOCResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPOCResponse.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPOCResponse.swift; sourceTree = "<group>"; };
-		6C36F38D45A07C74CAAE429714AAEB97 /* ReachStateUnReachable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReachStateUnReachable.m; sourceTree = "<group>"; };
-		6F229BB18368FDF90E459F3AD191EBCC /* PingHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PingHelper.m; sourceTree = "<group>"; };
-		6F523948AE5D04D081772F05DE04DFBE /* ReachStateWIFI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReachStateWIFI.m; sourceTree = "<group>"; };
-		70EA00F6715A3531BD134E80E42A55E1 /* ReachStateLoading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ReachStateLoading.h; sourceTree = "<group>"; };
-		76206AE9355142F4EB660712A2E12E4F /* LocalConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LocalConnection.m; sourceTree = "<group>"; };
-		81AEC5C1F26D91B63E92DF91B03BB05B /* Pods-IIHTTPRequest_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IIHTTPRequest_Tests-dummy.m"; sourceTree = "<group>"; };
-		82E9605E3E43D4366CC5677C8BDCA198 /* PingFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PingFoundation.h; sourceTree = "<group>"; };
-		845A16BE989BBE9D368D5F715A739DBB /* IIHTTPGCDUtility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPGCDUtility.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPGCDUtility.swift; sourceTree = "<group>"; };
-		85A2ECDD71F89AEDE06D4E0F0FC816BC /* IIHTTPNetWorkUtilityOC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IIHTTPNetWorkUtilityOC.h; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPNetWorkUtilityOC.h; sourceTree = "<group>"; };
-		8955A4D7AF89D0443413D3E716B159C8 /* IIHTTPImageRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPImageRequest.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPImageRequest.swift; sourceTree = "<group>"; };
-		8E0380624B0C12D570D6A6392E87DDE7 /* Pods-IIHTTPRequest_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IIHTTPRequest_Example-umbrella.h"; sourceTree = "<group>"; };
-		92839F58B5EB43FE594D12DD49EBF406 /* IIHTTPRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPRequest.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPRequest.swift; sourceTree = "<group>"; };
-		937581EAF468CD7BCA96FE19E7D5E8EE /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = IIHTTPRequest/Classes/HTTPSource/Result.swift; sourceTree = "<group>"; };
-		95AAE100EF8A6FCDD943CFE3D71B3B77 /* IHTTPProgressAFNCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IHTTPProgressAFNCode.swift; path = IIHTTPRequest/Classes/HTTPRequest/IHTTPProgressAFNCode.swift; sourceTree = "<group>"; };
-		984839D766E8341BAC1D556D71D4CE4B /* Pods-IIHTTPRequest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IIHTTPRequest_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9C02E4903AACAC3595BC5C6B9D0BDAE6 /* III18N.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = III18N.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C9C4D0F249E51BAEED0962AFE312CEC /* PingHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PingHelper.h; sourceTree = "<group>"; };
+		00C85EC37109E9A20EA9EC3C829850E8 /* IIHTTPRequestFather.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPRequestFather.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPRequestFather.swift; sourceTree = "<group>"; };
+		022A4EB6CB124D7BB9B619C2F18378B8 /* Pods-IIHTTPRequest_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IIHTTPRequest_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		03F520C39AFABB2EDEA40C11592C0C41 /* Pods-IIHTTPRequest_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IIHTTPRequest_Example-Info.plist"; sourceTree = "<group>"; };
+		0660F4DBB48584A3BC2E9827BF387043 /* II18N.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = II18N.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CB12277C186E6F230420529AA272333 /* Pods_IIHTTPRequest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IIHTTPRequest_Tests.framework; path = "Pods-IIHTTPRequest_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CB25B6574B47E8EE26EED48AA9431BE /* ConnectivityResponseValidationMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConnectivityResponseValidationMode.swift; sourceTree = "<group>"; };
+		126DC9C902FE308F1B1BE41B719D32D4 /* GetRefreshTokenFunction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GetRefreshTokenFunction.h; path = IIHTTPRequest/Classes/HTTPRequest/GetRefreshTokenFunction.h; sourceTree = "<group>"; };
+		1363902C24360BC56142B5EBE39881D0 /* ReachStateLoading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ReachStateLoading.h; sourceTree = "<group>"; };
+		159169E4563AC168E6C17E9FEC5B1345 /* IIHTTPRequest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IIHTTPRequest-Info.plist"; sourceTree = "<group>"; };
+		170D0374FAF9AC7EC23B4BCEE9B95803 /* ConnectivityResponseValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConnectivityResponseValidator.swift; sourceTree = "<group>"; };
+		1946B104F13F89F8A79845B5EFFA66FA /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = IIHTTPRequest/Classes/HTTPSource/ParameterEncoding.swift; sourceTree = "<group>"; };
+		1B3506C4CBB96B4385AAE0086D394202 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = IIHTTPRequest/Classes/HTTPSource/ResponseSerialization.swift; sourceTree = "<group>"; };
+		1E4AE22F71361452404897956B0AF13A /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = IIHTTPRequest/Classes/HTTPSource/Validation.swift; sourceTree = "<group>"; };
+		202B866AD9E500E9A79D79181FC7E867 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = IIHTTPRequest/Classes/HTTPSource/Alamofire.swift; sourceTree = "<group>"; };
+		20F25D6066D6780892421EE09F9FBFDC /* PingHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PingHelper.h; sourceTree = "<group>"; };
+		211F0CE8B08F42E0D7699F28B6D5E15F /* Pods-IIHTTPRequest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IIHTTPRequest_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		214C4E1C8D5D17CD25D02868D9F5B3B3 /* ReachStateWWAN.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReachStateWWAN.m; sourceTree = "<group>"; };
+		22D7C1D316267247EE07A635F88E8F03 /* Pods-IIHTTPRequest_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IIHTTPRequest_Example-umbrella.h"; sourceTree = "<group>"; };
+		248A655EAAE6B9003EB9BB362CB16223 /* ReachStateWIFI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReachStateWIFI.m; sourceTree = "<group>"; };
+		27D4C2DCC998BD949ABD5A7F91EAF4CC /* II18N.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = II18N.modulemap; sourceTree = "<group>"; };
+		3077EA7531EDDB03FE5D9281ECD8F29F /* IIHTTPRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IIHTTPRequest.framework; path = IIHTTPRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		308BD936FEEFCC869E4AEC96C241FC4A /* FSMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FSMDefines.h; sourceTree = "<group>"; };
+		314D911A77E092B5B466D5F7C0256FAA /* IIHTTPNetWorkUtilityOC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IIHTTPNetWorkUtilityOC.m; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPNetWorkUtilityOC.m; sourceTree = "<group>"; };
+		3856AE1C3D296144A68880CF89ECE005 /* IIHTTPGCDUtility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPGCDUtility.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPGCDUtility.swift; sourceTree = "<group>"; };
+		39955A947E0E838DA3BA50605730CF26 /* Pods-IIHTTPRequest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IIHTTPRequest_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3B7DABABCE7A21D0CCE5B4DA33EEFAF6 /* IIHTTPNetWorkUtilityOC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IIHTTPNetWorkUtilityOC.h; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPNetWorkUtilityOC.h; sourceTree = "<group>"; };
+		3BBA23B7B0295103AAAA977FEA0F76BF /* ReachStateWIFI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ReachStateWIFI.h; sourceTree = "<group>"; };
+		3BF1328B29F51B191E4E759E1EFD9DBD /* RealReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RealReachability.h; path = IIHTTPRequest/Classes/RealReachability/RealReachability.h; sourceTree = "<group>"; };
+		3F64C664FCD8FC8026F4EC270BDCC535 /* PingHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PingHelper.m; sourceTree = "<group>"; };
+		4048577A21FE4B96F3BC1F752A49F24F /* IIHTTPNetWorkUtility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPNetWorkUtility.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPNetWorkUtility.swift; sourceTree = "<group>"; };
+		4B28C707AE60DB1B4459D774B881D0B0 /* IIHTTPRequest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IIHTTPRequest.xcconfig; sourceTree = "<group>"; };
+		4B533F2DDFCFC1893D8576735E88520F /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = IIHTTPRequest/Classes/HTTPSource/Result.swift; sourceTree = "<group>"; };
+		4BF4956F51DBC1B6E9176665E5F0C81D /* II18N-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "II18N-umbrella.h"; sourceTree = "<group>"; };
+		4C61A9BF28DF44AF9B8E332497AAA6FB /* IIHTTPOCResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPOCResponse.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPOCResponse.swift; sourceTree = "<group>"; };
+		4F4D78C900E326E1A3A6F1E351FE11AE /* PingFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PingFoundation.m; sourceTree = "<group>"; };
+		517898C86AAF0B57B758E8F6A818CA4D /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = IIHTTPRequest/Classes/HTTPSource/Request.swift; sourceTree = "<group>"; };
+		51830A7E09C59376647C3D66F28B8D1B /* FSMStateUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FSMStateUtil.h; sourceTree = "<group>"; };
+		519B5D34B41B7026CB8D5C83CC41409A /* II18N-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "II18N-Info.plist"; sourceTree = "<group>"; };
+		51B215A982730D2D9180960A036E1140 /* ConnectivityFramework.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConnectivityFramework.swift; sourceTree = "<group>"; };
+		5351F082CF319375E275B2347976D433 /* IIHTTPRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPRequest.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPRequest.swift; sourceTree = "<group>"; };
+		552435C5873435BDF3A8B0DE6073D118 /* FSMEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FSMEngine.m; sourceTree = "<group>"; };
+		55F2773E1CA342B4D43B35D5297644D6 /* II18N.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = II18N.framework; path = II18N.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58137381A92327A17BDE49B37E22AFBB /* IHTTPHeaderAndParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IHTTPHeaderAndParams.swift; path = IIHTTPRequest/Classes/HTTPRequest/IHTTPHeaderAndParams.swift; sourceTree = "<group>"; };
+		58CABD409D26AEA2085453E9216E0362 /* IHTTPProgressAFNCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IHTTPProgressAFNCode.swift; path = IIHTTPRequest/Classes/HTTPRequest/IHTTPProgressAFNCode.swift; sourceTree = "<group>"; };
+		594A5B83E783774A76A53BBB08947C39 /* PingFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PingFoundation.h; sourceTree = "<group>"; };
+		5C9901B48FBAB0C8AE43621F5F793A45 /* GetRefreshTokenFunction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GetRefreshTokenFunction.m; path = IIHTTPRequest/Classes/HTTPRequest/GetRefreshTokenFunction.m; sourceTree = "<group>"; };
+		5CACAB4C2B533ED1F499373708B4EFF3 /* Pods-IIHTTPRequest_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IIHTTPRequest_Example-dummy.m"; sourceTree = "<group>"; };
+		5DD417965F5C86F72C97517A5914A4CB /* Pods-IIHTTPRequest_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IIHTTPRequest_Example.modulemap"; sourceTree = "<group>"; };
+		5F89BF012FF747833E50A77C5369AC26 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		61636372DC7C3F8CD48D13DE97EB6D68 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = IIHTTPRequest/Classes/HTTPSource/AFError.swift; sourceTree = "<group>"; };
+		62EA17A92A805B57C6809028DAC8DBE5 /* IIHTTPRequestExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPRequestExtension.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPRequestExtension.swift; sourceTree = "<group>"; };
+		649E7B46141DD5410A4329BC3C7D249E /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = IIHTTPRequest/Classes/HTTPSource/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		64AB91EAB145AB4C0EA2607D7840B891 /* FSMEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FSMEngine.h; sourceTree = "<group>"; };
+		69473DB8FD508C93C3C98214AF0C8323 /* FSMStateUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FSMStateUtil.m; sourceTree = "<group>"; };
+		6DCF51442813DDDADB349FC61C71F1B7 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = IIHTTPRequest/Classes/HTTPSource/Timeline.swift; sourceTree = "<group>"; };
+		6E4F14925ADBF21D98881DE87B3FD074 /* IIHTTPNetWork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPNetWork.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPNetWork.swift; sourceTree = "<group>"; };
+		72AB7E15A7973D5A54D428C7E46A1C1B /* III18NService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = III18NService.swift; path = II18N/Classes/III18NService.swift; sourceTree = "<group>"; };
+		731F02458F9716380B605E617E559C1C /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = IIHTTPRequest/Classes/HTTPSource/Notifications.swift; sourceTree = "<group>"; };
+		76348D47C9058D8B5EAA221999136F34 /* ReachStateUnReachable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReachStateUnReachable.m; sourceTree = "<group>"; };
+		7954A04C6114A13F4760E043DF5575C0 /* IIHTTPRequestErrorProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPRequestErrorProgress.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPRequestErrorProgress.swift; sourceTree = "<group>"; };
+		79A40BC845052C603BE358D53A1E909D /* Pods-IIHTTPRequest_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IIHTTPRequest_Tests-umbrella.h"; sourceTree = "<group>"; };
+		7E61EF37308C38AB4ABF403855626244 /* IMPI18N.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMPI18N.h; path = II18N/Classes/IMPI18N.h; sourceTree = "<group>"; };
+		81DBE47FA35083F8498E7CFF48D931BA /* Pods-IIHTTPRequest_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IIHTTPRequest_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		82CF41AC5BEDABA1B8BB2E9CDC6CD0F3 /* Pods_IIHTTPRequest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IIHTTPRequest_Example.framework; path = "Pods-IIHTTPRequest_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		830799330DF97C0737A024D277A746FD /* IIHTTPErrorInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPErrorInfo.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPErrorInfo.swift; sourceTree = "<group>"; };
+		83A8E32A0B6812BDA5ED82432E1D944F /* ReachStateUnReachable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ReachStateUnReachable.h; sourceTree = "<group>"; };
+		84FAD88EA9960BAE34639E608AE0E656 /* IIHTTPModuleDoor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPModuleDoor.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPModuleDoor.swift; sourceTree = "<group>"; };
+		86474AFE37393E6FDED38AF51C2E34D2 /* Pods-IIHTTPRequest_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IIHTTPRequest_Tests-Info.plist"; sourceTree = "<group>"; };
+		87796D92CCC4B21CFC2FC4FEFFED008E /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "IIHTTPRequest/Classes/HTTPSource/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		87C9B46EBBD673FC72C7E09DF5D74AD1 /* LocalConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LocalConnection.h; sourceTree = "<group>"; };
+		89FF5C469D78B05E5AFB422314E6B0B8 /* IIHTTPRequest.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = IIHTTPRequest.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8A13DE492DD0A20FA0730E3A65BD4FF0 /* IIHTTPRequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IIHTTPRequest-dummy.m"; sourceTree = "<group>"; };
+		8AF88D11CAC9C1FB0F6D9F65398ABC14 /* II18N-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "II18N-prefix.pch"; sourceTree = "<group>"; };
+		8D3466911652336255338649D5AFAB6B /* ReachState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReachState.m; sourceTree = "<group>"; };
+		9543AFCE1FDFCC2A8BA342FBB604A0C9 /* IIHTTPRequest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IIHTTPRequest-prefix.pch"; sourceTree = "<group>"; };
+		95EFB769FD5F437D34B055667B7BC1FE /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = IIHTTPRequest/Classes/HTTPSource/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		99E7ECDCB0BA321B40780CC36A5FD79D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A046693B4A8320A4751CEAD1D11B3486 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = IIHTTPRequest/Classes/HTTPSource/Request.swift; sourceTree = "<group>"; };
-		A56F71AD586A9174C85A39F97F8E8631 /* Pods-IIHTTPRequest_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IIHTTPRequest_Tests-Info.plist"; sourceTree = "<group>"; };
-		A5E5C50D22D7F8A119F1C23CDAC46840 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = IIHTTPRequest/Classes/HTTPSource/ResponseSerialization.swift; sourceTree = "<group>"; };
-		A897EB853203098697F067877CE4DC59 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = IIHTTPRequest/Classes/HTTPSource/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		AB59355B3E2632CD270E456C032992F8 /* IMPI18N.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IMPI18N.m; path = III18N/Classes/IMPI18N.m; sourceTree = "<group>"; };
-		AE797909BE4F7E4D3F21E4069C19122A /* FSMEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FSMEngine.m; sourceTree = "<group>"; };
-		B008D66CC088B6F2DA6CE105DFD4BA66 /* IIHTTPRequestEunmList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPRequestEunmList.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPRequestEunmList.swift; sourceTree = "<group>"; };
-		B04B4E99BD3F024D63E5A449AF005E87 /* IIHTTPRequest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IIHTTPRequest.xcconfig; sourceTree = "<group>"; };
-		B50CAC1FCBC8B9461F4EF99C82E19F35 /* IIHTTPRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IIHTTPRequest.framework; path = IIHTTPRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B58FDC0D64574E0C34B3883188164A06 /* LocalConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LocalConnection.h; sourceTree = "<group>"; };
-		B5A45C1C78875D79A1BE369C92B32ACB /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = IIHTTPRequest/Classes/HTTPSource/TaskDelegate.swift; sourceTree = "<group>"; };
-		B7B7BDD641EFCAE6D4B6B277740FD04F /* IIHTTPRequest.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = IIHTTPRequest.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B8D76FED1E0AD2584519756FBC1C55E4 /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = IIHTTPRequest/Classes/RealReachability/Reachability.h; sourceTree = "<group>"; };
-		B99FC9A9A9221325463A7D36E4DC2E9D /* Pods-IIHTTPRequest_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IIHTTPRequest_Example.modulemap"; sourceTree = "<group>"; };
-		B9F4A2559C49B7C61C39A7A60E231A2E /* III18N.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = III18N.modulemap; sourceTree = "<group>"; };
-		BA6C8A170648CCB59B1CC25A5F1C56B7 /* III18N-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "III18N-dummy.m"; sourceTree = "<group>"; };
-		BBE3D5E37D321CB415E8E7FEB68E7986 /* Connectivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connectivity.swift; path = IIHTTPRequest/Classes/Connectivity/Classes/Connectivity.swift; sourceTree = "<group>"; };
-		BC42D38C3A852A6E938B5CE71ED20D95 /* Pods-IIHTTPRequest_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IIHTTPRequest_Tests.modulemap"; sourceTree = "<group>"; };
-		BD082A82326A44C09BC8B59EE03C5253 /* IIHTTPNetWorkUtility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPNetWorkUtility.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPNetWorkUtility.swift; sourceTree = "<group>"; };
-		BD60DF034B095A9FBCC3A248BD600F43 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = IIHTTPRequest/Classes/HTTPSource/Notifications.swift; sourceTree = "<group>"; };
-		BE80C594DE26FA380AE4E5AD0CAA227A /* ConnectivityResponseValidationMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConnectivityResponseValidationMode.swift; sourceTree = "<group>"; };
-		BECC8D09D19587394F371FABDA0EF0DB /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "IIHTTPRequest/Classes/HTTPSource/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		BF0A41F7A1C9F336B5184E0CB98F5274 /* ReachStateLoading.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReachStateLoading.m; sourceTree = "<group>"; };
-		C2E8A52FCA6F39B0E9CEA5EE184963B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		C3109E13029F730981A0D195F523351E /* ConnectivityStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConnectivityStatus.swift; sourceTree = "<group>"; };
-		CB30BB37EB37323ACF72CC2A05E13F7D /* IIHTTPRequest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IIHTTPRequest-prefix.pch"; sourceTree = "<group>"; };
-		CDB5C6FF43B253F1F2687BE2FF761C75 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		CE7F20632E3EFF384101E7BF31C40966 /* FSMStateUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FSMStateUtil.h; sourceTree = "<group>"; };
-		D0F7672C148F36C255F8B059B48B4521 /* Pods_IIHTTPRequest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IIHTTPRequest_Example.framework; path = "Pods-IIHTTPRequest_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D202C241943E43074D3DD0AB95064CFD /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = IIHTTPRequest/Classes/HTTPSource/AFError.swift; sourceTree = "<group>"; };
-		D38055EFF1EE0B1BFA54FC487372E769 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = IIHTTPRequest/Classes/HTTPSource/SessionManager.swift; sourceTree = "<group>"; };
-		D4C623653AB35559A4E1B121DDAB45F3 /* IHTTPHeaderAndParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IHTTPHeaderAndParams.swift; path = IIHTTPRequest/Classes/HTTPRequest/IHTTPHeaderAndParams.swift; sourceTree = "<group>"; };
-		D858C87AE7D74BAB39D533A6F9A04323 /* ConnectivityPercentage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConnectivityPercentage.swift; sourceTree = "<group>"; };
-		DD205ACAB4FE66990D112BA3CFF765BB /* RealReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RealReachability.h; path = IIHTTPRequest/Classes/RealReachability/RealReachability.h; sourceTree = "<group>"; };
-		E12602E4620D7DBDFCDA5E678DA183B7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		E28AAF296129A9794D92B22F9445EAA2 /* IMPI18N.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMPI18N.h; path = III18N/Classes/IMPI18N.h; sourceTree = "<group>"; };
-		E5FD61449AB6F147A3BF722F4B4409EF /* Pods-IIHTTPRequest_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IIHTTPRequest_Example-frameworks.sh"; sourceTree = "<group>"; };
-		E89C6B67460B862ACECE561CC292C1AF /* GetRefreshTokenFunction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GetRefreshTokenFunction.m; path = IIHTTPRequest/Classes/HTTPRequest/GetRefreshTokenFunction.m; sourceTree = "<group>"; };
-		EB57754A12D253F0BA0E5F00439769D9 /* ReachStateWWAN.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ReachStateWWAN.h; sourceTree = "<group>"; };
-		EC385D89E6BF07482757F2C0A9DAD5EF /* III18N.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = III18N.framework; path = III18N.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECFDCCF86DEBFE6EF2F8AA538E4A2A22 /* IIHTTPErrorInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPErrorInfo.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPErrorInfo.swift; sourceTree = "<group>"; };
-		ED2784BC9515BCE919C2D7608EBDA3D4 /* GetRefreshTokenFunction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GetRefreshTokenFunction.h; path = IIHTTPRequest/Classes/HTTPRequest/GetRefreshTokenFunction.h; sourceTree = "<group>"; };
-		EF7B94FB0AC1734B8F0D2F3F242781C4 /* ReachStateUnloaded.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ReachStateUnloaded.h; sourceTree = "<group>"; };
-		F6F9688164C96E18C4960C3F1705E3A6 /* Pods-IIHTTPRequest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IIHTTPRequest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FAF42488A6F8E693560DEB52377C3CE4 /* Pods-IIHTTPRequest_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IIHTTPRequest_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		FBF0472F2D33A070C36DC05184F2EA05 /* Pods-IIHTTPRequest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IIHTTPRequest_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FD3ED4C3FDBD3D1FEA4E99CF0C2B427B /* ReachStateUnReachable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ReachStateUnReachable.h; sourceTree = "<group>"; };
-		FD524F9712E9115CF02D64B7F773FA63 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = IIHTTPRequest/Classes/HTTPSource/ParameterEncoding.swift; sourceTree = "<group>"; };
-		FD6C09C284C65FC4A7CA401148CAE0AC /* IIHTTPRequest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IIHTTPRequest-umbrella.h"; sourceTree = "<group>"; };
-		FF18D9C33C33D56B921A56DD95D666E7 /* ReachState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ReachState.h; sourceTree = "<group>"; };
+		9DCD4D475D9377D37336B9218D17C043 /* IMPI18N.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IMPI18N.m; path = II18N/Classes/IMPI18N.m; sourceTree = "<group>"; };
+		9FE3B517B1B3B6FBCD1248FB0372A947 /* Pods-IIHTTPRequest_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IIHTTPRequest_Tests-dummy.m"; sourceTree = "<group>"; };
+		A041154E1DBEA8DAD9019F932073757C /* IIHTTPRequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IIHTTPRequest.modulemap; sourceTree = "<group>"; };
+		A10944D401A251F62273621A258C8A82 /* Pods-IIHTTPRequest_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IIHTTPRequest_Tests.modulemap"; sourceTree = "<group>"; };
+		A1E31E09AB2CE9CFD1AABCB3B2169537 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = IIHTTPRequest/Classes/RealReachability/Reachability.m; sourceTree = "<group>"; };
+		A8E423894FBB5375796D5BE3EB677E20 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A8FB7BCC8E3F2659362E6AB9F971E0D6 /* IIHTTPRequestFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPRequestFactory.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPRequestFactory.swift; sourceTree = "<group>"; };
+		AB212B61152B8C5835BEEED9FE9DD7EB /* Pods-IIHTTPRequest_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IIHTTPRequest_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AECE937E1F509CC05E6EBF5F540B9815 /* ReachStateWWAN.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ReachStateWWAN.h; sourceTree = "<group>"; };
+		B1E22184A76D7B9338FDC960F94DD920 /* IIHTTPRequestEunmList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPRequestEunmList.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPRequestEunmList.swift; sourceTree = "<group>"; };
+		B6DB9BAED2C3CABDDB7CF7D677FB1820 /* IIHTTPRequest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IIHTTPRequest-umbrella.h"; sourceTree = "<group>"; };
+		B88D2C97E781935B0E31FDF45A27849E /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = IIHTTPRequest/Classes/HTTPSource/SessionDelegate.swift; sourceTree = "<group>"; };
+		BA1D6EF58A946D0615FA0C25A53175F9 /* IIL18NEnum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIL18NEnum.swift; path = II18N/Classes/IIL18NEnum.swift; sourceTree = "<group>"; };
+		BEB8633EFD83AA0CBF786EFC01A31236 /* II18N.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = II18N.xcconfig; sourceTree = "<group>"; };
+		BF9E8C7C842830C415886B05C520A3DE /* ReachState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ReachState.h; sourceTree = "<group>"; };
+		CE5C6C80133D2B98327D0733085F6B84 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = IIHTTPRequest/Classes/HTTPSource/MultipartFormData.swift; sourceTree = "<group>"; };
+		D305C443B97FC17A9CD5F82E6A8CA467 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = IIHTTPRequest/Classes/HTTPSource/SessionManager.swift; sourceTree = "<group>"; };
+		D678B04BBB647517BD02148C4313910D /* Pods-IIHTTPRequest_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IIHTTPRequest_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		D69DD49A2C283E520A74DA40A376F663 /* IIHTTPImageRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPImageRequest.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPImageRequest.swift; sourceTree = "<group>"; };
+		D75807E83486E2759A5FDFAFB4E489A9 /* ReachStateUnloaded.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReachStateUnloaded.m; sourceTree = "<group>"; };
+		D8D37CEE1A490A18236DA5606C653243 /* LocalConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LocalConnection.m; sourceTree = "<group>"; };
+		D930337B36A297243293B6BF4FD50E8D /* RealReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RealReachability.m; path = IIHTTPRequest/Classes/RealReachability/RealReachability.m; sourceTree = "<group>"; };
+		DA8BB8C1878AC79C09420C7BAA9B780E /* Connectivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connectivity.swift; path = IIHTTPRequest/Classes/Connectivity/Classes/Connectivity.swift; sourceTree = "<group>"; };
+		DDD4CC488F1F3B6A28D0054572EDB7BA /* NotificationNameAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationNameAdditions.swift; sourceTree = "<group>"; };
+		E071C091B70B207956CE072EEDF71982 /* ConnectivityPercentage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConnectivityPercentage.swift; sourceTree = "<group>"; };
+		E2F4274CD33319AF12915A16E4FCF3DD /* II18N-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "II18N-dummy.m"; sourceTree = "<group>"; };
+		E6FFB79B19589989B333962C0F5C8DA4 /* ConnectivityStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConnectivityStatus.swift; sourceTree = "<group>"; };
+		EE7C102896A398DD6E837391389E419B /* Pods-IIHTTPRequest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IIHTTPRequest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF3859293B7136ED61A59BA20A6F4B79 /* ReachStateLoading.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReachStateLoading.m; sourceTree = "<group>"; };
+		F12BC6574BF2857E333F4EC933668888 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = IIHTTPRequest/Classes/HTTPSource/TaskDelegate.swift; sourceTree = "<group>"; };
+		F25B01B13DB565C4BF2EC947514712B2 /* IIHTTPRequestStatusCodeProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHTTPRequestStatusCodeProgress.swift; path = IIHTTPRequest/Classes/HTTPRequest/IIHTTPRequestStatusCodeProgress.swift; sourceTree = "<group>"; };
+		F37A6E63497A96085F3E93E802876D99 /* Pods-IIHTTPRequest_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IIHTTPRequest_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F3F581282A12EE485FE38CF8834ECB81 /* ReachStateUnloaded.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ReachStateUnloaded.h; sourceTree = "<group>"; };
+		F5A582ADF40D9F163D3EA99679993DD3 /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = IIHTTPRequest/Classes/RealReachability/Reachability.h; sourceTree = "<group>"; };
+		FF6B2E3503E731ECD74AF1705D61BBE1 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = IIHTTPRequest/Classes/HTTPSource/Response.swift; sourceTree = "<group>"; };
+		FFBB63228F134F92BEAEAE8187F16969 /* Pods-IIHTTPRequest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IIHTTPRequest_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4038EB5B1056557C1EF19356BEC64B89 /* Frameworks */ = {
+		2A74AAF2F4414DC385E5E376FC8CFE48 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC7A8F54D6F37E332BF754028AF9AB20 /* Foundation.framework in Frameworks */,
+				B30EA15A19051744305955B4E3D2E5E6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C0F3CDA3A2C2B3130EA47EEC9420BEE /* Frameworks */ = {
+		40658BD99E5B150AFA6D654DD3EA5875 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42FF3A7CEDF8A0099F2794CB4CEF350B /* Foundation.framework in Frameworks */,
+				C0AE41F7FF1D0E9EAE20EF4E7F81E1C2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D8A44BB572A398F55634502A25FA861 /* Frameworks */ = {
+		AAFCDD6DBFFF20C7544D072B430EAD20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				268D2D50491FD0205F8CECE4CCFB23B3 /* Foundation.framework in Frameworks */,
-				C4ED883CE1821A77227F5EFE40A0F07F /* III18N.framework in Frameworks */,
+				702567BA574DAED3E510F95435B2E0F6 /* Foundation.framework in Frameworks */,
+				7463CCE4548537CF131FAFF52712B81A /* II18N.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,223 +282,209 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02989729135D4122468CD6ED6D075EA4 /* Pods-IIHTTPRequest_Example */ = {
+		12027031308A377643838895B667A2A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B99FC9A9A9221325463A7D36E4DC2E9D /* Pods-IIHTTPRequest_Example.modulemap */,
-				4FF038278E3828113998438D4AF93B5E /* Pods-IIHTTPRequest_Example-acknowledgements.markdown */,
-				1D898A4554A471456D98498B007E19F0 /* Pods-IIHTTPRequest_Example-acknowledgements.plist */,
-				41A06DE1DEA018E22921667802515E1C /* Pods-IIHTTPRequest_Example-dummy.m */,
-				E5FD61449AB6F147A3BF722F4B4409EF /* Pods-IIHTTPRequest_Example-frameworks.sh */,
-				58656C5D6253205C1AAF6C81ED929E5C /* Pods-IIHTTPRequest_Example-Info.plist */,
-				8E0380624B0C12D570D6A6392E87DDE7 /* Pods-IIHTTPRequest_Example-umbrella.h */,
-				FBF0472F2D33A070C36DC05184F2EA05 /* Pods-IIHTTPRequest_Example.debug.xcconfig */,
-				0CAF70E8DA246C9399FB39BBD47AC76F /* Pods-IIHTTPRequest_Example.release.xcconfig */,
-			);
-			name = "Pods-IIHTTPRequest_Example";
-			path = "Target Support Files/Pods-IIHTTPRequest_Example";
-			sourceTree = "<group>";
-		};
-		1335B7171538F3BC8880F3A81A2B1BC8 /* Pods-IIHTTPRequest_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				BC42D38C3A852A6E938B5CE71ED20D95 /* Pods-IIHTTPRequest_Tests.modulemap */,
-				18456DC97B12C54154BB385A331F17AD /* Pods-IIHTTPRequest_Tests-acknowledgements.markdown */,
-				FAF42488A6F8E693560DEB52377C3CE4 /* Pods-IIHTTPRequest_Tests-acknowledgements.plist */,
-				81AEC5C1F26D91B63E92DF91B03BB05B /* Pods-IIHTTPRequest_Tests-dummy.m */,
-				A56F71AD586A9174C85A39F97F8E8631 /* Pods-IIHTTPRequest_Tests-Info.plist */,
-				27EB7B201F498B9CA623687AB7390A61 /* Pods-IIHTTPRequest_Tests-umbrella.h */,
-				F6F9688164C96E18C4960C3F1705E3A6 /* Pods-IIHTTPRequest_Tests.debug.xcconfig */,
-				984839D766E8341BAC1D556D71D4CE4B /* Pods-IIHTTPRequest_Tests.release.xcconfig */,
-			);
-			name = "Pods-IIHTTPRequest_Tests";
-			path = "Target Support Files/Pods-IIHTTPRequest_Tests";
-			sourceTree = "<group>";
-		};
-		13804DA4F7E92515B742F7E5BB3C3570 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4605FD0AD873E22A8D27DF933D41D750 /* IIHTTPRequest.modulemap */,
-				B04B4E99BD3F024D63E5A449AF005E87 /* IIHTTPRequest.xcconfig */,
-				44A172D37B21B1D9F1B98CF825F09808 /* IIHTTPRequest-dummy.m */,
-				549541C51A8655BD71A946BCBF86CE93 /* IIHTTPRequest-Info.plist */,
-				CB30BB37EB37323ACF72CC2A05E13F7D /* IIHTTPRequest-prefix.pch */,
-				FD6C09C284C65FC4A7CA401148CAE0AC /* IIHTTPRequest-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/IIHTTPRequest";
-			sourceTree = "<group>";
-		};
-		467D9C659BE0B300245D3C394D6A8BFA /* HTTPRequest */ = {
-			isa = PBXGroup;
-			children = (
-				ED2784BC9515BCE919C2D7608EBDA3D4 /* GetRefreshTokenFunction.h */,
-				E89C6B67460B862ACECE561CC292C1AF /* GetRefreshTokenFunction.m */,
-				D4C623653AB35559A4E1B121DDAB45F3 /* IHTTPHeaderAndParams.swift */,
-				95AAE100EF8A6FCDD943CFE3D71B3B77 /* IHTTPProgressAFNCode.swift */,
-				ECFDCCF86DEBFE6EF2F8AA538E4A2A22 /* IIHTTPErrorInfo.swift */,
-				845A16BE989BBE9D368D5F715A739DBB /* IIHTTPGCDUtility.swift */,
-				8955A4D7AF89D0443413D3E716B159C8 /* IIHTTPImageRequest.swift */,
-				52B9FB4EA306E6CFB119D7066FC18DBE /* IIHTTPModuleDoor.swift */,
-				5CDDA9596D6345686A81A55F78F13748 /* IIHTTPNetWork.swift */,
-				BD082A82326A44C09BC8B59EE03C5253 /* IIHTTPNetWorkUtility.swift */,
-				85A2ECDD71F89AEDE06D4E0F0FC816BC /* IIHTTPNetWorkUtilityOC.h */,
-				57D88A0B4884AB702F2B9C5F40B61E7E /* IIHTTPNetWorkUtilityOC.m */,
-				6A8BA2273D3C9D73F500B749616A7481 /* IIHTTPOCResponse.swift */,
-				92839F58B5EB43FE594D12DD49EBF406 /* IIHTTPRequest.swift */,
-				2BC6FBAAB17CC71DEA8806B03ED75B5B /* IIHTTPRequestErrorProgress.swift */,
-				B008D66CC088B6F2DA6CE105DFD4BA66 /* IIHTTPRequestEunmList.swift */,
-				56351348E15128418CBD22FEA2F07AEF /* IIHTTPRequestExtension.swift */,
-				44623D1566F9DD229F4EE59221761AB5 /* IIHTTPRequestFactory.swift */,
-				0FA1879A5F990DA87C39493233296CE5 /* IIHTTPRequestFather.swift */,
-				5DF2534DA348CB1403F02D60D06394DB /* IIHTTPRequestStatusCodeProgress.swift */,
-			);
-			name = HTTPRequest;
-			sourceTree = "<group>";
-		};
-		490F097358F1447C035539B1C714C580 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9C02E4903AACAC3595BC5C6B9D0BDAE6 /* III18N.framework */,
-				D42187E91B4E21A02F94315870FB1667 /* iOS */,
+				0660F4DBB48584A3BC2E9827BF387043 /* II18N.framework */,
+				97AB057D9DE218AE8E3E4467DD3C9EEA /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		565038155739213CF8BC8D2D71F2733C /* RealReachability */ = {
+		2AF17F388AB1B8DFF7A81D0B4DF139DE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B8D76FED1E0AD2584519756FBC1C55E4 /* Reachability.h */,
-				0CA98901BDD372CE21AD7B4A464D0B76 /* Reachability.m */,
-				DD205ACAB4FE66990D112BA3CFF765BB /* RealReachability.h */,
-				215816ED2950E86EA4A22CB904C50729 /* RealReachability.m */,
-				9F287653333A61AAE7AE51F431F37397 /* Connection */,
-				E6AB483266F92DE209E3E8943AA920A7 /* FSM */,
-				F05E9B2F22C8AF097AC0EE74ABAFA7FD /* Ping */,
-			);
-			name = RealReachability;
-			sourceTree = "<group>";
-		};
-		611FD5E0179885C46223D7DCB559EF0A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B50CAC1FCBC8B9461F4EF99C82E19F35 /* IIHTTPRequest.framework */,
-				EC385D89E6BF07482757F2C0A9DAD5EF /* III18N.framework */,
-				D0F7672C148F36C255F8B059B48B4521 /* Pods_IIHTTPRequest_Example.framework */,
-				41F5AD8247EB5625F7CB0A997863026D /* Pods_IIHTTPRequest_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		68266AC168F1739E4D22E38A1BDE7475 /* HTTPSource */ = {
-			isa = PBXGroup;
-			children = (
-				D202C241943E43074D3DD0AB95064CFD /* AFError.swift */,
-				5B205F26FEA0D228AAA6E59592630960 /* Alamofire.swift */,
-				BECC8D09D19587394F371FABDA0EF0DB /* DispatchQueue+Alamofire.swift */,
-				1CE2271B288994DB0A4385F5959AA3E5 /* MultipartFormData.swift */,
-				A897EB853203098697F067877CE4DC59 /* NetworkReachabilityManager.swift */,
-				BD60DF034B095A9FBCC3A248BD600F43 /* Notifications.swift */,
-				FD524F9712E9115CF02D64B7F773FA63 /* ParameterEncoding.swift */,
-				A046693B4A8320A4751CEAD1D11B3486 /* Request.swift */,
-				069BB583F398E7C352C67B00772FEA09 /* Response.swift */,
-				A5E5C50D22D7F8A119F1C23CDAC46840 /* ResponseSerialization.swift */,
-				937581EAF468CD7BCA96FE19E7D5E8EE /* Result.swift */,
-				17E9DC1AE0F72B0B5FA177625C198D66 /* ServerTrustPolicy.swift */,
-				48E7D9194C645EC43C980928A7583AA9 /* SessionDelegate.swift */,
-				D38055EFF1EE0B1BFA54FC487372E769 /* SessionManager.swift */,
-				B5A45C1C78875D79A1BE369C92B32ACB /* TaskDelegate.swift */,
-				47E2B8DBFF45BD45ECA75CEA20FA2E0D /* Timeline.swift */,
-				28D0955068627392782FE7C4A6F8DD11 /* Validation.swift */,
-			);
-			name = HTTPSource;
-			sourceTree = "<group>";
-		};
-		753C52637525D78DDAAC8A920ED90458 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D3F6FA2C0B04D53BA7D582FFC368D858 /* III18N */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		88F0D4E41B01B2BA8B4623EE68C1A9F7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B9F4A2559C49B7C61C39A7A60E231A2E /* III18N.modulemap */,
-				11B6FEAA65F28F771A27C93B873563DE /* III18N.xcconfig */,
-				BA6C8A170648CCB59B1CC25A5F1C56B7 /* III18N-dummy.m */,
-				2C9E4AB8EA1F17CC03EFDED1F949A032 /* III18N-Info.plist */,
-				1DB2FAB084639197069ADEC39BCDD8D8 /* III18N-prefix.pch */,
-				0DF44E567F4D630E894E553963054AC4 /* III18N-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/III18N";
-			sourceTree = "<group>";
-		};
-		8D214E3AE1E4C32716E6C9D244763463 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				02989729135D4122468CD6ED6D075EA4 /* Pods-IIHTTPRequest_Example */,
-				1335B7171538F3BC8880F3A81A2B1BC8 /* Pods-IIHTTPRequest_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		9F287653333A61AAE7AE51F431F37397 /* Connection */ = {
-			isa = PBXGroup;
-			children = (
-				B58FDC0D64574E0C34B3883188164A06 /* LocalConnection.h */,
-				76206AE9355142F4EB660712A2E12E4F /* LocalConnection.m */,
-			);
-			name = Connection;
-			path = IIHTTPRequest/Classes/RealReachability/Connection;
-			sourceTree = "<group>";
-		};
-		A90535F2C52277BEDA937ECCD95D2C78 /* IIHTTPRequest */ = {
-			isa = PBXGroup;
-			children = (
-				EFBCA6535090DCF0F1BFC7899ED406E5 /* Connectivity */,
-				467D9C659BE0B300245D3C394D6A8BFA /* HTTPRequest */,
-				68266AC168F1739E4D22E38A1BDE7475 /* HTTPSource */,
-				CCA8481C129ED36A4C8BF4BF53B440B6 /* Pod */,
-				565038155739213CF8BC8D2D71F2733C /* RealReachability */,
-				13804DA4F7E92515B742F7E5BB3C3570 /* Support Files */,
-			);
-			name = IIHTTPRequest;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		AD19A1C5F84A26C125D954812FA321C9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				0E80230B98E6D9F065AD86FC32033293 /* ConnectivityFramework.swift */,
-				D858C87AE7D74BAB39D533A6F9A04323 /* ConnectivityPercentage.swift */,
-				BE80C594DE26FA380AE4E5AD0CAA227A /* ConnectivityResponseValidationMode.swift */,
-				53BA9888BF658D1A496747F524C43DB9 /* ConnectivityResponseValidator.swift */,
-				C3109E13029F730981A0D195F523351E /* ConnectivityStatus.swift */,
-			);
-			name = Model;
-			path = IIHTTPRequest/Classes/Connectivity/Classes/Model;
-			sourceTree = "<group>";
-		};
-		C1E26D9EB35EB3379364795E933EE7E2 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				33A77956CB4936833B7664EC254C2A74 /* NotificationNameAdditions.swift */,
+				DDD4CC488F1F3B6A28D0054572EDB7BA /* NotificationNameAdditions.swift */,
 			);
 			name = Extensions;
 			path = IIHTTPRequest/Classes/Connectivity/Classes/Extensions;
 			sourceTree = "<group>";
 		};
-		CCA8481C129ED36A4C8BF4BF53B440B6 /* Pod */ = {
+		5209D7531D77A6986898D82180080DEE /* Connection */ = {
 			isa = PBXGroup;
 			children = (
-				B7B7BDD641EFCAE6D4B6B277740FD04F /* IIHTTPRequest.podspec */,
-				CDB5C6FF43B253F1F2687BE2FF761C75 /* LICENSE */,
-				E12602E4620D7DBDFCDA5E678DA183B7 /* README.md */,
+				87C9B46EBBD673FC72C7E09DF5D74AD1 /* LocalConnection.h */,
+				D8D37CEE1A490A18236DA5606C653243 /* LocalConnection.m */,
+			);
+			name = Connection;
+			path = IIHTTPRequest/Classes/RealReachability/Connection;
+			sourceTree = "<group>";
+		};
+		5EF91CD8F25D4D143FF7783D45D79E83 /* Pods-IIHTTPRequest_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A10944D401A251F62273621A258C8A82 /* Pods-IIHTTPRequest_Tests.modulemap */,
+				AB212B61152B8C5835BEEED9FE9DD7EB /* Pods-IIHTTPRequest_Tests-acknowledgements.markdown */,
+				81DBE47FA35083F8498E7CFF48D931BA /* Pods-IIHTTPRequest_Tests-acknowledgements.plist */,
+				9FE3B517B1B3B6FBCD1248FB0372A947 /* Pods-IIHTTPRequest_Tests-dummy.m */,
+				86474AFE37393E6FDED38AF51C2E34D2 /* Pods-IIHTTPRequest_Tests-Info.plist */,
+				79A40BC845052C603BE358D53A1E909D /* Pods-IIHTTPRequest_Tests-umbrella.h */,
+				EE7C102896A398DD6E837391389E419B /* Pods-IIHTTPRequest_Tests.debug.xcconfig */,
+				211F0CE8B08F42E0D7699F28B6D5E15F /* Pods-IIHTTPRequest_Tests.release.xcconfig */,
+			);
+			name = "Pods-IIHTTPRequest_Tests";
+			path = "Target Support Files/Pods-IIHTTPRequest_Tests";
+			sourceTree = "<group>";
+		};
+		774064B01054D582BB53559472B3C340 /* Ping */ = {
+			isa = PBXGroup;
+			children = (
+				594A5B83E783774A76A53BBB08947C39 /* PingFoundation.h */,
+				4F4D78C900E326E1A3A6F1E351FE11AE /* PingFoundation.m */,
+				20F25D6066D6780892421EE09F9FBFDC /* PingHelper.h */,
+				3F64C664FCD8FC8026F4EC270BDCC535 /* PingHelper.m */,
+			);
+			name = Ping;
+			path = IIHTTPRequest/Classes/RealReachability/Ping;
+			sourceTree = "<group>";
+		};
+		799DED87B64DE434CD19F462BE800D49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55F2773E1CA342B4D43B35D5297644D6 /* II18N.framework */,
+				3077EA7531EDDB03FE5D9281ECD8F29F /* IIHTTPRequest.framework */,
+				82CF41AC5BEDABA1B8BB2E9CDC6CD0F3 /* Pods_IIHTTPRequest_Example.framework */,
+				0CB12277C186E6F230420529AA272333 /* Pods_IIHTTPRequest_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C48344BCD4468249E9390CD34FB73D4 /* HTTPSource */ = {
+			isa = PBXGroup;
+			children = (
+				61636372DC7C3F8CD48D13DE97EB6D68 /* AFError.swift */,
+				202B866AD9E500E9A79D79181FC7E867 /* Alamofire.swift */,
+				87796D92CCC4B21CFC2FC4FEFFED008E /* DispatchQueue+Alamofire.swift */,
+				CE5C6C80133D2B98327D0733085F6B84 /* MultipartFormData.swift */,
+				95EFB769FD5F437D34B055667B7BC1FE /* NetworkReachabilityManager.swift */,
+				731F02458F9716380B605E617E559C1C /* Notifications.swift */,
+				1946B104F13F89F8A79845B5EFFA66FA /* ParameterEncoding.swift */,
+				517898C86AAF0B57B758E8F6A818CA4D /* Request.swift */,
+				FF6B2E3503E731ECD74AF1705D61BBE1 /* Response.swift */,
+				1B3506C4CBB96B4385AAE0086D394202 /* ResponseSerialization.swift */,
+				4B533F2DDFCFC1893D8576735E88520F /* Result.swift */,
+				649E7B46141DD5410A4329BC3C7D249E /* ServerTrustPolicy.swift */,
+				B88D2C97E781935B0E31FDF45A27849E /* SessionDelegate.swift */,
+				D305C443B97FC17A9CD5F82E6A8CA467 /* SessionManager.swift */,
+				F12BC6574BF2857E333F4EC933668888 /* TaskDelegate.swift */,
+				6DCF51442813DDDADB349FC61C71F1B7 /* Timeline.swift */,
+				1E4AE22F71361452404897956B0AF13A /* Validation.swift */,
+			);
+			name = HTTPSource;
+			sourceTree = "<group>";
+		};
+		7C4D9AE5F75284A46D393815753869C6 /* FSM */ = {
+			isa = PBXGroup;
+			children = (
+				308BD936FEEFCC869E4AEC96C241FC4A /* FSMDefines.h */,
+				64AB91EAB145AB4C0EA2607D7840B891 /* FSMEngine.h */,
+				552435C5873435BDF3A8B0DE6073D118 /* FSMEngine.m */,
+				51830A7E09C59376647C3D66F28B8D1B /* FSMStateUtil.h */,
+				69473DB8FD508C93C3C98214AF0C8323 /* FSMStateUtil.m */,
+				BF9E8C7C842830C415886B05C520A3DE /* ReachState.h */,
+				8D3466911652336255338649D5AFAB6B /* ReachState.m */,
+				1363902C24360BC56142B5EBE39881D0 /* ReachStateLoading.h */,
+				EF3859293B7136ED61A59BA20A6F4B79 /* ReachStateLoading.m */,
+				F3F581282A12EE485FE38CF8834ECB81 /* ReachStateUnloaded.h */,
+				D75807E83486E2759A5FDFAFB4E489A9 /* ReachStateUnloaded.m */,
+				83A8E32A0B6812BDA5ED82432E1D944F /* ReachStateUnReachable.h */,
+				76348D47C9058D8B5EAA221999136F34 /* ReachStateUnReachable.m */,
+				3BBA23B7B0295103AAAA977FEA0F76BF /* ReachStateWIFI.h */,
+				248A655EAAE6B9003EB9BB362CB16223 /* ReachStateWIFI.m */,
+				AECE937E1F509CC05E6EBF5F540B9815 /* ReachStateWWAN.h */,
+				214C4E1C8D5D17CD25D02868D9F5B3B3 /* ReachStateWWAN.m */,
+			);
+			name = FSM;
+			path = IIHTTPRequest/Classes/RealReachability/FSM;
+			sourceTree = "<group>";
+		};
+		8D214E3AE1E4C32716E6C9D244763463 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BED99498893989EBF791EA518EDC1B8B /* Pods-IIHTTPRequest_Example */,
+				5EF91CD8F25D4D143FF7783D45D79E83 /* Pods-IIHTTPRequest_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		934A355BAA464BBF2D84BACC6B40A5BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5AFF757E7481ADA69CEE3BBAA41517D /* II18N */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		97AB057D9DE218AE8E3E4467DD3C9EEA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				99E7ECDCB0BA321B40780CC36A5FD79D /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B04B24B42462D3D8AD2DF10D0CE7092C /* Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				DA8BB8C1878AC79C09420C7BAA9B780E /* Connectivity.swift */,
+				2AF17F388AB1B8DFF7A81D0B4DF139DE /* Extensions */,
+				D239445BE2537D65CFC2134A2EABF8CC /* Model */,
+			);
+			name = Connectivity;
+			sourceTree = "<group>";
+		};
+		B5AFF757E7481ADA69CEE3BBAA41517D /* II18N */ = {
+			isa = PBXGroup;
+			children = (
+				72AB7E15A7973D5A54D428C7E46A1C1B /* III18NService.swift */,
+				BA1D6EF58A946D0615FA0C25A53175F9 /* IIL18NEnum.swift */,
+				7E61EF37308C38AB4ABF403855626244 /* IMPI18N.h */,
+				9DCD4D475D9377D37336B9218D17C043 /* IMPI18N.m */,
+				D825442CACDC57D512453B47CCB83429 /* Support Files */,
+			);
+			name = II18N;
+			path = II18N;
+			sourceTree = "<group>";
+		};
+		BED99498893989EBF791EA518EDC1B8B /* Pods-IIHTTPRequest_Example */ = {
+			isa = PBXGroup;
+			children = (
+				5DD417965F5C86F72C97517A5914A4CB /* Pods-IIHTTPRequest_Example.modulemap */,
+				022A4EB6CB124D7BB9B619C2F18378B8 /* Pods-IIHTTPRequest_Example-acknowledgements.markdown */,
+				D678B04BBB647517BD02148C4313910D /* Pods-IIHTTPRequest_Example-acknowledgements.plist */,
+				5CACAB4C2B533ED1F499373708B4EFF3 /* Pods-IIHTTPRequest_Example-dummy.m */,
+				F37A6E63497A96085F3E93E802876D99 /* Pods-IIHTTPRequest_Example-frameworks.sh */,
+				03F520C39AFABB2EDEA40C11592C0C41 /* Pods-IIHTTPRequest_Example-Info.plist */,
+				22D7C1D316267247EE07A635F88E8F03 /* Pods-IIHTTPRequest_Example-umbrella.h */,
+				39955A947E0E838DA3BA50605730CF26 /* Pods-IIHTTPRequest_Example.debug.xcconfig */,
+				FFBB63228F134F92BEAEAE8187F16969 /* Pods-IIHTTPRequest_Example.release.xcconfig */,
+			);
+			name = "Pods-IIHTTPRequest_Example";
+			path = "Target Support Files/Pods-IIHTTPRequest_Example";
+			sourceTree = "<group>";
+		};
+		C07C56D92FB2563649506E8F8B32AE81 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				89FF5C469D78B05E5AFB422314E6B0B8 /* IIHTTPRequest.podspec */,
+				A8E423894FBB5375796D5BE3EB677E20 /* LICENSE */,
+				5F89BF012FF747833E50A77C5369AC26 /* README.md */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		C2E72051D689B4FA1EBC2566D8CA75A1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A041154E1DBEA8DAD9019F932073757C /* IIHTTPRequest.modulemap */,
+				4B28C707AE60DB1B4459D774B881D0B0 /* IIHTTPRequest.xcconfig */,
+				8A13DE492DD0A20FA0730E3A65BD4FF0 /* IIHTTPRequest-dummy.m */,
+				159169E4563AC168E6C17E9FEC5B1345 /* IIHTTPRequest-Info.plist */,
+				9543AFCE1FDFCC2A8BA342FBB604A0C9 /* IIHTTPRequest-prefix.pch */,
+				B6DB9BAED2C3CABDDB7CF7D677FB1820 /* IIHTTPRequest-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/IIHTTPRequest";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -506,130 +492,144 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				E7FC01CCA93A05FDC8F7DD3D7A72587A /* Development Pods */,
-				490F097358F1447C035539B1C714C580 /* Frameworks */,
-				753C52637525D78DDAAC8A920ED90458 /* Pods */,
-				611FD5E0179885C46223D7DCB559EF0A /* Products */,
+				12027031308A377643838895B667A2A1 /* Frameworks */,
+				934A355BAA464BBF2D84BACC6B40A5BF /* Pods */,
+				799DED87B64DE434CD19F462BE800D49 /* Products */,
 				8D214E3AE1E4C32716E6C9D244763463 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D3F6FA2C0B04D53BA7D582FFC368D858 /* III18N */ = {
+		D239445BE2537D65CFC2134A2EABF8CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				48D1D652FEA4E66D9AF30E3E73F499CA /* III18NService.swift */,
-				39E2583FCDDD06B1B2E78A3A782B6C5B /* IIL18NEnum.swift */,
-				E28AAF296129A9794D92B22F9445EAA2 /* IMPI18N.h */,
-				AB59355B3E2632CD270E456C032992F8 /* IMPI18N.m */,
-				88F0D4E41B01B2BA8B4623EE68C1A9F7 /* Support Files */,
+				51B215A982730D2D9180960A036E1140 /* ConnectivityFramework.swift */,
+				E071C091B70B207956CE072EEDF71982 /* ConnectivityPercentage.swift */,
+				0CB25B6574B47E8EE26EED48AA9431BE /* ConnectivityResponseValidationMode.swift */,
+				170D0374FAF9AC7EC23B4BCEE9B95803 /* ConnectivityResponseValidator.swift */,
+				E6FFB79B19589989B333962C0F5C8DA4 /* ConnectivityStatus.swift */,
 			);
-			name = III18N;
-			path = III18N;
+			name = Model;
+			path = IIHTTPRequest/Classes/Connectivity/Classes/Model;
 			sourceTree = "<group>";
 		};
-		D42187E91B4E21A02F94315870FB1667 /* iOS */ = {
+		D825442CACDC57D512453B47CCB83429 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C2E8A52FCA6F39B0E9CEA5EE184963B2 /* Foundation.framework */,
+				27D4C2DCC998BD949ABD5A7F91EAF4CC /* II18N.modulemap */,
+				BEB8633EFD83AA0CBF786EFC01A31236 /* II18N.xcconfig */,
+				E2F4274CD33319AF12915A16E4FCF3DD /* II18N-dummy.m */,
+				519B5D34B41B7026CB8D5C83CC41409A /* II18N-Info.plist */,
+				8AF88D11CAC9C1FB0F6D9F65398ABC14 /* II18N-prefix.pch */,
+				4BF4956F51DBC1B6E9176665E5F0C81D /* II18N-umbrella.h */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/II18N";
 			sourceTree = "<group>";
 		};
-		E6AB483266F92DE209E3E8943AA920A7 /* FSM */ = {
+		DC802C32B138B344DCF5E85D0B3A1A00 /* RealReachability */ = {
 			isa = PBXGroup;
 			children = (
-				058B026729B35AFFAEDC3821012C8353 /* FSMDefines.h */,
-				0EABBE94FAFE491F0A376DAB322F215F /* FSMEngine.h */,
-				AE797909BE4F7E4D3F21E4069C19122A /* FSMEngine.m */,
-				CE7F20632E3EFF384101E7BF31C40966 /* FSMStateUtil.h */,
-				518CE017252DEAF05A91B6E014B21130 /* FSMStateUtil.m */,
-				FF18D9C33C33D56B921A56DD95D666E7 /* ReachState.h */,
-				0B691C11A5B2A0DD094201D547DFF502 /* ReachState.m */,
-				70EA00F6715A3531BD134E80E42A55E1 /* ReachStateLoading.h */,
-				BF0A41F7A1C9F336B5184E0CB98F5274 /* ReachStateLoading.m */,
-				EF7B94FB0AC1734B8F0D2F3F242781C4 /* ReachStateUnloaded.h */,
-				5BD052EC5E507D81075507E9118BFD82 /* ReachStateUnloaded.m */,
-				FD3ED4C3FDBD3D1FEA4E99CF0C2B427B /* ReachStateUnReachable.h */,
-				6C36F38D45A07C74CAAE429714AAEB97 /* ReachStateUnReachable.m */,
-				07F2FB4794F9168AA52AE5DA7B95789E /* ReachStateWIFI.h */,
-				6F523948AE5D04D081772F05DE04DFBE /* ReachStateWIFI.m */,
-				EB57754A12D253F0BA0E5F00439769D9 /* ReachStateWWAN.h */,
-				681B03F5090345861A22337350EE8416 /* ReachStateWWAN.m */,
+				F5A582ADF40D9F163D3EA99679993DD3 /* Reachability.h */,
+				A1E31E09AB2CE9CFD1AABCB3B2169537 /* Reachability.m */,
+				3BF1328B29F51B191E4E759E1EFD9DBD /* RealReachability.h */,
+				D930337B36A297243293B6BF4FD50E8D /* RealReachability.m */,
+				5209D7531D77A6986898D82180080DEE /* Connection */,
+				7C4D9AE5F75284A46D393815753869C6 /* FSM */,
+				774064B01054D582BB53559472B3C340 /* Ping */,
 			);
-			name = FSM;
-			path = IIHTTPRequest/Classes/RealReachability/FSM;
+			name = RealReachability;
 			sourceTree = "<group>";
 		};
 		E7FC01CCA93A05FDC8F7DD3D7A72587A /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A90535F2C52277BEDA937ECCD95D2C78 /* IIHTTPRequest */,
+				F0D2EDD1DAA8C3CD66FD825FA98C2FD7 /* IIHTTPRequest */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		EFBCA6535090DCF0F1BFC7899ED406E5 /* Connectivity */ = {
+		F0D2EDD1DAA8C3CD66FD825FA98C2FD7 /* IIHTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
-				BBE3D5E37D321CB415E8E7FEB68E7986 /* Connectivity.swift */,
-				C1E26D9EB35EB3379364795E933EE7E2 /* Extensions */,
-				AD19A1C5F84A26C125D954812FA321C9 /* Model */,
+				B04B24B42462D3D8AD2DF10D0CE7092C /* Connectivity */,
+				F4810DEF5311AA7B47E3CE193264DFF2 /* HTTPRequest */,
+				7C48344BCD4468249E9390CD34FB73D4 /* HTTPSource */,
+				C07C56D92FB2563649506E8F8B32AE81 /* Pod */,
+				DC802C32B138B344DCF5E85D0B3A1A00 /* RealReachability */,
+				C2E72051D689B4FA1EBC2566D8CA75A1 /* Support Files */,
 			);
-			name = Connectivity;
+			name = IIHTTPRequest;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		F05E9B2F22C8AF097AC0EE74ABAFA7FD /* Ping */ = {
+		F4810DEF5311AA7B47E3CE193264DFF2 /* HTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
-				82E9605E3E43D4366CC5677C8BDCA198 /* PingFoundation.h */,
-				07B83A6CD6292770C3D373107ADD3A32 /* PingFoundation.m */,
-				9C9C4D0F249E51BAEED0962AFE312CEC /* PingHelper.h */,
-				6F229BB18368FDF90E459F3AD191EBCC /* PingHelper.m */,
+				126DC9C902FE308F1B1BE41B719D32D4 /* GetRefreshTokenFunction.h */,
+				5C9901B48FBAB0C8AE43621F5F793A45 /* GetRefreshTokenFunction.m */,
+				58137381A92327A17BDE49B37E22AFBB /* IHTTPHeaderAndParams.swift */,
+				58CABD409D26AEA2085453E9216E0362 /* IHTTPProgressAFNCode.swift */,
+				830799330DF97C0737A024D277A746FD /* IIHTTPErrorInfo.swift */,
+				3856AE1C3D296144A68880CF89ECE005 /* IIHTTPGCDUtility.swift */,
+				D69DD49A2C283E520A74DA40A376F663 /* IIHTTPImageRequest.swift */,
+				84FAD88EA9960BAE34639E608AE0E656 /* IIHTTPModuleDoor.swift */,
+				6E4F14925ADBF21D98881DE87B3FD074 /* IIHTTPNetWork.swift */,
+				4048577A21FE4B96F3BC1F752A49F24F /* IIHTTPNetWorkUtility.swift */,
+				3B7DABABCE7A21D0CCE5B4DA33EEFAF6 /* IIHTTPNetWorkUtilityOC.h */,
+				314D911A77E092B5B466D5F7C0256FAA /* IIHTTPNetWorkUtilityOC.m */,
+				4C61A9BF28DF44AF9B8E332497AAA6FB /* IIHTTPOCResponse.swift */,
+				5351F082CF319375E275B2347976D433 /* IIHTTPRequest.swift */,
+				7954A04C6114A13F4760E043DF5575C0 /* IIHTTPRequestErrorProgress.swift */,
+				B1E22184A76D7B9338FDC960F94DD920 /* IIHTTPRequestEunmList.swift */,
+				62EA17A92A805B57C6809028DAC8DBE5 /* IIHTTPRequestExtension.swift */,
+				A8FB7BCC8E3F2659362E6AB9F971E0D6 /* IIHTTPRequestFactory.swift */,
+				00C85EC37109E9A20EA9EC3C829850E8 /* IIHTTPRequestFather.swift */,
+				F25B01B13DB565C4BF2EC947514712B2 /* IIHTTPRequestStatusCodeProgress.swift */,
 			);
-			name = Ping;
-			path = IIHTTPRequest/Classes/RealReachability/Ping;
+			name = HTTPRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4453D8C352B94F2753214CB6A7614BB0 /* Headers */ = {
+		340E59544031D58751F56AE737C40FA9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				820F4197EED23672120AB81200DBA26F /* III18N-umbrella.h in Headers */,
-				B26E7549C4297A12F962E306116E0B70 /* IMPI18N.h in Headers */,
+				B88CF732E974242181D0BCBE2C9C7598 /* FSMDefines.h in Headers */,
+				8087A6191FE427ED9297CCFA31A5F7AA /* FSMEngine.h in Headers */,
+				E76C65BA84701E50F6A7BFEC7D5F378A /* FSMStateUtil.h in Headers */,
+				861C148010837047EF6198BEB7FF218C /* GetRefreshTokenFunction.h in Headers */,
+				B2C5177629985BA5BE1D9005CED7817D /* IIHTTPNetWorkUtilityOC.h in Headers */,
+				ADCBB90BEDF021DD92661F4E8980E5B4 /* IIHTTPRequest-umbrella.h in Headers */,
+				3DABE42A7EA050DCBC45BEDB4E0568B0 /* LocalConnection.h in Headers */,
+				27E5967E43FEDE524172646099B5CF03 /* PingFoundation.h in Headers */,
+				28777DFC6C6B8BEABDC5E77E6D732E3D /* PingHelper.h in Headers */,
+				E1C3269A878800826EC2DA8F301D9BB4 /* Reachability.h in Headers */,
+				0D3E92834151A6EAD78A19B749AEFE69 /* ReachState.h in Headers */,
+				8F14C58841B2F27AD8E0632E0BA384E7 /* ReachStateLoading.h in Headers */,
+				D404D87AB187113DD4D7D2F5E6A78B76 /* ReachStateUnloaded.h in Headers */,
+				6F7CD30FD599C6D3C99E987D1615AA4F /* ReachStateUnReachable.h in Headers */,
+				C0CF44F7B20A308119378F9ED50C32DB /* ReachStateWIFI.h in Headers */,
+				9C7404661D5BA1004F6E461CBF73173F /* ReachStateWWAN.h in Headers */,
+				D09C1DA3B47B8684754C0826802B51B9 /* RealReachability.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E48709ECBABA408C76B4AC8560C5A75 /* Headers */ = {
+		5A0BC70504BDAE9691669134B6CB208E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C49ECBED79869D5FC10D0FC160DA27B6 /* Pods-IIHTTPRequest_Example-umbrella.h in Headers */,
+				0131CD8E333697705E9635A8DA554208 /* II18N-umbrella.h in Headers */,
+				FEFA785D8D70BEE1CFFD9AF5C1391477 /* IMPI18N.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5E5D41AE8630D8323EB9077EE6085C6 /* Headers */ = {
+		86C65274FA495DB42A839CEC7A6CE897 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD741FEA628C4FCA5B07C9BE8008C27F /* FSMDefines.h in Headers */,
-				5CA932147C592AD80292AFFF84BE62D4 /* FSMEngine.h in Headers */,
-				5C57DA3BB08111716E91841D8564D603 /* FSMStateUtil.h in Headers */,
-				B3E903DA6B41C2831C02784BD2F7B4B2 /* GetRefreshTokenFunction.h in Headers */,
-				26F687E9683629C96A8F352D635EFDEE /* IIHTTPNetWorkUtilityOC.h in Headers */,
-				AE7D342F1269CF0057065910972922C4 /* IIHTTPRequest-umbrella.h in Headers */,
-				060232863A59DBB2A83184EF1CED8CE8 /* LocalConnection.h in Headers */,
-				AEE32B8CA4FD59530E7AF734AD162981 /* PingFoundation.h in Headers */,
-				E288CEF3CB2576D562834C59D3EE4CAB /* PingHelper.h in Headers */,
-				C67091D7FA157691E7A4262D9BCA327C /* Reachability.h in Headers */,
-				AB49DC33DE2FE69DEA99B7EB5D2C017D /* ReachState.h in Headers */,
-				97C116942A8E91CE46FAF58B3D5A16FF /* ReachStateLoading.h in Headers */,
-				E3C0D30DA5CF1DA548C7C535F49EE744 /* ReachStateUnloaded.h in Headers */,
-				FFE7D38A2B071F8177163C58F2496269 /* ReachStateUnReachable.h in Headers */,
-				F6E7049A885DB0E87581A4B6A7D314DB /* ReachStateWIFI.h in Headers */,
-				039D6074A8C5E876E8279B4D60388E79 /* ReachStateWWAN.h in Headers */,
-				31C8F8DD2140F005B61B1459ADFA0036 /* RealReachability.h in Headers */,
+				D9C0B6C283927F572A8EFAFC73E08275 /* Pods-IIHTTPRequest_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,64 +644,64 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		603FC78618F648FECD24F7B6E9C7FBDF /* IIHTTPRequest */ = {
+		76E4047BDDFC8BC4683407251BEB49F1 /* II18N */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83F2B5F493501D69F5D99A5EC3C1C17F /* Build configuration list for PBXNativeTarget "IIHTTPRequest" */;
+			buildConfigurationList = E0A552D507F8284A17E43CB4A1FF8D79 /* Build configuration list for PBXNativeTarget "II18N" */;
 			buildPhases = (
-				B5E5D41AE8630D8323EB9077EE6085C6 /* Headers */,
-				B17CF6F45E6F4ADF89BDF56DE3D448BE /* Sources */,
-				7D8A44BB572A398F55634502A25FA861 /* Frameworks */,
-				112A59C80BF885BA86FF65FA5F1B61B1 /* Resources */,
+				5A0BC70504BDAE9691669134B6CB208E /* Headers */,
+				87E2EC78C58FA8849C9A801370DC3624 /* Sources */,
+				40658BD99E5B150AFA6D654DD3EA5875 /* Frameworks */,
+				F70B034A99EF963C51C5DBACEDCDA4B0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E70C0F81968442857CEE0610D06518BD /* PBXTargetDependency */,
 			);
-			name = IIHTTPRequest;
-			productName = IIHTTPRequest;
-			productReference = B50CAC1FCBC8B9461F4EF99C82E19F35 /* IIHTTPRequest.framework */;
+			name = II18N;
+			productName = II18N;
+			productReference = 55F2773E1CA342B4D43B35D5297644D6 /* II18N.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		942653A1766924AAA9681961C8848604 /* III18N */ = {
+		855DFABD6253AB62E177F72522A23E44 /* Pods-IIHTTPRequest_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 339B520DAB692F4D88FD9BE1D4C9D7C6 /* Build configuration list for PBXNativeTarget "III18N" */;
+			buildConfigurationList = D48D35C811640C980BF4A572E314A9A5 /* Build configuration list for PBXNativeTarget "Pods-IIHTTPRequest_Example" */;
 			buildPhases = (
-				4453D8C352B94F2753214CB6A7614BB0 /* Headers */,
-				41A967EBC49551B8C14B2E9FCC9FAD34 /* Sources */,
-				4038EB5B1056557C1EF19356BEC64B89 /* Frameworks */,
-				A7A6103D75E15D315D24796AE68B7995 /* Resources */,
+				86C65274FA495DB42A839CEC7A6CE897 /* Headers */,
+				C807A8249E4406F5F798408552E5ABE4 /* Sources */,
+				2A74AAF2F4414DC385E5E376FC8CFE48 /* Frameworks */,
+				DE86C419717C51253C24EE06CED25C95 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = III18N;
-			productName = III18N;
-			productReference = EC385D89E6BF07482757F2C0A9DAD5EF /* III18N.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E8C5EDABA19F4746473A5677D0D4063A /* Pods-IIHTTPRequest_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DC207E064CEDF48C6311466BE614BEAF /* Build configuration list for PBXNativeTarget "Pods-IIHTTPRequest_Example" */;
-			buildPhases = (
-				4E48709ECBABA408C76B4AC8560C5A75 /* Headers */,
-				7F005CF3338975E77F85CEA9EDF8D8DD /* Sources */,
-				6C0F3CDA3A2C2B3130EA47EEC9420BEE /* Frameworks */,
-				C1CD65A4B73AFC36D651490E5CA56028 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D69DDDB60465979AD8E269A44A464C71 /* PBXTargetDependency */,
-				DB22EED3F36B082D5EFBB047A8A26B4E /* PBXTargetDependency */,
+				EE5863B6C866135310D00EFDAF2F42B3 /* PBXTargetDependency */,
+				8D34E031FFB6A2938AF0D9E5526D8DF7 /* PBXTargetDependency */,
 			);
 			name = "Pods-IIHTTPRequest_Example";
 			productName = "Pods-IIHTTPRequest_Example";
-			productReference = D0F7672C148F36C255F8B059B48B4521 /* Pods_IIHTTPRequest_Example.framework */;
+			productReference = 82CF41AC5BEDABA1B8BB2E9CDC6CD0F3 /* Pods_IIHTTPRequest_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EE9B032916CB06127C7C144F98868E33 /* Pods-IIHTTPRequest_Tests */ = {
+		9D15CF4115902E0DE329DBEADBF7B084 /* IIHTTPRequest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C986555B1FEA90452834429B4EEE88F8 /* Build configuration list for PBXNativeTarget "IIHTTPRequest" */;
+			buildPhases = (
+				340E59544031D58751F56AE737C40FA9 /* Headers */,
+				A01F7522B1E20C8527C323914A91DEDA /* Sources */,
+				AAFCDD6DBFFF20C7544D072B430EAD20 /* Frameworks */,
+				8B634D8ED099562D9E5B7CB7AAA08ABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEB9AD141DB083176FA61B925D6B1FCA /* PBXTargetDependency */,
+			);
+			name = IIHTTPRequest;
+			productName = IIHTTPRequest;
+			productReference = 3077EA7531EDDB03FE5D9281ECD8F29F /* IIHTTPRequest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA7CE74413E270B7C129F2438E8F40B1 /* Pods-IIHTTPRequest_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A99DB0F6B610D2DE469A9A6CAA65663 /* Build configuration list for PBXNativeTarget "Pods-IIHTTPRequest_Tests" */;
 			buildPhases = (
@@ -717,7 +717,7 @@
 			);
 			name = "Pods-IIHTTPRequest_Tests";
 			productName = "Pods-IIHTTPRequest_Tests";
-			productReference = 41F5AD8247EB5625F7CB0A997863026D /* Pods_IIHTTPRequest_Tests.framework */;
+			productReference = 0CB12277C186E6F230420529AA272333 /* Pods_IIHTTPRequest_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -737,27 +737,20 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 611FD5E0179885C46223D7DCB559EF0A /* Products */;
+			productRefGroup = 799DED87B64DE434CD19F462BE800D49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				603FC78618F648FECD24F7B6E9C7FBDF /* IIHTTPRequest */,
-				942653A1766924AAA9681961C8848604 /* III18N */,
-				E8C5EDABA19F4746473A5677D0D4063A /* Pods-IIHTTPRequest_Example */,
-				EE9B032916CB06127C7C144F98868E33 /* Pods-IIHTTPRequest_Tests */,
+				76E4047BDDFC8BC4683407251BEB49F1 /* II18N */,
+				9D15CF4115902E0DE329DBEADBF7B084 /* IIHTTPRequest */,
+				855DFABD6253AB62E177F72522A23E44 /* Pods-IIHTTPRequest_Example */,
+				AA7CE74413E270B7C129F2438E8F40B1 /* Pods-IIHTTPRequest_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		112A59C80BF885BA86FF65FA5F1B61B1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7A6103D75E15D315D24796AE68B7995 /* Resources */ = {
+		8B634D8ED099562D9E5B7CB7AAA08ABB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -771,7 +764,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1CD65A4B73AFC36D651490E5CA56028 /* Resources */ = {
+		DE86C419717C51253C24EE06CED25C95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70B034A99EF963C51C5DBACEDCDA4B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -789,85 +789,85 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41A967EBC49551B8C14B2E9FCC9FAD34 /* Sources */ = {
+		87E2EC78C58FA8849C9A801370DC3624 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA5CFBCF4D010D9D38C7FDAB0A739624 /* III18N-dummy.m in Sources */,
-				DE995D1EB0219AA74C643E5EF496A409 /* III18NService.swift in Sources */,
-				4CD858E48D5AD5CF85BC47DB4C53B104 /* IIL18NEnum.swift in Sources */,
-				3724CED8C19A2F8C6DC2F265A3859E93 /* IMPI18N.m in Sources */,
+				CF60E377D44A283C9EA9277FE4510F45 /* II18N-dummy.m in Sources */,
+				C5F30EC254E43E5D60236F247EFA91BD /* III18NService.swift in Sources */,
+				A1DD27F28D0FC68B9B20209D9674CEFB /* IIL18NEnum.swift in Sources */,
+				E8E4C9A75D260D72D3A23DAE54A6E226 /* IMPI18N.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F005CF3338975E77F85CEA9EDF8D8DD /* Sources */ = {
+		A01F7522B1E20C8527C323914A91DEDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5021BD6D642A23504D2ADC9B7436DAF8 /* Pods-IIHTTPRequest_Example-dummy.m in Sources */,
+				4AAFB85FDE783F87C514CDA7BBC8CEB5 /* AFError.swift in Sources */,
+				4DFC9E0B9971509DA53E13998EB4BF0E /* Alamofire.swift in Sources */,
+				91B8FCF7440A13124F726C1142D12319 /* Connectivity.swift in Sources */,
+				9C7A551BA7911CDF7CFC28C4060975CA /* ConnectivityFramework.swift in Sources */,
+				DEB9E11BA5DFC23BA8C51C5162DAE93B /* ConnectivityPercentage.swift in Sources */,
+				45308DA65D092610135F84F28E8EB659 /* ConnectivityResponseValidationMode.swift in Sources */,
+				D53BF449A1A01AD6DBCFDF48AF99BA42 /* ConnectivityResponseValidator.swift in Sources */,
+				85593CC442C5655853FC84832D1FDEBC /* ConnectivityStatus.swift in Sources */,
+				5C67D4B9B6B9A8370E14C81447C05E63 /* DispatchQueue+Alamofire.swift in Sources */,
+				5287DA8CCEF768AAB64E984E1B53074E /* FSMEngine.m in Sources */,
+				4779458AAE9F097520BAE4BA9E84554A /* FSMStateUtil.m in Sources */,
+				6CC457516306DA86C02CC2ADED18FC00 /* GetRefreshTokenFunction.m in Sources */,
+				0DB2EDCCDD1E9E34FC1DC47F70232229 /* IHTTPHeaderAndParams.swift in Sources */,
+				32E2B327B17A9CD12A59C7B8E5FEB4AF /* IHTTPProgressAFNCode.swift in Sources */,
+				2E81AB6E076368930C23FEDB22497928 /* IIHTTPErrorInfo.swift in Sources */,
+				EBC3D159B5529C3825F5638936AEF5AC /* IIHTTPGCDUtility.swift in Sources */,
+				0A34A9649A21A26BC6C5C8AD01FBCC46 /* IIHTTPImageRequest.swift in Sources */,
+				5B9534093918B05A32F2885CC44E4BAA /* IIHTTPModuleDoor.swift in Sources */,
+				427DB55AEF5557BC07D0C12C7F762FD6 /* IIHTTPNetWork.swift in Sources */,
+				435A8375A98A52F9638C95A705CA5F4B /* IIHTTPNetWorkUtility.swift in Sources */,
+				32A425A7CA8955663898AAD44DA6EAD1 /* IIHTTPNetWorkUtilityOC.m in Sources */,
+				0C0E05FF833E18EC0EF9B25DA25E8082 /* IIHTTPOCResponse.swift in Sources */,
+				067B080AFDC1AD4634BEED5F41169338 /* IIHTTPRequest-dummy.m in Sources */,
+				87C3F88E1DAF999F22031DF1536AA96C /* IIHTTPRequest.swift in Sources */,
+				DDFA1717274ACC05F3EDCC8517CE7900 /* IIHTTPRequestErrorProgress.swift in Sources */,
+				7FF4E29A170AB51F9420FC599155C7C6 /* IIHTTPRequestEunmList.swift in Sources */,
+				A099725B36551328CD6D19236A565F2E /* IIHTTPRequestExtension.swift in Sources */,
+				7A83761339FB615D87F92437BFBB58C2 /* IIHTTPRequestFactory.swift in Sources */,
+				59220297CC913252E9D02542E260AB07 /* IIHTTPRequestFather.swift in Sources */,
+				8F4885346D8CEF019C447306DBB7CF46 /* IIHTTPRequestStatusCodeProgress.swift in Sources */,
+				EBB536F61B1AB997BE7F0BD7AFD30775 /* LocalConnection.m in Sources */,
+				D20C085DC540BEB9FE77457EF6C2D670 /* MultipartFormData.swift in Sources */,
+				A09E18E87FAC0064FE77A720CF3B7FA8 /* NetworkReachabilityManager.swift in Sources */,
+				496C99D3086294C9E5006A08664CEC81 /* NotificationNameAdditions.swift in Sources */,
+				286E2B38CD5A39D6FE788A4B1596769E /* Notifications.swift in Sources */,
+				31F48F1D917F97C431FF1F013219B58B /* ParameterEncoding.swift in Sources */,
+				DCC72DAA8820213246B4C46D64452E4D /* PingFoundation.m in Sources */,
+				2A4507D06EB131ABADD2E410B3C88E80 /* PingHelper.m in Sources */,
+				EFF434F6819C53FECD0D677AF2812F37 /* Reachability.m in Sources */,
+				361A7CF27812D5258790A4C32E2F6E9D /* ReachState.m in Sources */,
+				D8A89FC73B526D3D4B6815FC5D57F601 /* ReachStateLoading.m in Sources */,
+				B54B51F7813A20089DFC811291DD4239 /* ReachStateUnloaded.m in Sources */,
+				31D74C711DD7B6E77D7DE835D06E4A58 /* ReachStateUnReachable.m in Sources */,
+				4030A0CB795EFEB0045D5D1119B208C7 /* ReachStateWIFI.m in Sources */,
+				BF7D69B27D57F60B2D60253EE7D81C03 /* ReachStateWWAN.m in Sources */,
+				64BA1856875441025DD75CC910FD36AE /* RealReachability.m in Sources */,
+				8379F188C3D8A7A43982B17D2B5B3BDF /* Request.swift in Sources */,
+				5B8422DC2B01B1283F5D9BA7EC7B582A /* Response.swift in Sources */,
+				1F6490E492F6EA2B9D59407FBEEBB478 /* ResponseSerialization.swift in Sources */,
+				2CC19D6E745EC73999DFDB2E5D222C7A /* Result.swift in Sources */,
+				CBB114241BA38C39D06805C84E31506E /* ServerTrustPolicy.swift in Sources */,
+				C103EF42C588E41B0430CF3D7E53A377 /* SessionDelegate.swift in Sources */,
+				CB64C77C385E8E2BD64E865C50293E8A /* SessionManager.swift in Sources */,
+				E78C317B2C0EBF50A0453179766323DC /* TaskDelegate.swift in Sources */,
+				70F5ED7752045036984A54147EE40B7A /* Timeline.swift in Sources */,
+				F77FBEE934ED0274278A5C3E30635FCC /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B17CF6F45E6F4ADF89BDF56DE3D448BE /* Sources */ = {
+		C807A8249E4406F5F798408552E5ABE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C5B9283D0260FCF408D0AFFA107ABA1 /* AFError.swift in Sources */,
-				A6DFE3C113DB832FFB5CA99FE2818A78 /* Alamofire.swift in Sources */,
-				796E2FCC6EAB0112D2962E7A0C6C4F49 /* Connectivity.swift in Sources */,
-				BAB3B5714977AB948268FBEF787A3CA4 /* ConnectivityFramework.swift in Sources */,
-				C655C6D75B4CBBA1DEBED690E51E688A /* ConnectivityPercentage.swift in Sources */,
-				1AA3A2C9118DD9257C5C7334A32553CD /* ConnectivityResponseValidationMode.swift in Sources */,
-				61F042B6782D0EEE291FD1BEED6103E8 /* ConnectivityResponseValidator.swift in Sources */,
-				E89CD4024ECDD2EBE73CEF33FA8B2320 /* ConnectivityStatus.swift in Sources */,
-				BCDD79391212264D1D406FFF079C9BE1 /* DispatchQueue+Alamofire.swift in Sources */,
-				8C338F653CB45E793987AD942C3AE15F /* FSMEngine.m in Sources */,
-				15D814B68D0B081C29404A987024F9BF /* FSMStateUtil.m in Sources */,
-				AA30656E7ECA7ECD8F7697AF79C1874D /* GetRefreshTokenFunction.m in Sources */,
-				FBA2A68341CAA9DCB11FE482E7C140D2 /* IHTTPHeaderAndParams.swift in Sources */,
-				457AB93B0E8898258F46FC46BA6AC0B7 /* IHTTPProgressAFNCode.swift in Sources */,
-				17D7141E02B446F0DB4EF09305DA5518 /* IIHTTPErrorInfo.swift in Sources */,
-				6965BD2DD6323B2DF6AAADD4EE2258CB /* IIHTTPGCDUtility.swift in Sources */,
-				DEC72435C7D468E392AD509A86C8696C /* IIHTTPImageRequest.swift in Sources */,
-				01A0146181F03F7CA54E9C02006189A0 /* IIHTTPModuleDoor.swift in Sources */,
-				53DEDFAAE99C62C91AEA0A56CE259223 /* IIHTTPNetWork.swift in Sources */,
-				85A5D14C9AF9829F6C345201CD86A2FD /* IIHTTPNetWorkUtility.swift in Sources */,
-				F8A1250737A169EDE474F87CCF3524A2 /* IIHTTPNetWorkUtilityOC.m in Sources */,
-				7E5142D86EDFAD51502B48E6BD71B60D /* IIHTTPOCResponse.swift in Sources */,
-				A8538358CFF5FCBDA32E820CA4213EFA /* IIHTTPRequest-dummy.m in Sources */,
-				2C2B563C00EDB09A90DD815DE0712E62 /* IIHTTPRequest.swift in Sources */,
-				2CA8B02BFAEE39A9CE9FA392031608C7 /* IIHTTPRequestErrorProgress.swift in Sources */,
-				3343BA466453A5889D97ED02EABD315C /* IIHTTPRequestEunmList.swift in Sources */,
-				99AE6F78351212A18A105F2F0E6AE543 /* IIHTTPRequestExtension.swift in Sources */,
-				FB6C5A99C30B2BDAD95DB70F21750108 /* IIHTTPRequestFactory.swift in Sources */,
-				6FF0D18C8DB970532D5E0410B144343F /* IIHTTPRequestFather.swift in Sources */,
-				A33BB17CBA03C872F249ED585E113E15 /* IIHTTPRequestStatusCodeProgress.swift in Sources */,
-				8E07B086E2A176443DB08C05EE579968 /* LocalConnection.m in Sources */,
-				E7E293F72D43632972B38D4A60E1EE55 /* MultipartFormData.swift in Sources */,
-				CE95D806F8A13609EC447D4E9F4CFCD5 /* NetworkReachabilityManager.swift in Sources */,
-				7FB66B69C1639E9C47BE6DEC51C7CF95 /* NotificationNameAdditions.swift in Sources */,
-				CFE2CC98C374E246104BF272103A0E3A /* Notifications.swift in Sources */,
-				952F8611FC1C3C0B53A9685901357AD5 /* ParameterEncoding.swift in Sources */,
-				B5E2A46BBF266E0814ACE93C7D584D4B /* PingFoundation.m in Sources */,
-				5123BF7B5869FBA44D0284985CB5DA27 /* PingHelper.m in Sources */,
-				97B7ECFCF49B8578CD47A1ADC6FD3F96 /* Reachability.m in Sources */,
-				A78D21682EB4CD880CF4C5D8B7BFE61B /* ReachState.m in Sources */,
-				4083046F96F5654AD535CC61533DA57D /* ReachStateLoading.m in Sources */,
-				62E8B55E5889F57A8FABD65ED2DA9B30 /* ReachStateUnloaded.m in Sources */,
-				8B66D28D893E47D3736D7F2D376E46F1 /* ReachStateUnReachable.m in Sources */,
-				B904B20B178C460D7932D46A6D3516A6 /* ReachStateWIFI.m in Sources */,
-				98CD9548EA16921BCA450C9F8B766008 /* ReachStateWWAN.m in Sources */,
-				7DE9A233D0508ACF060254E897697107 /* RealReachability.m in Sources */,
-				EAFD276846056CDE912F186FE071EF37 /* Request.swift in Sources */,
-				8978F7A8E534CAC4E2F4AB1BAF4C5BB4 /* Response.swift in Sources */,
-				D6BFDBAEEB7A062F156C719304584E81 /* ResponseSerialization.swift in Sources */,
-				B759DF0B82B2431ACC5BFABB77B96D62 /* Result.swift in Sources */,
-				BAFC7AF2D2BCCDE653731D8A1F463930 /* ServerTrustPolicy.swift in Sources */,
-				3C2F4DAA99867AF82473EE536B2ADE28 /* SessionDelegate.swift in Sources */,
-				AB484D93A85C03BD05C2C1C5A512871D /* SessionManager.swift in Sources */,
-				1CB29BE3EBB951DB9072003683063C86 /* TaskDelegate.swift in Sources */,
-				EE2C09EC10C330CFB843DA4584E5ADBA /* Timeline.swift in Sources */,
-				BE4D550689D17C0BC65FA73D84D986D8 /* Validation.swift in Sources */,
+				7430F9F832D5B9EC4A392EB1C477B4D5 /* Pods-IIHTTPRequest_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -877,33 +877,33 @@
 		284AFDD9100764FDE3D5A1A663C71E9A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-IIHTTPRequest_Example";
-			target = E8C5EDABA19F4746473A5677D0D4063A /* Pods-IIHTTPRequest_Example */;
+			target = 855DFABD6253AB62E177F72522A23E44 /* Pods-IIHTTPRequest_Example */;
 			targetProxy = C226DD6BC05C1844CCA9D2EBA61CBE9A /* PBXContainerItemProxy */;
 		};
-		D69DDDB60465979AD8E269A44A464C71 /* PBXTargetDependency */ = {
+		8D34E031FFB6A2938AF0D9E5526D8DF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IIHTTPRequest;
-			target = 603FC78618F648FECD24F7B6E9C7FBDF /* IIHTTPRequest */;
-			targetProxy = 52EA5B3BC17F1CD4846772E7AB20F227 /* PBXContainerItemProxy */;
+			target = 9D15CF4115902E0DE329DBEADBF7B084 /* IIHTTPRequest */;
+			targetProxy = 4BB82F21E5E36FA5576391B81D29AC45 /* PBXContainerItemProxy */;
 		};
-		DB22EED3F36B082D5EFBB047A8A26B4E /* PBXTargetDependency */ = {
+		EE5863B6C866135310D00EFDAF2F42B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = III18N;
-			target = 942653A1766924AAA9681961C8848604 /* III18N */;
-			targetProxy = 7C271703E97B4CCAFF6B92145206197F /* PBXContainerItemProxy */;
+			name = II18N;
+			target = 76E4047BDDFC8BC4683407251BEB49F1 /* II18N */;
+			targetProxy = 087D037112316AE69C38AE8254E5D0DD /* PBXContainerItemProxy */;
 		};
-		E70C0F81968442857CEE0610D06518BD /* PBXTargetDependency */ = {
+		EEB9AD141DB083176FA61B925D6B1FCA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = III18N;
-			target = 942653A1766924AAA9681961C8848604 /* III18N */;
-			targetProxy = 0C0DC5D0F58733CC9A715218E241A2AA /* PBXContainerItemProxy */;
+			name = II18N;
+			target = 76E4047BDDFC8BC4683407251BEB49F1 /* II18N */;
+			targetProxy = 047EDA18998CF989821173BE4105314B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1AC417FDC5FA27AAB6E4F45F3B9187CF /* Debug */ = {
+		1E58201EE94D68B8D0689D5A44E570C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBF0472F2D33A070C36DC05184F2EA05 /* Pods-IIHTTPRequest_Example.debug.xcconfig */;
+			baseConfigurationReference = 39955A947E0E838DA3BA50605730CF26 /* Pods-IIHTTPRequest_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -933,42 +933,10 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		2059BB9F37AEA17FD19E3E1BD4ED209F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11B6FEAA65F28F771A27C93B873563DE /* III18N.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/III18N/III18N-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/III18N/III18N-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/III18N/III18N.modulemap";
-				PRODUCT_MODULE_NAME = III18N;
-				PRODUCT_NAME = III18N;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		2807F585A8FBC41D6C8FF539402985D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6F9688164C96E18C4960C3F1705E3A6 /* Pods-IIHTTPRequest_Tests.debug.xcconfig */;
+			baseConfigurationReference = EE7C102896A398DD6E837391389E419B /* Pods-IIHTTPRequest_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -999,106 +967,9 @@
 			};
 			name = Debug;
 		};
-		874BDD81E8A696BC7A22C4E2155108CF /* Debug */ = {
+		2FA671B05B7981726490D4504B7801C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B04B4E99BD3F024D63E5A449AF005E87 /* IIHTTPRequest.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/IIHTTPRequest/IIHTTPRequest-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/IIHTTPRequest/IIHTTPRequest-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/IIHTTPRequest/IIHTTPRequest.modulemap";
-				PRODUCT_MODULE_NAME = IIHTTPRequest;
-				PRODUCT_NAME = IIHTTPRequest;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8E089CBF84DC5241952FC4D23FA8D369 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B04B4E99BD3F024D63E5A449AF005E87 /* IIHTTPRequest.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/IIHTTPRequest/IIHTTPRequest-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/IIHTTPRequest/IIHTTPRequest-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/IIHTTPRequest/IIHTTPRequest.modulemap";
-				PRODUCT_MODULE_NAME = IIHTTPRequest;
-				PRODUCT_NAME = IIHTTPRequest;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9A3C759B5260BB56CA883688DADBF0B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 984839D766E8341BAC1D556D71D4CE4B /* Pods-IIHTTPRequest_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-IIHTTPRequest_Tests/Pods-IIHTTPRequest_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-IIHTTPRequest_Tests/Pods-IIHTTPRequest_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A604A63CE5CE9C68358C80A9174C3E28 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CAF70E8DA246C9399FB39BBD47AC76F /* Pods-IIHTTPRequest_Example.release.xcconfig */;
+			baseConfigurationReference = FFBB63228F134F92BEAEAE8187F16969 /* Pods-IIHTTPRequest_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1116,6 +987,103 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-IIHTTPRequest_Example/Pods-IIHTTPRequest_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7E61505521F32075DA0EE2F3CF24A839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB8633EFD83AA0CBF786EFC01A31236 /* II18N.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/II18N/II18N-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/II18N/II18N-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/II18N/II18N.modulemap";
+				PRODUCT_MODULE_NAME = II18N;
+				PRODUCT_NAME = II18N;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9676B7F4A0DCF09C0FAC8E57A483EC82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B28C707AE60DB1B4459D774B881D0B0 /* IIHTTPRequest.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IIHTTPRequest/IIHTTPRequest-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IIHTTPRequest/IIHTTPRequest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IIHTTPRequest/IIHTTPRequest.modulemap";
+				PRODUCT_MODULE_NAME = IIHTTPRequest;
+				PRODUCT_NAME = IIHTTPRequest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9A3C759B5260BB56CA883688DADBF0B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 211F0CE8B08F42E0D7699F28B6D5E15F /* Pods-IIHTTPRequest_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IIHTTPRequest_Tests/Pods-IIHTTPRequest_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IIHTTPRequest_Tests/Pods-IIHTTPRequest_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1194,9 +1162,9 @@
 			};
 			name = Debug;
 		};
-		CFD464D8699F53B757F4B018A428A512 /* Debug */ = {
+		BFCF18A47B15B3DF367FD1C0B58C4F52 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11B6FEAA65F28F771A27C93B873563DE /* III18N.xcconfig */;
+			baseConfigurationReference = 4B28C707AE60DB1B4459D774B881D0B0 /* IIHTTPRequest.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1207,18 +1175,50 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/III18N/III18N-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/III18N/III18N-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/IIHTTPRequest/IIHTTPRequest-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IIHTTPRequest/IIHTTPRequest-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/III18N/III18N.modulemap";
-				PRODUCT_MODULE_NAME = III18N;
-				PRODUCT_NAME = III18N;
+				MODULEMAP_FILE = "Target Support Files/IIHTTPRequest/IIHTTPRequest.modulemap";
+				PRODUCT_MODULE_NAME = IIHTTPRequest;
+				PRODUCT_NAME = IIHTTPRequest;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E1A411303C236F3BC44995420C84C2A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB8633EFD83AA0CBF786EFC01A31236 /* II18N.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/II18N/II18N-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/II18N/II18N-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/II18N/II18N.modulemap";
+				PRODUCT_MODULE_NAME = II18N;
+				PRODUCT_NAME = II18N;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1288,15 +1288,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		339B520DAB692F4D88FD9BE1D4C9D7C6 /* Build configuration list for PBXNativeTarget "III18N" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CFD464D8699F53B757F4B018A428A512 /* Debug */,
-				2059BB9F37AEA17FD19E3E1BD4ED209F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1315,20 +1306,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83F2B5F493501D69F5D99A5EC3C1C17F /* Build configuration list for PBXNativeTarget "IIHTTPRequest" */ = {
+		C986555B1FEA90452834429B4EEE88F8 /* Build configuration list for PBXNativeTarget "IIHTTPRequest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				874BDD81E8A696BC7A22C4E2155108CF /* Debug */,
-				8E089CBF84DC5241952FC4D23FA8D369 /* Release */,
+				9676B7F4A0DCF09C0FAC8E57A483EC82 /* Debug */,
+				BFCF18A47B15B3DF367FD1C0B58C4F52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC207E064CEDF48C6311466BE614BEAF /* Build configuration list for PBXNativeTarget "Pods-IIHTTPRequest_Example" */ = {
+		D48D35C811640C980BF4A572E314A9A5 /* Build configuration list for PBXNativeTarget "Pods-IIHTTPRequest_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AC417FDC5FA27AAB6E4F45F3B9187CF /* Debug */,
-				A604A63CE5CE9C68358C80A9174C3E28 /* Release */,
+				1E58201EE94D68B8D0689D5A44E570C9 /* Debug */,
+				2FA671B05B7981726490D4504B7801C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0A552D507F8284A17E43CB4A1FF8D79 /* Build configuration list for PBXNativeTarget "II18N" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A411303C236F3BC44995420C84C2A7 /* Debug */,
+				7E61505521F32075DA0EE2F3CF24A839 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

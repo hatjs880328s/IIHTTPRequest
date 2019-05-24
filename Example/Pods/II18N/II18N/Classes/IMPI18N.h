@@ -17,6 +17,8 @@
 +(void)initUserLanguage;
 //获取应用当前语言
 +(NSString *)userLanguage;
+//获取应用当前语言是否是英文
++(BOOL)isENLanguage;
 //设置当前语言
 +(void)setUserlanguage:(NSString *)language;
 //获取当前Localde

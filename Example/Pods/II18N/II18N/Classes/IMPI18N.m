@@ -85,6 +85,15 @@ static NSBundle *bundle = nil;
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
+/// 是否是英文语言
++(BOOL)isENLanguage {
+    NSString *languageStr = [[NSUserDefaults standardUserDefaults] objectForKey:@"userLanguage"];
+    if ([languageStr isEqualToString:@"en"]) {
+        return true;
+    }
+    return false;
+}
+
 //获取当前Localde
 + (NSLocale *)currentLocal {
      return [[NSLocale alloc] initWithLocaleIdentifier:[self userLanguage]];

@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-@_exported import III18N
+@_exported import II18N
 
 // ⑤异常处理类
 open class IIHTTPRequestErrorProgress: NSObject {
