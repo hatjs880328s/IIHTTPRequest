@@ -79,11 +79,11 @@ extension IIHTTPRequestErrorProgress {
     /// 刷新token操作
     func refreshToken() {
         let oldAT = self.response.request?.allHTTPHeaderFields?["Authorization"] ?? ""
-        IIHTTPRefreshATModule.refreshToken(originAT: oldAT, directRequest: {
+        IIHTTPRefreshATModule.refreshToken(originAT: oldAT, showAlertInfo: false, directRequest: {
             self.reRequest()
         }, successAction: { (response) in
             self.reRequest()
-        }) { (shouldLogOut) in
+        }) { (shouldLogOut, _) in
             if !shouldLogOut { return }
             self.moreThanoneUserLoginwithsameoneAPPID()
         }

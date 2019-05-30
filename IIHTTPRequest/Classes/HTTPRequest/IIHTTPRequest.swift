@@ -156,12 +156,13 @@ open class IIHTTPRequest: IIHTTPRequestFather {
     ///   - successAction: yes
     ///   - errorAction: no
     @objc public class func realRefreshToken(refreshTokenInfo: String,
+                                             showAlertInfo: Bool,
                                            requestURL: String,
                                            successAction:@escaping (_ response: ResponseClass) -> Void,
                                            errorAction:@escaping (_ errorType: ErrorInfo) -> Void) {
         let params = IIHTTPHeaderAndParams.getRefreshTokenParams(refreshTokenInfo: refreshTokenInfo)
         let header = IIHTTPHeaderAndParams.getRefreshTokenHeader(id: IIHTTPModuleDoor.urlParams.authHeaderSecret, secret: IIHTTPModuleDoor.urlParams.authHeaderSecret)
-        IIHTTPRequest.startRequest(method: .post, url: requestURL, params: params, header: header, timeOut: 30, encodingType: .urlEncoding, requestType: .refreshToken, successAction: { (response) in
+        IIHTTPRequest.startRequest(showAlertInfo: showAlertInfo, method: .post, url: requestURL, params: params, header: header, timeOut: 30, encodingType: .urlEncoding, requestType: .refreshToken, successAction: { (response) in
             successAction(response)
         }) { (error) in
             errorAction(error)
