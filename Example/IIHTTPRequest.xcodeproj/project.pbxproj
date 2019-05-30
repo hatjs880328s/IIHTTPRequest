@@ -269,13 +269,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-IIHTTPRequest_Example/Pods-IIHTTPRequest_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/II18N/II18N.framework",
 				"${BUILT_PRODUCTS_DIR}/IIHTTPRequest/IIHTTPRequest.framework",
+				"${BUILT_PRODUCTS_DIR}/III18N/III18N.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/II18N.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IIHTTPRequest.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/III18N.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

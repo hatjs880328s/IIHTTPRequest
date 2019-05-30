@@ -80,7 +80,10 @@ open class IIHTTPRequest: IIHTTPRequestFather {
         let httpHeader = IIHTTPHeaderAndParams.analyzeHTTPHeader(header)
         let httpMethod = method.changeToAlaMethod()
         let requestManager = IIHTTPHeaderAndParams.redirectURL(progress: shouldGetRedirect)
-        let realEncoding = method == .get ? ParamsSeriType.urlEncoding : ParamsSeriType.jsonEncoding
+        var realEncoding: ParamsSeriType = encodingType
+        if method == .get {
+            realEncoding = .urlEncoding
+        }
         let httpRencoding = IIHTTPHeaderAndParams.getTrueEncodingType(param: realEncoding)
         do {
             let req = try URLRequest(url: URL(string: url)!, method: httpMethod, headers: httpHeader)
@@ -143,8 +146,8 @@ open class IIHTTPRequest: IIHTTPRequestFather {
             errorAction(error)
         }
     }
-    
-    /// 刷新token[全局队列中处理]
+
+    /// 刷新token[被IIHTTPRefreshATModule调用]
     ///
     /// - Parameters:
     ///   - refreshTokenInfo: 旧token ^RT
@@ -152,31 +155,13 @@ open class IIHTTPRequest: IIHTTPRequestFather {
     ///   - secret: client-secret
     ///   - successAction: yes
     ///   - errorAction: no
-    open class func refreshToken(id: String,
-                                 secret: String,
-                                 successAction:@escaping (_ response: ResponseClass) -> Void,
-                                 errorAction:@escaping (_ errorType: ErrorInfo) -> Void) {
-            let refreshToken = IIHTTPModuleDoor.dynamicParams.impAccessRT//IMPAccessTokenModel.activeToken()?.refreshToken
-            if refreshToken == nil { return }
-            self.realRefreshToken(refreshTokenInfo: refreshToken!, id: id, secret: secret, successAction: successAction, errorAction: errorAction)
-    }
-    
-    /// private刷新token
-    ///
-    /// - Parameters:
-    ///   - refreshTokenInfo: 旧token ^RT
-    ///   - id: client-id
-    ///   - secret: client-secret
-    ///   - successAction: yes
-    ///   - errorAction: no
-    @objc open class func realRefreshToken(refreshTokenInfo: String,
-                                           id: String,
-                                           secret: String,
+    @objc public class func realRefreshToken(refreshTokenInfo: String,
+                                           requestURL: String,
                                            successAction:@escaping (_ response: ResponseClass) -> Void,
                                            errorAction:@escaping (_ errorType: ErrorInfo) -> Void) {
         let params = IIHTTPHeaderAndParams.getRefreshTokenParams(refreshTokenInfo: refreshTokenInfo)
-        let header = IIHTTPHeaderAndParams.getRefreshTokenHeader(id: id, secret: secret)
-        IIHTTPRequest.startRequest(method: .post, url: IIHTTPModuleDoor.dynamicParams.oauthPath, params: params, header: header, timeOut: 30, encodingType: .urlEncoding, requestType: .refreshToken, successAction: { (response) in
+        let header = IIHTTPHeaderAndParams.getRefreshTokenHeader(id: IIHTTPModuleDoor.urlParams.authHeaderSecret, secret: IIHTTPModuleDoor.urlParams.authHeaderSecret)
+        IIHTTPRequest.startRequest(method: .post, url: requestURL, params: params, header: header, timeOut: 30, encodingType: .urlEncoding, requestType: .refreshToken, successAction: { (response) in
             successAction(response)
         }) { (error) in
             errorAction(error)

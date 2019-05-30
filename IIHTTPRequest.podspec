@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IIHTTPRequest'
-  s.version          = '1.1.3'
+  s.version          = '1.1.4'
   s.summary          = 'IIHTTPRequest'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/hatjs880328s/IIHTTPRequest.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.swift_version = '5.0'
+  s.swift_version = '4.2'
   s.ios.deployment_target = '8.0'
 
   # s.source_files = 'IIHTTPRequest/Classes/**/*'
@@ -62,5 +62,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'II18N'
+  s.dependency 'III18N'
 end

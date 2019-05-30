@@ -57,7 +57,7 @@ open class ResponseClass: NSObject {
         super.init()
         self.setData(data)
         if errorType != nil {
-            self.errorValue = ErrorInfo(data: response.data, type: errorType!)
+            self.errorValue = ErrorInfo(data: response, type: errorType!)
         }
     }
     
@@ -79,9 +79,9 @@ open class ResponseHTML: ResponseClass {
     override func setData(_ data: DataResponse<Any>) {
         super.setData(data)
         if data.response?.statusCode == ResponseStatusCode.code400.rawValue {
-            self.errorValue = ErrorInfo(data: response.data, type: ERRORMsgType.code400BodyHtml)
+            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.code400BodyHtml)
         } else {
-            self.errorValue = ErrorInfo(data: response.data, type: ERRORMsgType.unknowError)
+            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError)
         }
     }
 }
@@ -113,7 +113,7 @@ open class ResponseJSON: ResponseClass {
             if errMsg == "" {
                 emptyStr = III18NEnum.http_request_error.rawValue
             }
-            self.errorValue = ErrorInfo(data: response.data, type: ERRORMsgType.businessErrorMsg, errorMsg: errMsg)
+            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.businessErrorMsg, errorMsg: errMsg)
             self.errorValue.setLv2ErrorCode(with: "\(data["code"] ?? emptyStr)")
             return true
         } else {

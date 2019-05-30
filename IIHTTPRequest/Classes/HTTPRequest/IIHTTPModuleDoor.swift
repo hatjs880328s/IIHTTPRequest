@@ -108,6 +108,15 @@ public class IIHTTPModuleDynamicParams: NSObject {
         return realAction()
     }
 
+    /// 刷新token地址数组
+    var refreshTokenPath: [String] {
+        guard let realAction = getRefreshPathAction else { return [] }
+        return realAction()
+    }
+
+    /// 刷新token地址数组
+    @objc public var getRefreshPathAction: (() -> [String])?
+
     /// auth - path
     @objc public var getAuthPathAction: (() -> String)?
 

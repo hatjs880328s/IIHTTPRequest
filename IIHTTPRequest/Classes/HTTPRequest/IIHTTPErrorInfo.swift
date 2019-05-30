@@ -12,20 +12,20 @@ import Foundation
 public class ErrorInfo: NSObject {
     
     /// 这里给初值完全是因为让oc能调用到
-    public var errorType: ERRORMsgType = ERRORMsgType.unknowError
+    @objc public var errorType: ERRORMsgType = ERRORMsgType.unknowError
     
-    public var errorMsg: String!
+    @objc public var errorMsg: String!
     
     /// 第二级错误码[400]下的Error_400_72001
-    public var lv2ErrorCode: String!
+    @objc public var lv2ErrorCode: String!
 
     /// 小助手url地址
-    public var wifiHelperURL: URL?
+    @objc public var wifiHelperURL: URL?
 
     /// 返回数据
-    public var responseData: Data?
+    public var responseData: DataResponse<Any>?
     
-    init(data: Data?, type: ERRORMsgType, errorMsg: String? = nil) {
+    init(data: DataResponse<Any>?, type: ERRORMsgType, errorMsg: String? = nil) {
         self.errorType = type
         self.errorMsg = errorMsg
         self.responseData = data
