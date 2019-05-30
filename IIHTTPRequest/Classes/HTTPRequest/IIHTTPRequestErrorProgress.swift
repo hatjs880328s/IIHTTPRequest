@@ -126,12 +126,14 @@ extension IIHTTPRequestErrorProgress {
 
     /// 错误码为400 body数据类型为html，如果是refreshtoken则退出登录否则报异常
     func code400AndBodyHtmlProgress() {
-        if self.requestType == .refreshToken {
-            self.moreThanoneUserLoginwithsameoneAPPID()
-        } else {
-            if !showAlertInfo { return }
-            IIHTTPModuleDoor.dynamicParams.showToastAction?(getI18NStr(key: III18NEnum.http_request_error.rawValue))
-        }
+//        if self.requestType == .refreshToken {
+//            self.moreThanoneUserLoginwithsameoneAPPID()
+//        } else {
+//            if !showAlertInfo { return }
+//            IIHTTPModuleDoor.dynamicParams.showToastAction?(getI18NStr(key: III18NEnum.http_request_error.rawValue))
+//        }
+        if !showAlertInfo { return }
+        IIHTTPModuleDoor.dynamicParams.showToastAction?(getI18NStr(key: III18NEnum.http_request_error.rawValue))
     }
     
     /// 处理400 403 500的情况
