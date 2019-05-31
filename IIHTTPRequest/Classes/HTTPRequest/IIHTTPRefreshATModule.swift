@@ -1,12 +1,12 @@
 //
 //  *******************************************
-//  
+//
 //  IIHTTPRefreshATModule.swift
 //  IIHTTPRequest
 //
 //  Created by Noah_Shan on 2019/5/29.
 //  Copyright © 2018 Inpur. All rights reserved.
-//  
+//
 //  *******************************************
 //
 
@@ -38,9 +38,9 @@ import UIKit
     ///   - directRequest: 直接重新请求回调
     @objc public dynamic static func refreshToken(originAT: String,
                                                   showAlertInfo: Bool,
-                                          directRequest: @escaping () -> Void,
-                                          successAction:@escaping (_ response: ResponseClass) -> Void,
-                                          errorAction:@escaping (_ shouldLogOut: Bool, _ errorStr: String?) -> Void) {
+                                                  directRequest: @escaping () -> Void,
+                                                  successAction:@escaping (_ response: ResponseClass) -> Void,
+                                                  errorAction:@escaping (_ shouldLogOut: Bool, _ errorStr: String?) -> Void) {
 
         let refreshTokenStatusCode = self.shouldRefreshToken(oldAT: originAT)
         switch refreshTokenStatusCode {
@@ -87,9 +87,9 @@ extension IIHTTPRefreshATModule {
     ///   - errorAction: no
     @objc private dynamic static func realRefreshToken(originAT: String,
                                                        showAlertInfo: Bool,
-                                               requestATURLArr: [String],
-                                               successAction:@escaping (_ response: ResponseClass) -> Void,
-                                               errorAction:@escaping (_ shouldLogOut: Bool, _ errorStr: String?) -> Void) {
+                                                       requestATURLArr: [String],
+                                                       successAction:@escaping (_ response: ResponseClass) -> Void,
+                                                       errorAction:@escaping (_ shouldLogOut: Bool, _ errorStr: String?) -> Void) {
 
         let refreshToken = IIHTTPModuleDoor.dynamicParams.impAccessRT
 
@@ -115,10 +115,14 @@ extension IIHTTPRefreshATModule {
                     IIHTTPRequest.gcdSem.releaseSignal()
                     return
                 }
+                var logInfo = ""
+                if errInfo.responseData != nil {
+                    logInfo = "\(String(describing: errInfo.responseData))"
+                }
                 if responseStatusCode == ResponseStatusCode.code400.rawValue {
-                    errorAction(true, errInfo.responseData?.response?.description)
+                    errorAction(true, logInfo)
                 } else {
-                    errorAction(false, errInfo.responseData?.response?.description)
+                    errorAction(false, logInfo)
                 }
                 IIHTTPRequest.gcdSem.releaseSignal()
             } else {
