@@ -1,12 +1,12 @@
 //
 //  *******************************************
-//
+//  
 //  IIHTTPRefreshATModule.swift
 //  IIHTTPRequest
 //
 //  Created by Noah_Shan on 2019/5/29.
 //  Copyright © 2018 Inpur. All rights reserved.
-//
+//  
 //  *******************************************
 //
 
@@ -38,9 +38,9 @@ import UIKit
     ///   - directRequest: 直接重新请求回调
     @objc public dynamic static func refreshToken(originAT: String,
                                                   showAlertInfo: Bool,
-                                                  directRequest: @escaping () -> Void,
-                                                  successAction:@escaping (_ response: ResponseClass) -> Void,
-                                                  errorAction:@escaping (_ shouldLogOut: Bool, _ errorStr: String?) -> Void) {
+                                          directRequest: @escaping () -> Void,
+                                          successAction:@escaping (_ response: ResponseClass) -> Void,
+                                          errorAction:@escaping (_ shouldLogOut: Bool, _ errorStr: String?) -> Void) {
 
         let refreshTokenStatusCode = self.shouldRefreshToken(oldAT: originAT)
         switch refreshTokenStatusCode {
@@ -50,7 +50,7 @@ import UIKit
             directRequest()
         case .shouldRefresh:
             IIHTTPRequest.gcdSem.limitThreadCountAsyncProgress {
-                realRefreshToken(originAT: originAT, showAlertInfo: showAlertInfo, requestATURLArr: IIHTTPModuleDoor.dynamicParams.refreshTokenPath, successAction: successAction, errorAction: errorAction)
+                realRefreshToken(originAT: originAT, showAlertInfo: showAlertInfo, requestATURLArr: IIHTTPModuleDoor.dynamicParams.refreshTokenPath, directRequest: directRequest, successAction: successAction, errorAction: errorAction)
             }
         }
     }
@@ -87,9 +87,10 @@ extension IIHTTPRefreshATModule {
     ///   - errorAction: no
     @objc private dynamic static func realRefreshToken(originAT: String,
                                                        showAlertInfo: Bool,
-                                                       requestATURLArr: [String],
-                                                       successAction:@escaping (_ response: ResponseClass) -> Void,
-                                                       errorAction:@escaping (_ shouldLogOut: Bool, _ errorStr: String?) -> Void) {
+                                               requestATURLArr: [String],
+                                               directRequest: @escaping () -> Void,
+                                               successAction:@escaping (_ response: ResponseClass) -> Void,
+                                               errorAction:@escaping (_ shouldLogOut: Bool, _ errorStr: String?) -> Void) {
 
         let refreshToken = IIHTTPModuleDoor.dynamicParams.impAccessRT
 
@@ -99,6 +100,14 @@ extension IIHTTPRefreshATModule {
             IIHTTPRequest.gcdSem.releaseSignal()
             return
         }
+
+        // 在判定一次OLD NEW AT 是否相同:不同，直接request并返回；相同则请求新的AT
+        if shouldRefreshToken(oldAT: originAT) == .shouldDirectRequest {
+            directRequest()
+            IIHTTPRequest.gcdSem.releaseSignal()
+            return
+        }
+
         // 设置是否需要弹错误信息
         var realAlertInfo = showAlertInfo
         if requestATURLArr.count > 1 { realAlertInfo = false }
@@ -129,7 +138,7 @@ extension IIHTTPRefreshATModule {
                 //不是最后一个[这里不释放信号量]
                 var newURLArr = requestATURLArr
                 _ = newURLArr.removeFirst()
-                IIHTTPRefreshATModule.realRefreshToken(originAT: originAT, showAlertInfo: showAlertInfo, requestATURLArr: newURLArr, successAction: successAction, errorAction: errorAction)
+                IIHTTPRefreshATModule.realRefreshToken(originAT: originAT, showAlertInfo: showAlertInfo, requestATURLArr: newURLArr, directRequest: directRequest, successAction: successAction, errorAction: errorAction)
             }
         }
     }
