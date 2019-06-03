@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>IIHTTPRequest.xcscheme</key>
+		<key>II18N.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>III18N.xcscheme</key>
+		<key>IIHTTPRequest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

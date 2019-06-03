@@ -1,6 +1,6 @@
 {
   "name": "IIHTTPRequest",
-  "version": "1.1.4",
+  "version": "1.1.9",
   "summary": "IIHTTPRequest",
   "description": "IIHTTPRequest\n网络请求库SDK",
   "homepage": "https://github.com/hatjs880328s/IIHTTPRequest",
@@ -13,14 +13,14 @@
   },
   "source": {
     "git": "https://github.com/hatjs880328s/IIHTTPRequest.git",
-    "tag": "1.1.4"
+    "tag": "1.1.9"
   },
-  "swift_versions": "4.2",
+  "swift_versions": "5.0",
   "platforms": {
     "ios": "8.0"
   },
   "dependencies": {
-    "III18N": [
+    "II18N": [
 
     ]
   },
@@ -58,5 +58,5 @@
       "source_files": "IIHTTPRequest/Classes/RealReachability/**/*"
     }
   ],
-  "swift_version": "4.2"
+  "swift_version": "5.0"
 }
