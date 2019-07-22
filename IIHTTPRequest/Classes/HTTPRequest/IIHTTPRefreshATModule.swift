@@ -1,12 +1,12 @@
 //
 //  *******************************************
-//
+//  
 //  IIHTTPRefreshATModule.swift
 //  IIHTTPRequest
 //
 //  Created by Noah_Shan on 2019/5/29.
 //  Copyright © 2018 Inpur. All rights reserved.
-//
+//  
 //  *******************************************
 //
 
@@ -38,10 +38,9 @@ import UIKit
     ///   - directRequest: 直接重新请求回调
     @objc public dynamic static func refreshToken(originAT: String,
                                                   showAlertInfo: Bool,
-                                                  directRequest: @escaping () -> Void,
-                                                  successAction:@escaping (_ response: ResponseClass) -> Void,
-                                                  errorAction:@escaping (_ shouldLogOut: Bool, _ errorStr: String?) -> Void) {
-
+                                          directRequest: @escaping () -> Void,
+                                          successAction:@escaping (_ response: ResponseClass) -> Void,
+                                          errorAction:@escaping (_ shouldLogOut: Bool, _ errorStr: String?) -> Void) {
         if !(UIApplication.shared.applicationState == UIApplication.State.active) { return }
         let refreshTokenStatusCode = self.shouldRefreshToken(oldAT: originAT)
         switch refreshTokenStatusCode {
@@ -88,10 +87,10 @@ extension IIHTTPRefreshATModule {
     ///   - errorAction: no
     @objc private dynamic static func realRefreshToken(originAT: String,
                                                        showAlertInfo: Bool,
-                                                       requestATURLArr: [String],
-                                                       directRequest: @escaping () -> Void,
-                                                       successAction:@escaping (_ response: ResponseClass) -> Void,
-                                                       errorAction:@escaping (_ shouldLogOut: Bool, _ errorStr: String?) -> Void) {
+                                               requestATURLArr: [String],
+                                               directRequest: @escaping () -> Void,
+                                               successAction:@escaping (_ response: ResponseClass) -> Void,
+                                               errorAction:@escaping (_ shouldLogOut: Bool, _ errorStr: String?) -> Void) {
 
         let refreshToken = IIHTTPModuleDoor.dynamicParams.impAccessRT
 

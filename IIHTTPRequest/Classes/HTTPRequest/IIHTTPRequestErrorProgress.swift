@@ -22,6 +22,9 @@ open class IIHTTPRequestErrorProgress: NSObject {
     var errorAction: ((_ errorType: ErrorInfo) -> Void)!
     
     var showAlertInfo: Bool!
+
+    /// exchange should relogin code
+    private let exchangeLV2Code = "100401"
     
     init(response: DataResponse<Any>!,
          requestType: RequestType,
@@ -112,6 +115,10 @@ extension IIHTTPRequestErrorProgress {
     
     /// 第二级别code处理-弹窗
     func progressLv2ErrorCode(code: String) {
+        if code == self.exchangeLV2Code {
+            IIHTTPModuleDoor.dynamicParams.exchangeLV2CodeAction?()
+            return
+        }
         let realLv2Code = "Error_400_\(code)"
         let enumValue = III18NEnum(rawValue: realLv2Code)
         if enumValue == nil {

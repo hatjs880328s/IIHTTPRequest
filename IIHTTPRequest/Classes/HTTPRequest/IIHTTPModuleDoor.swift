@@ -78,6 +78,9 @@ public class IIHTTPModuleAlertInfo: NSObject {
 /// 所有实时动态获取的属性信息
 public class IIHTTPModuleDynamicParams: NSObject {
 
+    /// 100104错误码处理方法
+    @objc public var exchangeLV2CodeAction: (() -> Void)?
+
     /// 设置rt信息的action
     @objc public var getRTAction: (() -> String)?
 
