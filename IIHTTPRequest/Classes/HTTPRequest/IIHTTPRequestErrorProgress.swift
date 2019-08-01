@@ -116,7 +116,7 @@ extension IIHTTPRequestErrorProgress {
     /// 第二级别code处理-弹窗
     func progressLv2ErrorCode(code: String) {
         if code == self.exchangeLV2Code {
-            IIHTTPModuleDoor.dynamicParams.exchangeLV2CodeAction?()
+            IIHTTPModuleDoor.dynamicParams.exchangeLV2CodeAction?(self.response.request?.allHTTPHeaderFields)
             return
         }
         let realLv2Code = "Error_400_\(code)"

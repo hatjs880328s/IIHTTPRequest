@@ -79,7 +79,7 @@ public class IIHTTPModuleAlertInfo: NSObject {
 public class IIHTTPModuleDynamicParams: NSObject {
 
     /// 100104错误码处理方法
-    @objc public var exchangeLV2CodeAction: (() -> Void)?
+    @objc public var exchangeLV2CodeAction: ((_ requestHeader: [String: String]?) -> Void)?
 
     /// 设置rt信息的action
     @objc public var getRTAction: (() -> String)?
