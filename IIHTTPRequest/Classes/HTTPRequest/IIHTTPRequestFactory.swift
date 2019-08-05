@@ -114,7 +114,7 @@ open class ResponseJSON: ResponseClass {
                 emptyStr = III18NEnum.http_request_error.rawValue
             }
             self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.businessErrorMsg, errorMsg: errMsg)
-            self.errorValue.setLv2ErrorCode(with: "\(data["code"] ?? emptyStr)")
+            self.errorValue.setLv2ErrorCode(with: "\(data["code"] ?? (data["errCode"] ?? ""))")
             return true
         } else {
             return false
