@@ -8,6 +8,17 @@
 
 import Foundation
 
+/// 网络接入状态
+@objc public enum IIHTTPCurrentWWANAccessType: Int {
+    case WiFi
+    case gen5
+    case gen4
+    case gen3
+    case gen2
+    case unknown
+    case notReachable
+}
+
 /*
  TODO:
  1.在没有VPN模式下使用ping功能来判定是否有网络[vpn下icmp协议失效]
@@ -23,7 +34,7 @@ public class IIHTTPNetWork: NSObject {
     static let pingBarNetWorkTime: TimeInterval = 1.5
 
     static let connectivity = Connectivity(shouldUseHTTPS: false)
-    
+
     /// 开启监听与设置ping服务器
     @objc public class func startService(with emmIPAdd: URL) {
         guard let appleUrl = URL(string: "https://www.apple.com") else { return }
@@ -34,19 +45,42 @@ public class IIHTTPNetWork: NSObject {
         self.setPingHost()
         RealReachability.sharedInstance().startNotifier()
     }
-    
+
+    /// 获取当前的网络接入方式
+    @objc public static func getCurrentNetAccessType() -> IIHTTPCurrentWWANAccessType {
+        var result: IIHTTPCurrentWWANAccessType? = nil
+        let status = RealReachability.sharedInstance()?.currentReachabilityStatus() ?? ReachabilityStatus.RealStatusUnknown
+        switch status {
+        case .RealStatusNotReachable: result = IIHTTPCurrentWWANAccessType.notReachable
+        case ReachabilityStatus.RealStatusViaWiFi: result = IIHTTPCurrentWWANAccessType.WiFi
+        case .RealStatusUnknown: result = .unknown
+        default: break
+        }
+        //
+        let realStatus = RealReachability.sharedInstance()?.currentWWANtype() ?? WWANAccessType.typeUnknown
+        switch realStatus {
+        case .type2G: result = .gen2
+        case .type3G: result = .gen3
+        case .type4G: result = .gen4
+        case .typeUnknown: result = .unknown
+        default:
+            break
+        }
+        return result ?? .unknown
+    }
+
     /// 设置ping服务器[设置超时时间为10S]
     private class func setPingHost() {
         RealReachability.sharedInstance().hostForPing = IIHTTPModuleDoor.urlParams.pingCheckAdd
         RealReachability.sharedInstance().hostForCheck = IIHTTPModuleDoor.urlParams.pingDoubleCheckAdd
         RealReachability.sharedInstance().pingTimeout = pingTimeOut
     }
-    
+
     /// 添加监听-多用在基类中或者工具类中，普通vc可不用
     @objc public class func addObserver(selector: Selector, observer: Any) {
         NotificationCenter.default.addObserver(observer, selector: selector, name: NSNotification.Name.realReachabilityChanged, object: nil)
     }
-    
+
     /// 返回真实的网络连接状态-[limit 10s,使用ping去校验网络]
     /// 这里进行二次认证 - 使用第三方来进一步判定 - 如果双重否定则是否定，否则都是真
     @objc public class func getRealNetStatus(connectAction:@escaping () -> Void, nonConnectAction: @escaping () -> Void) {
