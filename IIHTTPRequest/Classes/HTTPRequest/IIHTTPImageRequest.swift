@@ -10,11 +10,11 @@ import Foundation
 
 /*
  关于form-data body体的说明：
-
+ 
  //Content-Disposition: form-data; name="file"; filename="temp.png"
  
  https://blog.csdn.net/zllww123/article/details/77587292
-
+ 
  */
 
 open class IIHTTPImageRequest: NSObject {
@@ -32,9 +32,9 @@ open class IIHTTPImageRequest: NSObject {
                                data: [Data],
                                fileName: [String],
                                withName: [String],
-                               successAction: @escaping () -> Void,
+                               successAction: @escaping (_ result: ResponseClass) -> Void,
                                failAction: @escaping () -> Void) {
-
+        
         let httpHeader = IIHTTPHeaderAndParams.analyzeHTTPHeader(nil)
         upload(multipartFormData: { (multipartFormData) in
             for i in 0 ..< data.count {
@@ -49,7 +49,7 @@ open class IIHTTPImageRequest: NSObject {
                 upload.responseJSON { response in
                     let resultResponse = IHTTPProgressAFNCode.progressResponse(response: response)
                     if resultResponse.errorValue == nil {
-                        successAction()
+                        successAction(resultResponse)
                     } else {
                         failAction()
                     }
@@ -60,7 +60,7 @@ open class IIHTTPImageRequest: NSObject {
         }
         
     }
-
+    
     /// 文件下载
     ///
     /// - Parameters:
@@ -80,21 +80,21 @@ open class IIHTTPImageRequest: NSObject {
             let fileURL = documentsURL.appendingPathComponent("\(folder)\(fileName)\(extensionStr)")
             return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
         }
-
+        
         let httpHeader = IIHTTPHeaderAndParams.analyzeHTTPHeader(nil)
         let downloadRequest = download(url,
-                 headers: httpHeader,
-                 to: destination)
+                                       headers: httpHeader,
+                                       to: destination)
             .downloadProgress(closure: { (progress) in
                 downLoadProgress?(progress.fractionCompleted)
             })
             .responseData { (data) in
-            if data.result.error == nil && data.response?.statusCode == 200 {
-                downLoadFilePath(data.result.value, data.destinationURL, data.response?.mimeType ?? "")
-            } else {
-                error()
-            }
-            }
+                if data.result.error == nil && data.response?.statusCode == 200 {
+                    downLoadFilePath(data.result.value, data.destinationURL, data.response?.mimeType ?? "")
+                } else {
+                    error()
+                }
+        }
         return downloadRequest
     }
 }
