@@ -47,7 +47,7 @@ public class IIHTTPNetWork: NSObject {
     }
 
     /// 获取当前的网络接入方式
-    @objc public static func getCurrentNetAccessType() -> IIHTTPCurrentWWANAccessType {
+    @objc public func getCurrentNetAccessType() -> IIHTTPCurrentWWANAccessType {
         var result: IIHTTPCurrentWWANAccessType? = nil
         let status = RealReachability.sharedInstance()?.currentReachabilityStatus() ?? ReachabilityStatus.RealStatusUnknown
         switch status {
