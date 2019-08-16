@@ -62,7 +62,7 @@ public class IIHTTPNetWork: NSObject {
         case .type2G: result = .gen2
         case .type3G: result = .gen3
         case .type4G: result = .gen4
-        case .typeUnknown: result = .unknown
+        case .typeUnknown: result = result == nil ? .unknown : result
         default:
             break
         }
