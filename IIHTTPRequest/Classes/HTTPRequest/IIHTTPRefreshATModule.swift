@@ -41,7 +41,10 @@ import UIKit
                                           directRequest: @escaping () -> Void,
                                           successAction:@escaping (_ response: ResponseClass) -> Void,
                                           errorAction:@escaping (_ shouldLogOut: Bool, _ errorStr: String?) -> Void) {
-        if !(UIApplication.shared.applicationState == UIApplication.State.active) { return }
+        if (UIApplication.shared.applicationState == UIApplication.State.background) {
+            errorAction(false, "api can't request : background mode [maybe somebody call u]")
+            return
+        }
         let refreshTokenStatusCode = self.shouldRefreshToken(oldAT: originAT)
         switch refreshTokenStatusCode {
         case .donothing:
