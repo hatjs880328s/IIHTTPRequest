@@ -17,7 +17,7 @@ class IIHTTPHeaderAndParams: NSObject {
     private static let oauthContent_type = "Content-Type"
     
     private static let oauthContent_Value = "application/x-www-form-urlencoded"
-
+    
     /// app生命周期内目前只有两个sessionmanager 一个是 default普通请求使用，一个是当前属性，捕获wifihelper使用
     public static var redirectManager: SessionManager?
     
@@ -79,23 +79,23 @@ class IIHTTPHeaderAndParams: NSObject {
             return JSONEncoding.default
         }
     }
-
+    
     /// 是否需要拦截重定向
     class func redirectURL(progress: Bool) -> SessionManager {
         if progress {
             if redirectManager == nil {
                 let serverTrustPolicyManager: ServerTrustPolicyManager? = nil
-//                if 2 == 1 {
-//                    serverTrustPolicyManager = ServerTrustPolicyManager(policies: [
-//                        (Utilities.getAppEMMIP() ?? ""): ServerTrustPolicy.performDefaultEvaluation(validateHost: true)
-//                        ])
-//                }
+                //                if 2 == 1 {
+                //                    serverTrustPolicyManager = ServerTrustPolicyManager(policies: [
+                //                        (Utilities.getAppEMMIP() ?? ""): ServerTrustPolicy.performDefaultEvaluation(validateHost: true)
+                //                        ])
+                //                }
                 let configuration = URLSessionConfiguration.default
                 configuration.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
                 configuration.timeoutIntervalForRequest = 15
                 redirectManager = SessionManager(configuration: configuration, serverTrustPolicyManager: serverTrustPolicyManager)
                 redirectManager!.delegate.taskWillPerformHTTPRedirection = { (session, task, response, request) -> URLRequest? in
-                    return nil
+                    return IIHTTPModuleDoor.dynamicParams.redirectAction?(session, task, response, request)
                 }
                 return redirectManager!
             } else {
@@ -108,9 +108,9 @@ class IIHTTPHeaderAndParams: NSObject {
     
     /// 判定是否是一个真正的url
     class func progressURL(url: String) -> Bool {
-//        if url.isRealUrl() {
-//            return true
-//        }
+        //        if url.isRealUrl() {
+        //            return true
+        //        }
         if (IIHTTPModuleDoor.dynamicParams.isUrlAction?(url) ?? false) {
             return true
         }
