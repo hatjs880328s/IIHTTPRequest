@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IIHTTPRequest'
-  s.version          = '1.3.5'
+  s.version          = '1.3.6'
   s.summary          = 'IIHTTPRequest'
 
 # This description is used to generate tags and improve search results.
