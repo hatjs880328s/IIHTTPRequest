@@ -10,21 +10,21 @@ import Foundation
 
 /*
  思路走一波：
- 
+
  TODO:
  将网络请求封装到此core中
  1.网络请求 ✅
  2.数据上传 ✅
  3.数据下载 ✅
  4.网络实时监控与实时状态获取core ✅
- 
+
  目前处理方式：
  ①首先处理网络无连接与网络连接超时状态-response.result.isFail -1001 & -1003 & -1009
  ②经过第一步确认有返回值，既response-result是有值的，此时处理code[200~300,300~500]
  ③经过第二步处理后在分析contenttype,分为 text/plain & application/json; charset=utf-8 & text/html
  ④根据第二步中的code和第三步中的type一起来分析数据
  ⑤错误处理类：HTTPRequestErrorProgress此处与当前APP业务有耦合
- 
+
  注意：
  ①：urlencoding & jsonencoding 在此处的区别是：
  前者会将contenttype设置为application/x-www-form-urlencoded
@@ -43,15 +43,15 @@ import Foundation
  */
 
 open class IIHTTPRequest: IIHTTPRequestFather {
-    
+
     override private init() { super.init() }
-    
+
     static public let refreshTokenOperationLock = NSRecursiveLock()
-    
+
     static let gcdSem: IIHTTPGCDUtility = IIHTTPGCDUtility()
 
     static var actionForlogin: AnyClass?
-    
+
     /// 静态网络请求-优先判断网络状态
     ///
     /// - Parameters:
@@ -63,17 +63,17 @@ open class IIHTTPRequest: IIHTTPRequestFather {
     ///   - successAction: success action <ResponseClass>
     ///   - errorAction: error action <ErrorInfo>
     @objc override open class func startRequest(
-                                       showAlertInfo: Bool = true,
-                                       shouldGetRedirect: Bool = false,
-                                       method: IIHTTPMethod,
-                                       url: String,
-                                       params: [String: Any]?,
-                                       header: [String: String]? = nil,
-                                       timeOut: TimeInterval = 15,
-                                       encodingType: ParamsSeriType = .jsonEncoding,
-                                       requestType: RequestType = .normal,
-                                       successAction:@escaping (_ response: ResponseClass) -> Void,
-                                       errorAction:@escaping (_ errorType: ErrorInfo) -> Void) {
+        showAlertInfo: Bool = true,
+        shouldGetRedirect: Bool = false,
+        method: IIHTTPMethod,
+        url: String,
+        params: [String: Any]?,
+        header: [String: String]? = nil,
+        timeOut: TimeInterval = 15,
+        encodingType: ParamsSeriType = .jsonEncoding,
+        requestType: RequestType = .normal,
+        successAction:@escaping (_ response: ResponseClass) -> Void,
+        errorAction:@escaping (_ errorType: ErrorInfo) -> Void) {
 
         super.startRequest(method: method, url: url, params: params, successAction: successAction, errorAction: errorAction)
         if !IIHTTPHeaderAndParams.progressURL(url: url) { return }
@@ -89,7 +89,10 @@ open class IIHTTPRequest: IIHTTPRequestFather {
             let req = try URLRequest(url: URL(string: url)!, method: httpMethod, headers: httpHeader)
             var reqEncode = try httpRencoding.encode(req, with: params)
             reqEncode.timeoutInterval = timeOut
+            let startRuestTime = Date().timeIntervalSince1970
             _ = requestManager.request(reqEncode).responseJSON { (response) in
+                let endRuestTime = Date().timeIntervalSince1970
+                NotificationCenter.default.post(name: NSNotification.Name.init("IIHTTPModuleDoor_urlParams_responseNotiName"), object: nil, userInfo: ["RES": response, "START": startRuestTime, "END": endRuestTime])
                 let resultResponse = IHTTPProgressAFNCode.progressResponse(response: response)
                 if resultResponse.errorValue == nil {
                     successAction(resultResponse)
@@ -101,7 +104,7 @@ open class IIHTTPRequest: IIHTTPRequestFather {
             }
         } catch {}
     }
-    
+
     /// 401刷新token后[再次调用原始接口]-非业务人员调用
     @objc open override class func startRequest(
         with urlrequest: URLRequest,
@@ -121,7 +124,7 @@ open class IIHTTPRequest: IIHTTPRequestFather {
             }
         }
     }
-    
+
     /// 请求token
     ///
     /// - Parameters:
@@ -137,7 +140,7 @@ open class IIHTTPRequest: IIHTTPRequestFather {
                                        secret: String,
                                        successAction:@escaping (_ response: ResponseClass) -> Void,
                                        errorAction:@escaping (_ errorType: ErrorInfo) -> Void) {
-    
+
         let params = IIHTTPHeaderAndParams.getRequestTokenParams(userName: userName, userPwd: userPwd, id: id, secret: secret)
         let header = IIHTTPHeaderAndParams.getRequestTokenHeader()
         IIHTTPRequest.startRequest(method: .post, url: IIHTTPModuleDoor.dynamicParams.oauthPath, params: params, header: header, encodingType: .urlEncoding, requestType: .requestToken, successAction: { (response) in
@@ -157,9 +160,9 @@ open class IIHTTPRequest: IIHTTPRequestFather {
     ///   - errorAction: no
     @objc public class func realRefreshToken(refreshTokenInfo: String,
                                              showAlertInfo: Bool,
-                                           requestURL: String,
-                                           successAction:@escaping (_ response: ResponseClass) -> Void,
-                                           errorAction:@escaping (_ errorType: ErrorInfo) -> Void) {
+                                             requestURL: String,
+                                             successAction:@escaping (_ response: ResponseClass) -> Void,
+                                             errorAction:@escaping (_ errorType: ErrorInfo) -> Void) {
         let params = IIHTTPHeaderAndParams.getRefreshTokenParams(refreshTokenInfo: refreshTokenInfo)
         let header = IIHTTPHeaderAndParams.getRefreshTokenHeader(id: IIHTTPModuleDoor.urlParams.authHeaderSecret, secret: IIHTTPModuleDoor.urlParams.authHeaderSecret)
         IIHTTPRequest.startRequest(showAlertInfo: showAlertInfo, method: .post, url: requestURL, params: params, header: header, timeOut: 30, encodingType: .urlEncoding, requestType: .refreshToken, successAction: { (response) in
