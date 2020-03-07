@@ -68,6 +68,9 @@ open class IIHTTPRequestErrorProgress: NSObject {
             if let urlStr = response.response?.allHeaderFields["Location"] as? String {
                 errorInfo.wifiHelperURL = URL(string: urlStr)
             }
+        case ERRORMsgType.contentType415Error:
+            if !showAlertInfo { return }
+            IIHTTPModuleDoor.dynamicParams.showToastAction?(getI18NStr(key: "ihtrequest_contenttype_error_alert"))
         }
     }
     

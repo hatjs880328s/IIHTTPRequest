@@ -109,6 +109,7 @@ public enum ResponseContentType: String {
     case unknowError
     case code400BodyHtml
     case wifiHelper
+    case contentType415Error
 }
 
 /// 网络返回数据的Status-code
@@ -119,6 +120,7 @@ public enum ResponseContentType: String {
     case code400 = 400
     case code401 = 401
     case code403 = 403
+    case code415 = 415
     case code500 = 500
 }
 

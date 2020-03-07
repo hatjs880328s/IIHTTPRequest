@@ -27,6 +27,8 @@ class HTTPRequestCodeFactory: NSObject {
             return Code403(response: response)//需要继续处理
         case ResponseStatusCode.code500.rawValue:
             return Code500(response: response)//需要继续处理
+        case ResponseStatusCode.code415.rawValue:
+            return Code415(response: response)//抛出415错误提示
         default:
             return CodeOthers(response: response)//只需要抛出unknowerror
         }
@@ -124,6 +126,13 @@ class Code401: IIHTTPRequestStatusCodeProgress {
 class Code403: IIHTTPRequestStatusCodeProgress {
     override func progress() {
         self.responseIns = self.progressContentType(response: self.responseData)
+    }
+}
+
+/// 415, 直接提示content-type
+class Code415: IIHTTPRequestStatusCodeProgress {
+    override func progress() {
+        self.responseIns = ResponseFactoary().responseInstance(data: self.responseData, responseType: ResponseContentType.html, errorType: ERRORMsgType.contentType415Error)
     }
 }
 
