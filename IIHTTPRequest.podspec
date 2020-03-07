@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IIHTTPRequest'
-  s.version          = '1.3.7'
+  s.version          = '2.0.0'
   s.summary          = 'IIHTTPRequest'
 
 # This description is used to generate tags and improve search results.
@@ -19,7 +19,8 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
   IIHTTPRequest
-  网络请求库SDK
+  网络请求库SDK - IHTTTPRequest From 2.0.0
+
                        DESC
 
   s.homepage         = 'https://github.com/hatjs880328s/IIHTTPRequest'

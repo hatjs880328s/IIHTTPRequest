@@ -43,6 +43,27 @@ class IIHTTPHeaderAndParams: NSObject {
             return defaultHeaderFields
         }
     }
+
+    /// 添加报文头部信息
+    /// [old]v1:有header直接使用header;没有header返回默认header
+    /// [new]V2:没header直接返回默认header;有header，将之添加覆盖到默认header之上
+    /// - Returns: 字典
+    class func ihtanalyzeHTTPHeader(_ header: HTTPHeaders?) -> HTTPHeaders {
+        var defaultHeaderFields: HTTPHeaders = [
+            "User-Agent": "yun+/\(IIHTTPModuleDoor.urlParams.appCurrentVersion) (iPhone; iOS \(IIHTTPModuleDoor.urlParams.deviceIOSVersion); Scale/\(IIHTTPModuleDoor.urlParams.ihtScale)",
+            "Accept-Language": IIHTTPHeaderAndParams.currentUseLanguage(),
+            "OrganId": IIHTTPModuleDoor.dynamicParams.organId
+        ]
+        if header == nil {
+            return defaultHeaderFields
+        } else {
+            let resultHeader = header!
+            for eachItem in resultHeader {
+                defaultHeaderFields[eachItem.key] = eachItem.value
+            }
+            return defaultHeaderFields
+        }
+    }
     
     /// 刷新token之后重新请求之前的req需要新的本地AT
     class func refreshTokenGetNewAT() -> String? {

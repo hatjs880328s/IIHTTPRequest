@@ -17,7 +17,8 @@ open class ResponseFactoary: NSObject {
         }
         switch responseType {
         case .json:
-            return ResponseJSON(data: data)
+            return IHTResponseJSON(data: data)
+            //return ResponseJSON(data: data)
         case .protoBuf:
             return ResponseProtoBuf(data: data)
         case .html:
@@ -119,6 +120,51 @@ open class ResponseJSON: ResponseClass {
         } else {
             return false
         }
+    }
+}
+
+/// 为IHT解析json
+open class IHTResponseJSON: ResponseClass {
+    override func setData(_ data: DataResponse<Any>) {
+        super.setData(data)
+
+        if let dicValue = data.value as? NSDictionary {
+            if self.progressIHTStupidErrmsg(dicValue) { return }
+
+            if let realDicValue = dicValue["data"] as? NSDictionary {
+                self.dicValue = realDicValue
+                return
+            }
+            if let realArrValue = dicValue["data"] as? NSArray {
+                self.arrValue = realArrValue
+                return
+            }
+            self.anyValue = dicValue["data"] as AnyObject
+            return
+        } else {
+            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError, errorMsg: "iht_struct_error")
+        }
+
+    }
+
+    /// iht处理错误信息 code = 000 | 0000 是没有问题，其他是有问题的
+    private func progressIHTStupidErrmsg(_ infos: NSDictionary) -> Bool {
+        guard let backCode = infos["code"] as? String else {
+            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError, errorMsg: "iht_struct_error")
+            return true
+        }
+        guard let backCodeIntValue = Int(backCode) else {
+            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError, errorMsg: "iht_struct_error")
+            return true
+        }
+
+        if backCodeIntValue == 0 {
+            return false
+        }
+
+        self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError, errorMsg: "iht_struct_error")
+        return true
+
     }
 }
 

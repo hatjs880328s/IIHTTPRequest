@@ -1,8 +1,8 @@
 {
   "name": "IIHTTPRequest",
-  "version": "1.1.9",
+  "version": "2.0.0",
   "summary": "IIHTTPRequest",
-  "description": "IIHTTPRequest\n网络请求库SDK",
+  "description": "IIHTTPRequest\n网络请求库SDK - IHTTTPRequest From 2.0.0",
   "homepage": "https://github.com/hatjs880328s/IIHTTPRequest",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/hatjs880328s/IIHTTPRequest.git",
-    "tag": "1.1.9"
+    "tag": "2.0.0"
   },
   "swift_versions": "5.0",
   "platforms": {

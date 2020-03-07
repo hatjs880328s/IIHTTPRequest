@@ -66,6 +66,9 @@ public class IIHTTPModuleDoorURL: NSObject {
     
     //oc http svc ins
     @objc public var ocRefreshTokenUti: AnyClass?
+
+    /// iht screen scale
+    @objc public var ihtScale: CGFloat = 0.0
     
 }
 
@@ -116,6 +119,18 @@ public class IIHTTPModuleDynamicParams: NSObject {
         guard let realAction = getRefreshPathAction else { return [] }
         return realAction()
     }
+
+    /// enterprise id
+    var organId: String  {
+        guard let realAction = organIdAction else { return "" }
+        return realAction()
+    }
+
+    /// ihttoken id
+    var ihttoken: String  {
+        guard let realAction = ihttokenAction else { return "" }
+        return realAction()
+    }
     
     /// 刷新token地址数组
     @objc public var getRefreshPathAction: (() -> [String])?
@@ -146,4 +161,10 @@ public class IIHTTPModuleDynamicParams: NSObject {
     
     /// 重定向 action
     @objc public var redirectAction: ((_ session: URLSession, _ task: URLSessionTask, _ response: HTTPURLResponse, _ request: URLRequest) -> URLRequest?)?
+
+    /// 记录header中组织号id的字段
+    @objc public var organIdAction: (() -> String)?
+
+    /// 记录iht中token数据的action
+    @objc public var ihttokenAction: (() -> String)?
 }
