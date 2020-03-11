@@ -139,7 +139,8 @@ open class IHTResponseJSON: ResponseClass {
                 self.arrValue = realArrValue
                 return
             }
-            self.anyValue = dicValue["data"] as AnyObject
+            // 如果是bool类型数据,直接赋值为true
+            self.anyValue = 1 as AnyObject
             return
         } else {
             self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError, errorMsg: "iht_struct_error")
@@ -147,25 +148,33 @@ open class IHTResponseJSON: ResponseClass {
 
     }
 
-    /// iht处理错误信息 code = 000 | 0000 是没有问题，其他是有问题的
+    /// iht处理错误信息 code = 000 | 0000 是没有问题，其他是有问题的 true: 有问题 false: 没问题
     private func progressIHTStupidErrmsg(_ infos: NSDictionary) -> Bool {
         guard let backCode = infos["code"] as? String else {
             self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError, errorMsg: "iht_struct_error")
             return true
         }
-        guard let backCodeIntValue = Int(backCode) else {
-            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError, errorMsg: "iht_struct_error")
+        
+        switch backCode {
+        case "0000":
+            return false
+        case "000":
+            return false
+        case "0703":
+            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.authError, errorMsg: "")
+            return true
+        case "0704":
+            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.authError, errorMsg: "")
+            return true
+        case "0705":
+            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.rtError, errorMsg: "")
+            return true
+        default:
+            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError, errorMsg: "")
             return true
         }
-
-        if backCodeIntValue == 0 {
-            return false
-        }
-
-        self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError, errorMsg: "iht_struct_error")
-        return true
-
     }
+    
 }
 
 /// 返回数据类-protobuf <Data>

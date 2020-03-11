@@ -163,9 +163,11 @@ open class IIHTTPRequest: IIHTTPRequestFather {
                                              requestURL: String,
                                              successAction:@escaping (_ response: ResponseClass) -> Void,
                                              errorAction:@escaping (_ errorType: ErrorInfo) -> Void) {
-        let params = IIHTTPHeaderAndParams.getRefreshTokenParams(refreshTokenInfo: refreshTokenInfo)
-        let header = IIHTTPHeaderAndParams.getRefreshTokenHeader(id: IIHTTPModuleDoor.urlParams.authHeaderSecret, secret: IIHTTPModuleDoor.urlParams.authHeaderSecret)
-        IIHTTPRequest.startRequest(showAlertInfo: showAlertInfo, method: .post, url: requestURL, params: params, header: header, timeOut: 30, encodingType: .urlEncoding, requestType: .refreshToken, successAction: { (response) in
+        let params = IIHTTPHeaderAndParams.getIHTRefreshTokenParams(refreshTokenInfo: refreshTokenInfo)
+        
+        // 这里使用iht 刷新token
+        
+        IHTHTTPCore.startRequest(method: IIHTTPMethod.post, url: requestURL, params: params, encodingType: .urlEncoding, successAction: { (response) in
             successAction(response)
         }) { (error) in
             errorAction(error)

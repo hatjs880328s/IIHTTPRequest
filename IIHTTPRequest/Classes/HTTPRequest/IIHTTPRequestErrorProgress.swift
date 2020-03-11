@@ -71,6 +71,12 @@ open class IIHTTPRequestErrorProgress: NSObject {
         case ERRORMsgType.contentType415Error:
             if !showAlertInfo { return }
             IIHTTPModuleDoor.dynamicParams.showToastAction?(getI18NStr(key: "ihtrequest_contenttype_error_alert"))
+        case ERRORMsgType.rtError:
+            // rt失效, 退出登录
+            moreThanoneUserLoginwithsameoneAPPID()
+        case ERRORMsgType.havenoToken:
+            if !showAlertInfo { return }
+            IIHTTPModuleDoor.dynamicParams.showToastAction?("token格式错误,或者没有传输token信息")
         }
     }
     

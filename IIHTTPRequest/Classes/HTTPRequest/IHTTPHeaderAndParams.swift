@@ -52,7 +52,8 @@ class IIHTTPHeaderAndParams: NSObject {
         var defaultHeaderFields: HTTPHeaders = [
             "User-Agent": "yun+/\(IIHTTPModuleDoor.urlParams.appCurrentVersion) (iPhone; iOS \(IIHTTPModuleDoor.urlParams.deviceIOSVersion); Scale/\(IIHTTPModuleDoor.urlParams.ihtScale)",
             "Accept-Language": IIHTTPHeaderAndParams.currentUseLanguage(),
-            "OrganId": IIHTTPModuleDoor.dynamicParams.organId
+            "OrganId": IIHTTPModuleDoor.dynamicParams.organId,
+            "Authorization": IIHTTPModuleDoor.dynamicParams.impAccessAT ?? ""
         ]
         if header == nil {
             return defaultHeaderFields
@@ -79,6 +80,11 @@ class IIHTTPHeaderAndParams: NSObject {
     /// 获取刷新token-params
     class func getRefreshTokenParams(refreshTokenInfo: String) -> [String: String] {
         return [grantType: refreshToken, refreshToken: refreshTokenInfo]
+    }
+    
+    /// 获取刷新token-params
+    class func getIHTRefreshTokenParams(refreshTokenInfo: String) -> [String: String] {
+        return ["refreshToken": refreshTokenInfo]
     }
     
     /// 获取请求token-header

@@ -100,6 +100,7 @@ public enum ResponseContentType: String {
  - businessErrorMsg:               返回了业务错误信息eg,["errCode":"-3","msg":"未将对象引用指向对象实例","errorLvl":"3"]
  - unknowError:                    nginx返回错误码不做处理
  - code400BodyHtml:                status为400 Body Contenttype为Html-判定Requesttype为refreshtoken退出登录，其他抛异常
+ - rtError:                        rt失效,退出登录
  */
 @objc public enum ERRORMsgType: Int {
     case noConnection
@@ -110,6 +111,8 @@ public enum ResponseContentType: String {
     case code400BodyHtml
     case wifiHelper
     case contentType415Error
+    case rtError
+    case havenoToken
 }
 
 /// 网络返回数据的Status-code

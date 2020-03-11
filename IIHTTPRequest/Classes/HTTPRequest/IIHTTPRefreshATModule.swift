@@ -126,20 +126,21 @@ extension IIHTTPRefreshATModule {
         }) { (errInfo) in
             if requestATURLArr.count == 1 {
                 //最后一个[执行回调后再释放信号]
-                guard let responseStatusCode = errInfo.responseData?.response?.statusCode else {
-                    errorAction(false, errInfo.responseData?.response?.description)
-                    IIHTTPRequest.gcdSem.releaseSignal()
-                    return
-                }
-                var logInfo = ""
-                if errInfo.responseData != nil {
-                    logInfo = "\(String(describing: errInfo.responseData))"
-                }
-                if responseStatusCode == ResponseStatusCode.code400.rawValue {
-                    errorAction(true, logInfo)
-                } else {
-                    errorAction(false, logInfo)
-                }
+//                guard let responseStatusCode = errInfo.responseData?.response?.statusCode else {
+//                    errorAction(false, errInfo.responseData?.response?.description)
+//                    IIHTTPRequest.gcdSem.releaseSignal()
+//                    return
+//                }
+//                var logInfo = ""
+//                if errInfo.responseData != nil {
+//                    logInfo = "\(String(describing: errInfo.responseData))"
+//                }
+//                if responseStatusCode == ResponseStatusCode.code400.rawValue {
+//                    errorAction(true, logInfo)
+//                } else {
+//                    errorAction(false, logInfo)
+//                }
+                errorAction(true, "refreshtoken fail")
                 IIHTTPRequest.gcdSem.releaseSignal()
             } else {
                 //不是最后一个[这里不释放信号量]
