@@ -59,7 +59,8 @@ open class IIHTTPRequestErrorProgress: NSObject {
         case ERRORMsgType.unknowError:
             // 未知错误 - 提示即可
             if !showAlertInfo { return }
-            IIHTTPModuleDoor.dynamicParams.showToastAction?(getI18NStr(key: III18NEnum.http_request_error.rawValue))
+            let errMsg = (errorInfo.errorMsg == nil || errorInfo.errorMsg == "") ? getI18NStr(key: III18NEnum.http_request_error.rawValue) : errorInfo.errorMsg!
+            IIHTTPModuleDoor.dynamicParams.showToastAction?(errMsg)
         case ERRORMsgType.code400BodyHtml:
             // 400 后的HTML返回 - 退出登录
             code400AndBodyHtmlProgress()
@@ -76,7 +77,7 @@ open class IIHTTPRequestErrorProgress: NSObject {
             moreThanoneUserLoginwithsameoneAPPID()
         case ERRORMsgType.havenoToken:
             if !showAlertInfo { return }
-            IIHTTPModuleDoor.dynamicParams.showToastAction?("token格式错误,或者没有传输token信息")
+            //IIHTTPModuleDoor.dynamicParams.showToastAction?("token格式错误,或者没有传输token信息")
         }
     }
     

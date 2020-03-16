@@ -154,6 +154,8 @@ open class IHTResponseJSON: ResponseClass {
             self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError, errorMsg: "iht_struct_error")
             return true
         }
+
+        let errMsg = infos["message"] as? String ?? ""
         
         switch backCode {
         case "0000":
@@ -161,16 +163,16 @@ open class IHTResponseJSON: ResponseClass {
         case "000":
             return false
         case "0703":
-            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.authError, errorMsg: "")
+            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.authError, errorMsg: errMsg)
             return true
         case "0704":
-            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.authError, errorMsg: "")
+            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.authError, errorMsg: errMsg)
             return true
         case "0705":
-            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.rtError, errorMsg: "")
+            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.rtError, errorMsg: errMsg)
             return true
         default:
-            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError, errorMsg: "")
+            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError, errorMsg: errMsg)
             return true
         }
     }
