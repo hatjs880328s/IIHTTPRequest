@@ -50,9 +50,8 @@ class IIHTTPHeaderAndParams: NSObject {
     /// - Returns: 字典
     class func ihtanalyzeHTTPHeader(_ header: HTTPHeaders?) -> HTTPHeaders {
         var defaultHeaderFields: HTTPHeaders = [
-            "User-Agent": "yun+/\(IIHTTPModuleDoor.urlParams.appCurrentVersion) (iPhone; iOS \(IIHTTPModuleDoor.urlParams.deviceIOSVersion); Scale/\(IIHTTPModuleDoor.urlParams.ihtScale)",
+            "User-Agent": "yun+/\(IIHTTPModuleDoor.urlParams.appCurrentVersion) (iPhone; iOS \(IIHTTPModuleDoor.urlParams.deviceIOSVersion); Scale/\(IIHTTPModuleDoor.urlParams.ihtScale))",
             "Accept-Language": IIHTTPHeaderAndParams.currentUseLanguage(),
-            "OrganId": IIHTTPModuleDoor.dynamicParams.organId,
             "Authorization": IIHTTPModuleDoor.dynamicParams.impAccessAT ?? ""
         ]
         if header == nil {

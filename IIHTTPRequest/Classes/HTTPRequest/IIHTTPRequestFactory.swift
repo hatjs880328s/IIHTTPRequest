@@ -139,6 +139,10 @@ open class IHTResponseJSON: ResponseClass {
                 self.arrValue = realArrValue
                 return
             }
+            if let realAnyValue = dicValue["data"] {
+                self.anyValue = realAnyValue as AnyObject
+                return
+            }
             // 如果是bool类型数据,直接赋值为true
             self.anyValue = 1 as AnyObject
             return
