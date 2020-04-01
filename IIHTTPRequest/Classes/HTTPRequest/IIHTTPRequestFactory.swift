@@ -147,7 +147,7 @@ open class IHTResponseJSON: ResponseClass {
             self.anyValue = 1 as AnyObject
             return
         } else {
-            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError, errorMsg: "iht_struct_error")
+            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError, errorMsg: "")
         }
 
     }
@@ -161,7 +161,7 @@ open class IHTResponseJSON: ResponseClass {
             backCode = infos["errorCode"] as? String ?? ""
         }
         if backCode.isEmpty {
-            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError, errorMsg: "iht_struct_error")
+            self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError, errorMsg: "")
             return true
         }
 
