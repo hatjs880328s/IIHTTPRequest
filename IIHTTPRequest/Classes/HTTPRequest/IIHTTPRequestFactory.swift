@@ -186,6 +186,7 @@ open class IHTResponseJSON: ResponseClass {
             return true
         default:
             self.errorValue = ErrorInfo(data: response, type: ERRORMsgType.unknowError, errorMsg: errMsg)
+            self.errorValue.setLv2ErrorCode(with: backCode)
             return true
         }
     }
