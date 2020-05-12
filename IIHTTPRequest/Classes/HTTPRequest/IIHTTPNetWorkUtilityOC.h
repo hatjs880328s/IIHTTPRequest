@@ -18,4 +18,14 @@
 
 - (NSArray *)getApplicationStatusBarVw;
 
+/// 适配ios13.0
+/// 0: wifi
+/// 1: 1g或其他
+/// 2: 2g
+/// 3: 3g
+/// 4: 4g
+/// -1: have no
+///
+- (int)networkStateFromStatebar;
+
 @end

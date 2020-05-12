@@ -42,6 +42,7 @@ public class IIHTTPNetWork: NSObject {
         guard let aliyunUrl = URL(string: "http://www.alidns.com") else { return }
         guard let txUrl = URL(string: "https://www.dnspod.cn") else { return }
         connectivity.connectivityURLs = [emmIPAdd, aliyunUrl, txUrl, appleUrl, baiduUrl]
+        connectivity.successThreshold = Connectivity.Percentage(25.0)
         self.setPingHost()
         RealReachability.sharedInstance().startNotifier()
     }
@@ -120,10 +121,10 @@ public class IIHTTPNetWork: NSObject {
     @objc public class func getNetStatusWith3rd(endAction: @escaping (_ haveNet: Bool) -> Void) {
         IIHTTPNetWork.connectivity.checkConnectivity { connectivity in
             switch connectivity.status {
-            case .connected, .connectedViaCellular, .connectedViaWiFi :
-                endAction(true)
-            default:
+            case .notConnected, .connectedViaWiFiWithoutInternet :
                 endAction(false)
+            default:
+                endAction(true)
             }
         }
     }
