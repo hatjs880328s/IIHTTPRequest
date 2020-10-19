@@ -16,7 +16,7 @@ public class ErrorInfo: NSObject {
     
     @objc public var errorMsg: String!
     
-    /// 第二级错误码[400]下的Error_400_72001
+    /// 第二级错误码[400]下的Error_400_72001 [云+ 2.0 中的code属性也是此值]
     @objc public var lv2ErrorCode: String!
 
     /// 小助手url地址

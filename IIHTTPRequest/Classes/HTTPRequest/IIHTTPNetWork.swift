@@ -121,7 +121,7 @@ public class IIHTTPNetWork: NSObject {
     @objc public class func getNetStatusWith3rd(endAction: @escaping (_ haveNet: Bool) -> Void) {
         IIHTTPNetWork.connectivity.checkConnectivity { connectivity in
             switch connectivity.status {
-            case .notConnected, .connectedViaWiFiWithoutInternet :
+            case .notConnected, .connectedViaWiFiWithoutInternet, .connectedViaCellularWithoutInternet :
                 endAction(false)
             default:
                 endAction(true)

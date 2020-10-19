@@ -167,4 +167,7 @@ public class IIHTTPModuleDynamicParams: NSObject {
 
     /// 记录iht中token数据的action
     @objc public var ihttokenAction: (() -> String)?
+
+    /// 字符串序列化方法 - body-sum计算使用
+    @objc public var progressHttpBody: ((_ data: NSData?) -> String)?
 }

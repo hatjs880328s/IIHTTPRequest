@@ -20,6 +20,8 @@ class IHTHTTPCoreParametersProgress: NSObject {
         var newParams = realParams
         
         newParams["token"] = IIHTTPModuleDoor.dynamicParams.ihttoken
+
+        newParams["isPhone"] = true
         
         return newParams
     }

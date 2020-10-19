@@ -62,6 +62,10 @@ open class IHTHTTPCore: IIHTTPRequestFather {
             var reqEncode = try httpRencoding.encode(req, with: newParams)
             reqEncode.timeoutInterval = timeOut
             let startRuestTime = Date().timeIntervalSince1970
+            // ---这里需要加上对body-sum的校验--- start
+            let bodySum = IIHTTPModuleDoor.dynamicParams.progressHttpBody?(reqEncode.httpBody as? NSData) ?? ""
+            reqEncode.addValue(bodySum, forHTTPHeaderField: "body-sum")
+            // ---这里需要加上对body-sum的校验--- end
             _ = requestManager.request(reqEncode).responseJSON { (response) in
                 let endRuestTime = Date().timeIntervalSince1970
                 NotificationCenter.default.post(name: NSNotification.Name.init("IIHTTPModuleDoor_urlParams_responseNotiName"), object: nil, userInfo: ["RES": response, "START": startRuestTime, "END": endRuestTime])
