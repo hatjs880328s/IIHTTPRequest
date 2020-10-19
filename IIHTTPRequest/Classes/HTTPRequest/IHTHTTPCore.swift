@@ -63,8 +63,14 @@ open class IHTHTTPCore: IIHTTPRequestFather {
             reqEncode.timeoutInterval = timeOut
             let startRuestTime = Date().timeIntervalSince1970
             // ---这里需要加上对body-sum的校验--- start
-            let bodySum = IIHTTPModuleDoor.dynamicParams.progressHttpBody?(reqEncode.httpBody as? NSData) ?? ""
-            reqEncode.addValue(bodySum, forHTTPHeaderField: "body-sum")
+            if method == .get {
+                let bodySum = IIHTTPModuleDoor.dynamicParams.progressHttpBody?(nil, reqEncode.url?.query) ?? ""
+                reqEncode.addValue(bodySum, forHTTPHeaderField: "body-sum")
+            } else {
+                let bodySum = IIHTTPModuleDoor.dynamicParams.progressHttpBody?(reqEncode.httpBody as? NSData, nil) ?? ""
+                reqEncode.addValue(bodySum, forHTTPHeaderField: "body-sum")
+            }
+
             // ---这里需要加上对body-sum的校验--- end
             _ = requestManager.request(reqEncode).responseJSON { (response) in
                 let endRuestTime = Date().timeIntervalSince1970
