@@ -52,7 +52,9 @@ class IIHTTPHeaderAndParams: NSObject {
         var defaultHeaderFields: HTTPHeaders = [
             "User-Agent": "yun+/\(IIHTTPModuleDoor.urlParams.appCurrentVersion) (iPhone; iOS \(IIHTTPModuleDoor.urlParams.deviceIOSVersion); Scale/\(IIHTTPModuleDoor.urlParams.ihtScale))",
             "Accept-Language": IIHTTPHeaderAndParams.currentUseLanguage(),
-            "Authorization": IIHTTPModuleDoor.dynamicParams.impAccessAT ?? ""
+            "Authorization": IIHTTPModuleDoor.dynamicParams.impAccessAT ?? "",
+            "AppVersion": (Bundle.main.infoDictionary?["CFBundleVersion"] as? String) ?? "",
+            "OrganId": IIHTTPModuleDoor.dynamicParams.organId
         ]
         if header == nil {
             return defaultHeaderFields
