@@ -50,7 +50,7 @@ class IIHTTPHeaderAndParams: NSObject {
     /// - Returns: 字典
     class func ihtanalyzeHTTPHeader(_ header: HTTPHeaders?) -> HTTPHeaders {
         var defaultHeaderFields: HTTPHeaders = [
-            "User-Agent": "yun+/\(IIHTTPModuleDoor.urlParams.appCurrentVersion) (iPhone; iOS \(IIHTTPModuleDoor.urlParams.deviceIOSVersion); Scale/\(IIHTTPModuleDoor.urlParams.ihtScale))",
+            "User-Agent": progressUserAgent(),
             "Accept-Language": IIHTTPHeaderAndParams.currentUseLanguage(),
             "Authorization": IIHTTPModuleDoor.dynamicParams.impAccessAT ?? "",
             "AppVersion": (Bundle.main.infoDictionary?["CFBundleVersion"] as? String) ?? "",
@@ -65,6 +65,24 @@ class IIHTTPHeaderAndParams: NSObject {
             }
             return defaultHeaderFields
         }
+    }
+
+    /// 处理User-Agent
+    class func progressUserAgent() -> String {
+        let bundleId = Bundle.main.infoDictionary?["CFBundleIdentifier"] as? String ?? ""
+        var appName = ""
+        if bundleId == "com.SZSKY.HtimeInternetnew" {
+            // 云上协同特殊处理
+            appName = "cass"
+        } else if bundleId == "com.inspur.HtimeInternet" {
+            // 社科院特殊处理
+            appName = "ccwork"
+        } else {
+            // 其他自动打包处理
+            appName = bundleId.replacingOccurrences(of: "com.inspur.HTEnter", with: "")
+        }
+
+        return "\(appName)/\(IIHTTPModuleDoor.urlParams.appCurrentVersion) (iPhone; iOS \(IIHTTPModuleDoor.urlParams.deviceIOSVersion); Scale/\(IIHTTPModuleDoor.urlParams.ihtScale))"
     }
     
     /// 刷新token之后重新请求之前的req需要新的本地AT
