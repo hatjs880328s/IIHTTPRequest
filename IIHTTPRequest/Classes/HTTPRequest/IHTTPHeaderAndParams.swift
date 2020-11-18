@@ -79,7 +79,7 @@ class IIHTTPHeaderAndParams: NSObject {
             appName = "ccwork"
         } else {
             // 其他自动打包处理
-            appName = bundleId.replacingOccurrences(of: "com.inspur.HTEnter", with: "")
+            appName = bundleId.replacingOccurrences(of: "com.inspur.Enter", with: "")
         }
 
         return "\(appName)/\(IIHTTPModuleDoor.urlParams.appCurrentVersion) (iPhone; iOS \(IIHTTPModuleDoor.urlParams.deviceIOSVersion); Scale/\(IIHTTPModuleDoor.urlParams.ihtScale))"
