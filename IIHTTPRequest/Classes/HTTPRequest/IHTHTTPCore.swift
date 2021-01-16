@@ -86,5 +86,51 @@ open class IHTHTTPCore: IIHTTPRequestFather {
             }
         } catch {}
     }
+    
+    /// 静态网络请求-优先判断网络状态
+    ///
+    /// - Parameters:
+    ///   - url: URL<String>
+    ///   - showAlertInfo: 是否有必要弹出错误提示，默认为true
+    ///   - shouldGetRedirect: 是否有必要捕获wifi小助手，默认关闭
+    ///   - params: 参数
+    ///   - header: header
+    ///   - successAction: success action <ResponseClass>
+    ///   - errorAction: error action <ErrorInfo>
+    @objc open class func startShareExtensionRequest(
+        showAlertInfo: Bool = true,
+        shouldGetRedirect: Bool = false,
+        method: IIHTTPMethod,
+        url: String,
+        params: [String: Any]?,
+        header: [String: String]? = nil,
+        timeOut: TimeInterval = 15,
+        encodingType: ParamsSeriType = .jsonEncoding,
+        requestType: RequestType = .normal,
+        successAction:@escaping (_ response: String?) -> Void) {
+
+        if !IIHTTPHeaderAndParams.progressURL(url: url) { return }
+        let httpHeader = IIHTTPHeaderAndParams.ihtanalyzeHTTPHeader(header)
+        let httpMethod = method.changeToAlaMethod()
+        let requestManager = IIHTTPHeaderAndParams.redirectURL(progress: shouldGetRedirect)
+        var realEncoding: ParamsSeriType = encodingType
+        if method == .get {
+            realEncoding = .urlEncoding
+        }
+        let httpRencoding = IIHTTPHeaderAndParams.getTrueEncodingType(param: realEncoding)
+        let newParams = IHTHTTPCoreParametersProgress().progressParams(params: params)
+        do {
+            let req = try URLRequest(url: URL(string: url)!, method: httpMethod, headers: httpHeader)
+            var reqEncode = try httpRencoding.encode(req, with: newParams)
+            reqEncode.timeoutInterval = timeOut
+
+            _ = requestManager.request(reqEncode)
+                .responseJSON { (response) in
+                    
+                }.responseString(completionHandler: { (response) in
+                    successAction(response.value)
+                })
+        } catch {}
+    }
 
 }
