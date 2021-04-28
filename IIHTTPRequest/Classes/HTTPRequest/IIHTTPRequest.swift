@@ -73,9 +73,10 @@ open class IIHTTPRequest: IIHTTPRequestFather {
         encodingType: ParamsSeriType = .jsonEncoding,
         requestType: RequestType = .normal,
         successAction:@escaping (_ response: ResponseClass) -> Void,
-        errorAction:@escaping (_ errorType: ErrorInfo) -> Void) {
+        errorAction:@escaping (_ errorType: ErrorInfo) -> Void,
+        normalAction: ((_ normalInfo: Any?, _ result: Bool) -> Void)? = nil) {
 
-        super.startRequest(method: method, url: url, params: params, successAction: successAction, errorAction: errorAction)
+        super.startRequest(method: method, url: url, params: params, successAction: successAction, errorAction: errorAction, normalAction: normalAction)
         if !IIHTTPHeaderAndParams.progressURL(url: url) { return }
         let httpHeader = IIHTTPHeaderAndParams.analyzeHTTPHeader(header)
         let httpMethod = method.changeToAlaMethod()
@@ -169,8 +170,8 @@ open class IIHTTPRequest: IIHTTPRequestFather {
         
         IHTHTTPCore.startRequest(method: IIHTTPMethod.post, url: requestURL, params: params, encodingType: .urlEncoding, successAction: { (response) in
             successAction(response)
-        }) { (error) in
+        }, errorAction: {(error) in
             errorAction(error)
-        }
+        }, normalAction: nil)
     }
 }

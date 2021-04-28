@@ -36,7 +36,9 @@ open class IIHTTPRequestFather: NSObject {
                                   encodingType: ParamsSeriType = .jsonEncoding,
                                   requestType: RequestType = .normal,
                                   successAction:@escaping (_ response: ResponseClass) -> Void,
-                                  errorAction:@escaping (_ errorType: ErrorInfo) -> Void) {
+                                  errorAction:@escaping (_ errorType: ErrorInfo) -> Void,
+                                  normalAction: ((_ normalInfo: Any?, _ result: Bool) -> Void)?
+                                  ) {
         writeLog(url: url, requestType: requestType)
     }
 
