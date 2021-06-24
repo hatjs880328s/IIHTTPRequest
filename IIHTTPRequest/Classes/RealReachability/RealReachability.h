@@ -49,7 +49,8 @@ typedef NS_ENUM(NSInteger, WWANAccessType) {
     WWANTypeUnknown = -1, /// maybe iOS6
     WWANType4G = 0,
     WWANType3G = 1,
-    WWANType2G = 3
+    WWANType2G = 3,
+    WWANType5G = 4
 };
 
 @protocol RealReachabilityDelegate <NSObject>
