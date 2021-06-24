@@ -78,7 +78,7 @@ NSString *const kRRVPNStatusChangedNotification = @"kRRVPNStatusChangedNotificat
         
         _typeStrings4G = @[CTRadioAccessTechnologyLTE];
         
-        _typeStrings5G = @[CTRadioAccessTechnologyNRNSA];
+        _typeStrings5G = @[CTRadioAccessTechnologyNRNSA, @CTRadioAccessTechnologyNR];
         
         _hostForPing = kDefaultHost;
         _hostForCheck = kDefaultHost;
