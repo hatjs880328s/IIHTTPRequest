@@ -82,7 +82,7 @@ class IIHTTPHeaderAndParams: NSObject {
             appName = bundleId.replacingOccurrences(of: "com.inspur.Enter", with: "")
         }
 
-        return "\(appName)/\(IIHTTPModuleDoor.urlParams.appCurrentVersion) (iPhone; iOS \(IIHTTPModuleDoor.urlParams.deviceIOSVersion); Scale/\(IIHTTPModuleDoor.urlParams.ihtScale))"
+        return "ccwork/\(appName)/\(IIHTTPModuleDoor.urlParams.appCurrentVersion) (iPhone; iOS \(IIHTTPModuleDoor.urlParams.deviceIOSVersion); Scale/\(IIHTTPModuleDoor.urlParams.ihtScale))"
     }
     
     /// 刷新token之后重新请求之前的req需要新的本地AT
