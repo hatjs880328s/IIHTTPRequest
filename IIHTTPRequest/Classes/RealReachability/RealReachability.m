@@ -78,7 +78,11 @@ NSString *const kRRVPNStatusChangedNotification = @"kRRVPNStatusChangedNotificat
         
         _typeStrings4G = @[CTRadioAccessTechnologyLTE];
         
-        _typeStrings5G = @[CTRadioAccessTechnologyNRNSA, CTRadioAccessTechnologyNR];
+        if (@available(iOS 14.0, *)) {
+            _typeStrings5G = @[CTRadioAccessTechnologyNRNSA, CTRadioAccessTechnologyNR];
+        } else {
+            _typeStrings5G = @[];
+        }
         
         _hostForPing = kDefaultHost;
         _hostForCheck = kDefaultHost;
