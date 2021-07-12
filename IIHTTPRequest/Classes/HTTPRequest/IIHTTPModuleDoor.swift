@@ -1,12 +1,12 @@
 //
 //  *******************************************
-//  
+//
 //  IIHTTPModuleDoor.swift
 //  testcanrun
 //
 //  Created by Noah_Shan on 2019/4/18.
 //  Copyright © 2018 Inpur. All rights reserved.
-//  
+//
 //  *******************************************
 //
 
@@ -131,6 +131,15 @@ public class IIHTTPModuleDynamicParams: NSObject {
         guard let realAction = ihttokenAction else { return "" }
         return realAction()
     }
+    
+    /// cctoken
+    var cctoken: String {
+        guard let realAction = ccTokenAction else { return "" }
+        return realAction()
+    }
+    
+    /// cctoken
+    @objc public var ccTokenAction: (() -> String)?
     
     /// 刷新token地址数组
     @objc public var getRefreshPathAction: (() -> [String])?

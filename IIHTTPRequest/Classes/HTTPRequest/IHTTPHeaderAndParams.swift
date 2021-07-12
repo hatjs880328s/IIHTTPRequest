@@ -31,7 +31,8 @@ class IIHTTPHeaderAndParams: NSObject {
             "X-ECC-Current-Enterprise": "\(IIHTTPModuleDoor.dynamicParams.impUserID)",
             "User-Agent": "iOS/\(IIHTTPModuleDoor.urlParams.deviceIOSVersion)(Apple \(IIHTTPModuleDoor.urlParams.deviceKey)) CloudPlus_Phone/\(IIHTTPModuleDoor.urlParams.appCurrentVersion)",
             "Accept-Language": IIHTTPHeaderAndParams.currentUseLanguage(),
-            "X-Device-ID": IIHTTPModuleDoor.urlParams.deviceUUID
+            "X-Device-ID": IIHTTPModuleDoor.urlParams.deviceUUID,
+            "cctoken": IIHTTPModuleDoor.dynamicParams.cctoken
         ]
         if header == nil {
             return defaultHeaderFields
