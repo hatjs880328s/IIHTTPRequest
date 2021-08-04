@@ -21,6 +21,8 @@ open class IIHTTPRequestErrorProgress: NSObject {
     
     var errorAction: ((_ errorType: ErrorInfo) -> Void)!
     
+    var refreshTokenBegin: (() -> Void)?
+    
     var showAlertInfo: Bool!
 
     /// exchange should relogin code
@@ -30,13 +32,15 @@ open class IIHTTPRequestErrorProgress: NSObject {
          requestType: RequestType,
          showAlertInfo: Bool,
          successAction:@escaping (_ response: ResponseClass) -> Void,
-         errorAction:@escaping (_ errorType: ErrorInfo) -> Void) {
+         errorAction:@escaping (_ errorType: ErrorInfo) -> Void,
+         refreshTokenBegin: (() -> Void)?) {
     
         self.response = response
         self.showAlertInfo = showAlertInfo
         self.requestType = requestType
         self.successAction = successAction
         self.errorAction = errorAction
+        self.refreshTokenBegin = refreshTokenBegin
     }
     
     /// 异常处理
@@ -108,6 +112,7 @@ extension IIHTTPRequestErrorProgress {
 
     /// 重新发起之前失败的网络请求[请求new token之后去重新请求;并在header中标记;如果有标记则不会再次请求]
     @objc func reRequest() {
+        self.refreshTokenBegin?()
         guard var requestHeader = self.response?.request?.allHTTPHeaderFields else { return }
         guard var changeRequest = self.response.request else { return }
         guard let newAT = IIHTTPHeaderAndParams.refreshTokenGetNewAT() else { return }

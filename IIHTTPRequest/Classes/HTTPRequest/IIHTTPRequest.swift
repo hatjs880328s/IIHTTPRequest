@@ -74,9 +74,10 @@ open class IIHTTPRequest: IIHTTPRequestFather {
         requestType: RequestType = .normal,
         successAction:@escaping (_ response: ResponseClass) -> Void,
         errorAction:@escaping (_ errorType: ErrorInfo) -> Void,
+        refreshTokenBegin: (() -> Void)? = nil,
         normalAction: ((_ normalInfo: Any?, _ result: Bool) -> Void)? = nil) {
 
-        super.startRequest(method: method, url: url, params: params, successAction: successAction, errorAction: errorAction, normalAction: normalAction)
+        super.startRequest(method: method, url: url, params: params, successAction: successAction, errorAction: errorAction, refreshTokenBegin: refreshTokenBegin, normalAction: normalAction)
         if !IIHTTPHeaderAndParams.progressURL(url: url) { return }
         let httpHeader = IIHTTPHeaderAndParams.analyzeHTTPHeader(header)
         let httpMethod = method.changeToAlaMethod()
@@ -98,7 +99,7 @@ open class IIHTTPRequest: IIHTTPRequestFather {
                 if resultResponse.errorValue == nil {
                     successAction(resultResponse)
                 } else {
-                    let errorProgressIns = IIHTTPRequestErrorProgress(response: response, requestType: requestType, showAlertInfo: showAlertInfo, successAction: successAction, errorAction: errorAction)
+                    let errorProgressIns = IIHTTPRequestErrorProgress(response: response, requestType: requestType, showAlertInfo: showAlertInfo, successAction: successAction, errorAction: errorAction, refreshTokenBegin: refreshTokenBegin)
                     errorProgressIns.errorMsgProgress(resultResponse.errorValue)
                     errorAction(resultResponse.errorValue)
                 }
@@ -119,7 +120,7 @@ open class IIHTTPRequest: IIHTTPRequestFather {
             if resultResponse.errorValue == nil {
                 successAction(resultResponse)
             } else {
-                let errorProgressIns = IIHTTPRequestErrorProgress(response: response, requestType: .normal, showAlertInfo: showAlertInfo, successAction: successAction, errorAction: errorAction)
+                let errorProgressIns = IIHTTPRequestErrorProgress(response: response, requestType: .normal, showAlertInfo: showAlertInfo, successAction: successAction, errorAction: errorAction, refreshTokenBegin: nil)
                 errorProgressIns.errorMsgProgress(resultResponse.errorValue)
                 errorAction(resultResponse.errorValue)
             }

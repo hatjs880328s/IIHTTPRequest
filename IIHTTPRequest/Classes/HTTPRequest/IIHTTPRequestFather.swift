@@ -37,6 +37,7 @@ open class IIHTTPRequestFather: NSObject {
                                   requestType: RequestType = .normal,
                                   successAction:@escaping (_ response: ResponseClass) -> Void,
                                   errorAction:@escaping (_ errorType: ErrorInfo) -> Void,
+                                  refreshTokenBegin: (() -> Void)?,
                                   normalAction: ((_ normalInfo: Any?, _ result: Bool) -> Void)?
                                   ) {
         writeLog(url: url, requestType: requestType)

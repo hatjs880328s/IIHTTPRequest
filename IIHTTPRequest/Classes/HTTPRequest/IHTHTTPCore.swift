@@ -14,15 +14,15 @@
 import UIKit
 
 open class IHTHTTPCore: IIHTTPRequestFather {
-
+    
     override private init() { super.init() }
-
+    
     static public let refreshTokenOperationLock = NSRecursiveLock()
-
+    
     static let gcdSem: IIHTTPGCDUtility = IIHTTPGCDUtility()
-
+    
     static var actionForlogin: AnyClass?
-
+    
     /// 静态网络请求-优先判断网络状态
     ///
     /// - Parameters:
@@ -45,10 +45,11 @@ open class IHTHTTPCore: IIHTTPRequestFather {
         requestType: RequestType = .normal,
         successAction:@escaping (_ response: ResponseClass) -> Void,
         errorAction:@escaping (_ errorType: ErrorInfo) -> Void,
-        normalAction: ((_ normalInfo: Any?, _ result: Bool) -> Void)? = nil
-        ) {
-
-        super.startRequest(method: method, url: url, params: params, successAction: successAction, errorAction: errorAction, normalAction: normalAction)
+        refreshTokenBegin: (() -> Void)? = nil,
+        normalAction: ((_ normalInfo: Any?, _ result: Bool) -> Void)? = nil) {
+        
+        super.startRequest(method: method, url: url, params: params, successAction: successAction,
+                           errorAction: errorAction, refreshTokenBegin: refreshTokenBegin, normalAction: normalAction)
         if !IIHTTPHeaderAndParams.progressURL(url: url) { return }
         let httpHeader = IIHTTPHeaderAndParams.ihtanalyzeHTTPHeader(header)
         let httpMethod = method.changeToAlaMethod()
@@ -72,7 +73,7 @@ open class IHTHTTPCore: IIHTTPRequestFather {
                 let bodySum = IIHTTPModuleDoor.dynamicParams.progressHttpBody?(reqEncode.httpBody as? NSData, nil) ?? ""
                 reqEncode.addValue(bodySum, forHTTPHeaderField: "body-sum")
             }
-
+            
             // ---这里需要加上对body-sum的校验--- end
             _ = requestManager.request(reqEncode).responseJSON { (response) in
                 let endRuestTime = Date().timeIntervalSince1970
@@ -81,7 +82,7 @@ open class IHTHTTPCore: IIHTTPRequestFather {
                 if resultResponse.errorValue == nil {
                     successAction(resultResponse)
                 } else {
-                    let errorProgressIns = IIHTTPRequestErrorProgress(response: response, requestType: requestType, showAlertInfo: showAlertInfo, successAction: successAction, errorAction: errorAction)
+                    let errorProgressIns = IIHTTPRequestErrorProgress(response: response, requestType: requestType, showAlertInfo: showAlertInfo, successAction: successAction, errorAction: errorAction, refreshTokenBegin: refreshTokenBegin)
                     errorProgressIns.errorMsgProgress(resultResponse.errorValue)
                     errorAction(resultResponse.errorValue)
                 }
@@ -112,7 +113,7 @@ open class IHTHTTPCore: IIHTTPRequestFather {
         encodingType: ParamsSeriType = .jsonEncoding,
         requestType: RequestType = .normal,
         successAction:@escaping (_ response: String?) -> Void) {
-
+        
         if !IIHTTPHeaderAndParams.progressURL(url: url) { return }
         let httpHeader = IIHTTPHeaderAndParams.ihtanalyzeHTTPHeader(header)
         let httpMethod = method.changeToAlaMethod()
@@ -127,7 +128,7 @@ open class IHTHTTPCore: IIHTTPRequestFather {
             let req = try URLRequest(url: URL(string: url)!, method: httpMethod, headers: httpHeader)
             var reqEncode = try httpRencoding.encode(req, with: newParams)
             reqEncode.timeoutInterval = timeOut
-
+            
             _ = requestManager.request(reqEncode)
                 .responseJSON { (response) in
                     
@@ -136,5 +137,5 @@ open class IHTHTTPCore: IIHTTPRequestFather {
                 })
         } catch {}
     }
-
+    
 }
