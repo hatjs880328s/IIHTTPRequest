@@ -78,7 +78,7 @@ NSString *const kRRVPNStatusChangedNotification = @"kRRVPNStatusChangedNotificat
         
         _typeStrings4G = @[CTRadioAccessTechnologyLTE];
         
-        if (@available(iOS 14.0, *)) {
+        if (@available(iOS 14.1, *)) {
             _typeStrings5G = @[CTRadioAccessTechnologyNRNSA, CTRadioAccessTechnologyNR];
         } else {
             _typeStrings5G = @[];
