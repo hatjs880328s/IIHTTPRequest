@@ -61,7 +61,10 @@ open class IHTHTTPCore: IIHTTPRequestFather {
         let httpRencoding = IIHTTPHeaderAndParams.getTrueEncodingType(param: realEncoding)
         let newParams = IHTHTTPCoreParametersProgress().progressParams(params: params)
         do {
-            let req = try URLRequest(url: URL(string: url)!, method: httpMethod, headers: httpHeader)
+            guard let realURL = URL(string: url) else {
+                return
+            }
+            let req = try URLRequest(url: realURL, method: httpMethod, headers: httpHeader)
             var reqEncode = try httpRencoding.encode(req, with: newParams)
             reqEncode.timeoutInterval = timeOut
             let startRuestTime = Date().timeIntervalSince1970
