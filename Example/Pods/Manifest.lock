@@ -1,29 +1,29 @@
 PODS:
   - II18N (0.1.0)
-  - IIHTTPRequest (2.0.0):
+  - IIHTTPRequest (2.0.31):
     - II18N
-    - IIHTTPRequest/Connectivity (= 2.0.0)
-    - IIHTTPRequest/HTTPRequest (= 2.0.0)
-    - IIHTTPRequest/HTTPSource (= 2.0.0)
-    - IIHTTPRequest/RealReachability (= 2.0.0)
-  - IIHTTPRequest/Connectivity (2.0.0):
+    - IIHTTPRequest/Connectivity (= 2.0.31)
+    - IIHTTPRequest/HTTPRequest (= 2.0.31)
+    - IIHTTPRequest/HTTPSource (= 2.0.31)
+    - IIHTTPRequest/RealReachability (= 2.0.31)
+  - IIHTTPRequest/Connectivity (2.0.31):
     - II18N
     - IIHTTPRequest/RealReachability
-  - IIHTTPRequest/HTTPRequest (2.0.0):
+  - IIHTTPRequest/HTTPRequest (2.0.31):
     - II18N
     - IIHTTPRequest/Connectivity
     - IIHTTPRequest/HTTPSource
     - IIHTTPRequest/RealReachability
-  - IIHTTPRequest/HTTPSource (2.0.0):
+  - IIHTTPRequest/HTTPSource (2.0.31):
     - II18N
-  - IIHTTPRequest/RealReachability (2.0.0):
+  - IIHTTPRequest/RealReachability (2.0.31):
     - II18N
 
 DEPENDENCIES:
   - IIHTTPRequest (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - II18N
 
 EXTERNAL SOURCES:
@@ -32,8 +32,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   II18N: 323a17a6c4af02c6fed5d942dbdf5e540e2643b0
-  IIHTTPRequest: be155ddd506e8c84c2f30fbd3b37c7d0c72d369c
+  IIHTTPRequest: 59cc213f76448238f70a5cfb117966a2c1cd4f93
 
-PODFILE CHECKSUM: ddec0b6da59bc11fcf6156b72e628137a8b4e95e
+PODFILE CHECKSUM: 0292c94467c72595da13a3a763a07e8dc8b1b480
 
-COCOAPODS: 1.7.1
+COCOAPODS: 1.10.0
