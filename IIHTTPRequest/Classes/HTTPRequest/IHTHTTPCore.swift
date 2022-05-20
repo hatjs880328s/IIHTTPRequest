@@ -24,7 +24,7 @@ open class IHTHTTPCore: IIHTTPRequestFather {
     static var actionForlogin: AnyClass?
     
     /// 静态网络请求-优先判断网络状态
-    /// 
+    ///
     /// - Parameters:
     ///   - url: URL<String>
     ///   - showAlertInfo: 是否有必要弹出错误提示，默认为true

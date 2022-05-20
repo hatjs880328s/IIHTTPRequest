@@ -73,17 +73,17 @@ class IIHTTPHeaderAndParams: NSObject {
         let bundleId = Bundle.main.infoDictionary?["CFBundleIdentifier"] as? String ?? ""
         var appName = ""
         if bundleId == "com.SZSKY.HtimeInternetnew" {
-            // 云上协同特殊处理
+            // 社科院特殊处理
             appName = "cass"
         } else if bundleId == "com.inspur.HtimeInternet" {
-            // 社科院特殊处理
+            // 云上协同特殊处理
             appName = "ccwork"
         } else {
             // 其他自动打包处理
             appName = bundleId.replacingOccurrences(of: "com.inspur.Enter", with: "")
         }
 
-        return "ccwork/\(appName)/\(IIHTTPModuleDoor.urlParams.appCurrentVersion) (iPhone; iOS \(IIHTTPModuleDoor.urlParams.deviceIOSVersion); Scale/\(IIHTTPModuleDoor.urlParams.ihtScale))"
+        return "\(appName)/\(IIHTTPModuleDoor.urlParams.appCurrentVersion) (iPhone; iOS \(IIHTTPModuleDoor.dynamicParams.userAgentInfo); Scale/\(IIHTTPModuleDoor.urlParams.ihtScale))"
     }
     
     /// 刷新token之后重新请求之前的req需要新的本地AT

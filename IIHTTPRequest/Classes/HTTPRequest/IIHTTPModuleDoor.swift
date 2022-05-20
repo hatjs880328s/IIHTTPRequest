@@ -137,6 +137,11 @@ public class IIHTTPModuleDynamicParams: NSObject {
         guard let realAction = ccTokenAction else { return "" }
         return realAction()
     }
+    /// ua 拓展信息
+    var userAgentInfo: String  {
+        guard let realAction = userAgentAction else { return "" }
+        return realAction()
+    }
     
     /// cctoken
     @objc public var ccTokenAction: (() -> String)?
@@ -173,6 +178,9 @@ public class IIHTTPModuleDynamicParams: NSObject {
 
     /// 记录header中组织号id的字段
     @objc public var organIdAction: (() -> String)?
+    
+    /// ua拓展信息
+    @objc public var userAgentAction: (() -> String)?
 
     /// 记录iht中token数据的action
     @objc public var ihttokenAction: (() -> String)?
